@@ -41,7 +41,3 @@ cd ~/DotFiles
 rm -rf ~/.config/niri && mkdir -p ~/.config/niri
 stow -t ~/.config/niri niri
 
-
-```bash
-./script.sh
-````
