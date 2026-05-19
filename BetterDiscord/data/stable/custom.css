@@ -1,0 +1,11 @@
+@font-face { 
+    font-family: 'MinecraftDefault'; 
+    /* Use the file:/// protocol to point to your local Linux directory */
+    src: url('file:///home/prunus/.config/BetterDiscord/themes/MinecraftDefault-Bold.ttf'); 
+    font-weight: normal; 
+} 
+
+/* Apply the font to the entire Discord UI */
+*:not([class*="hljs"]):not(code) { 
+    font-family: 'MinecraftDefault', sans-serif !important; 
+}

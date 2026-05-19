@@ -1,0 +1,14 @@
+{
+    "settings": {
+        "showMemberListIcons": true,
+        "showDMListIcons": true,
+        "showPeopleListIcons": true,
+        "currentChannelColor": true,
+        "showStatusIcons": true,
+        "currentUserIcon": true,
+        "ignoreEnabled": false,
+        "ignoredChannels": [],
+        "ignoredGuilds": []
+    },
+    "changelogVersion": "1.12.3"
+}

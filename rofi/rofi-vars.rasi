@@ -1,0 +1,5 @@
+* {
+    radius: 0px;
+    radius-second: 0px;
+    border-size: 2px;
+}

@@ -1,0 +1,20 @@
+{
+    "currentVersionInfo": {
+        "version": "1.2.3",
+        "hasShownChangelog": true
+    },
+    "settings": {
+        "games": {
+            "buckshot roulette.x86_64": {
+                "name": "buckshot roulette.x86_64",
+                "playtimeSeconds": 10,
+                "lastPlayed": 1776880708783
+            },
+            "factorygamesteam-win64-shipping.exe": {
+                "name": "Satisfactory",
+                "playtimeSeconds": 110,
+                "lastPlayed": 1778947204704
+            }
+        }
+    }
+}
