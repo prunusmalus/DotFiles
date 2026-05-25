@@ -2,7 +2,7 @@
  * @name JumpToTop
  * @author SnappyCreeper
  * @description Adds a button to the channel header allowing you to jump to first message in a channel. (Original by Huderon)
- * @version 1.0.5
+ * @version 1.0.6
  * @authorId 1031925360239058974
  * @source https://github.com/snappycreeper/BetterDiscordPlugins/tree/main/JumpToTop
  * @updateurl https://raw.githubusercontent.com/snappycreeper/BetterDiscordPlugins/main/JumpToTop/JumpToTop.plugin.js
@@ -21,6 +21,9 @@ var IconClasses = BdApi.Webpack.getByKeys("browser", "icon")
 var Tooltip = BdApi.Components?.Tooltip;
 var transitionTo = BdApi.Webpack.getByStrings("transitionTo - Transitioning to", {searchExports: true});
 
+var SelectedChannelStore = BdApi.Webpack.getByKeys("getChannelId", "getVoiceChannelId");
+var SelectedGuildStore = BdApi.Webpack.getByKeys("getGuildId", "getLastSelectedGuildId");
+
 function ToolbarComponent() {
   const iconClass = IconClasses?.icon ?? "";
   const wrapperClass = IconWrapperClasses?.iconWrapper ?? "";
@@ -35,9 +38,18 @@ function ToolbarComponent() {
         onMouseEnter,
         onMouseLeave,
         onClick: () => {
-          transitionTo(location.pathname + "/0");
+          const guildId = SelectedGuildStore.getGuildId();
+          const channelId = SelectedChannelStore.getChannelId();
+
+          if (!channelId) return;
+
+          if (guildId) {
+            transitionTo(`/channels/${guildId}/${channelId}/0`);
+          } else {
+            transitionTo(`/channels/@me/${channelId}/0`);
+          }
         },
-        style: { cursor: "pointer" }, // fallback so it's always clickable even if classes fail
+        style: { cursor: "pointer" },
       },
       /* @__PURE__ */ BdApi.React.createElement(
         "svg",
@@ -59,7 +71,6 @@ function ToolbarComponent() {
   );
 }
 
-// src/plugins/JumpToTop/index.jsx
 var [ChannelHeader, ChannelHeaderKey] = BdApi.Webpack.getWithKey(BdApi.Webpack.Filters.byKeys("Icon", "Divider"));
 module.exports = class MentionFilter {
   constructor(meta) {
@@ -67,7 +78,7 @@ module.exports = class MentionFilter {
   }
   start() {
     BdApi.Patcher.after(this.meta.name, ChannelHeader, ChannelHeaderKey, (_, [{toolbar}], returnValue) => {
-      if (!toolbar) return; // guard: toolbar prop missing entirely
+      if (!toolbar) return; 
       const Toolbar = BdApi.Utils.findInTree(
         toolbar,
         (prop) => Array.isArray(prop) && prop.some((element) => element?.key === "pins"),

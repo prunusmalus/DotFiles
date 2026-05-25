@@ -230,8 +230,8 @@ binds {
     // --- Scripts & Menus ---
     Mod+R {spawn "rofi" "-show" "drun";}
     //Mod+R {spawn "/home/prunus/.config/hypr/bin/RofiLauncher"; }
-    Mod+Alt+C {spawn "clipcat-menu";}
-    //Mod+Alt+C { spawn "/home/prunus/.config/hypr/scripts/cliphist.sh" "c"; }
+    //Mod+Alt+C {spawn "clipcat-menu";}
+    Mod+Alt+C { spawn "/home/prunus/.config/hypr/scripts/cliphist.sh" "c"; }
     Mod+Alt+W { spawn "/home/prunus/.config/hypr/scripts/cliphist.sh" "w"; }
     Mod+Alt+D { spawn "/home/prunus/.config/hypr/scripts/rofi-emoji.sh"; }
     Mod+Shift+Alt+W { spawn "/home/prunus/.config/hypr/scripts/Wallpaper.sh"; }

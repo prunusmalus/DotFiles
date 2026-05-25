@@ -37,6 +37,7 @@ end
 alias nefetch='neofetch'
 alias nfetch='neofetch'
 alias nf='neofetch'
+alias ay='AyuGram'
 
 alias ff='fastfetch'
 
@@ -61,6 +62,7 @@ alias ls='eza --icons=always --group-directories-first -A' # Swap LS
 alias ll='eza --icons=always --group-directories-first -lA --git --time-style=relative'
 alias lt='eza --icons=always --tree --level=2 -A'
 alias ltt='eza --icons=always --tree --level=3 -A'
+alias ddd='discord'
 
 alias ds='cd'
 alias c='clear'

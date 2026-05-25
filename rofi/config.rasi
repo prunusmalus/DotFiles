@@ -45,7 +45,7 @@ dummywall {
     orientation:                 horizontal;
     children:                    [ "mode-switcher" ];
     background-color:            transparent;
-    background-image:            url("~/DotFiles/hypr/Wallpapers/TokyoNight/cats_animated_pink_trees_pixelated_brigde_sakura.gif", height);
+    background-image:            url("~/DotFiles/Walls/walls/cats_animated_pink_trees_pixelated_brigde_sakura.gif", height);
     //background-image:            url("~/.local/share/wallpapers/.current.wall", height);
 }
 
