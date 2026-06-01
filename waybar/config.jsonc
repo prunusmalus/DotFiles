@@ -194,8 +194,7 @@
             "locked": "",
             "unlocked": ""
         }
-    }
-    }
+    },
     "custom/waybar-media": {
     "return-type": "json",
     "exec": "waybar-media.py status",

@@ -108,3 +108,4 @@ text/x-python3=dde-file-manager-custom-open-text-x-python3.desktop
 x-scheme-handler/betterdiscord=discord.desktop
 application/vnd.microsoft.portable-executable=wine.desktop
 x-scheme-handler/dotify=dotify-handler.desktop
+x-scheme-handler/figma=figma-linux.desktop

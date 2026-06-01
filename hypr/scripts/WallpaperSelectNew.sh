@@ -4,7 +4,8 @@
 cache_dir="$HOME/.config/hypr/.cache"
 wallCache="$cache_dir/.wallpaper"
 # Force TokyoNight directory as per your original script
-wallDIR="$HOME/.config/hypr/Wallpapers/TokyoNight"
+#wallDIR="$HOME/.config/hypr/Wallpapers/TokyoNight"
+wallDIR="$HOME/DotFiles/Walls"
 
 # Ensure cache file exists
 mkdir -p "$cache_dir"

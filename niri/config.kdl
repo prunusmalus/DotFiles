@@ -16,7 +16,7 @@ environment {
 prefer-no-csd
 
 cursor {
-    xcursor-theme "macOSuw"
+    xcursor-theme "macOS"
     xcursor-size 24
 }
 
