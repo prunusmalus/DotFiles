@@ -319,3 +319,35 @@ tooltip label {
   color: #cdd6f4;
   padding: 2px 4px;
 }
+
+#media_player {
+  color: red;
+}
+
+#media_player .button {
+  color: white;
+  background: transparent;
+  border-width: 0px;
+  border-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#media_player .play-button {
+}
+
+#media_player .prev-button {
+}
+
+#media_player .next-button {
+}
+
+#media_player .players {
+  color: white;
+}
+
+#media_player .title {
+  color: white;
+}
