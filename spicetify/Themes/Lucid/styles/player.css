@@ -2,8 +2,8 @@
 /* :root {
   --player-height: 80px;
   --player-padding-x: 8px;
-  --player-border-radius: 8px;
-  --player-image-radius: 8px;
+  --player-border-radius: 0px;
+  --player-image-radius: 0px;
   --player-bg-opacity: 50%;
   --player-bg-color: rgba(var(--clr-surface-1-rgb), 0.7);
   --player-blur: 32px;

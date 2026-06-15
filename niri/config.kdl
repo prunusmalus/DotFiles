@@ -15,10 +15,10 @@ environment {
 
 prefer-no-csd
 
-cursor {
-    xcursor-theme "macOS"
+ cursor {
+    xcursor-theme "chromeos"
     xcursor-size 24
-}
+} 
 
 
 // ==================
@@ -42,6 +42,15 @@ input {
         // natural-scroll
         // accel-speed 0.2
         // accel-profile "flat"
+/*        shake-to-enlarge {
+            // Uncomment the next line to enable if it is off by default
+            on
+            grow 5
+            grow-speed 0.01
+            threshold 2000
+            hold-duration-ms 1500
+            zoom-factor 5
+        } */      
         scroll-method "on-button-down"
         scroll-button 274
     }
@@ -240,7 +249,7 @@ binds {
     Mod+Alt+W { spawn "/home/prunus/.config/hypr/scripts/cliphist.sh" "w"; }
     Mod+Alt+D { spawn "/home/prunus/.config/hypr/scripts/rofi-emoji.sh"; }
     Mod+Shift+Alt+W { spawn "/home/prunus/.config/hypr/scripts/Wallpaper.sh"; }
-    Mod+Shift+D {spawn "/home/prunus/.config/hypr/scripts/idk.sh";}
+    Mod+Ctrl+D {spawn "/home/prunus/.config/hypr/scripts/idk.sh";}
     //Mod+Alt+D {spawn "/home/prunus/.config/hypr/scripts/rofi-emoji.sh";}
     Mod+Shift+W {spawn "/home/prunus/.config/hypr/scripts/WallpaperSelect.sh thm1";}
     Mod+C {spawn "kitty" "cava";}
@@ -275,6 +284,8 @@ binds {
     // --- Focus Navigation ---
     Mod+Left  { focus-column-left; }
     Mod+Right { focus-column-right; }
+    Mod+Shift+A  { focus-column-left; }
+    Mod+Shift+D { focus-column-right; }
     Mod+Up    { focus-window-up; }
     Mod+Down  { focus-window-down; }
     Mod+Alt+H     { focus-column-left; }

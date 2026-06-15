@@ -108,3 +108,5 @@ function ranger
     end
     rm -f $temp_file
 end
+
+fish_add_path /home/prunus/.spicetify

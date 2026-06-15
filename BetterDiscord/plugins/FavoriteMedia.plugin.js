@@ -1,7 +1,7 @@
 /**
  * @name FavoriteMedia
  * @description Allows to favorite GIFs, images, videos, audios and files.
- * @version 1.13.28
+ * @version 1.13.29
  * @author Dastan
  * @authorId 310450863845933057
  * @source https://github.com/Dastan21/BDAddons/blob/main/plugins/FavoriteMedia
@@ -29,7 +29,7 @@ const MusicNoteSVG = (props) => BdApi.React.createElement('svg', { className: cl
 const MiniFileSVG = (props) => BdApi.React.createElement('svg', { className: classes.icon.icon, ariaHidden: false, viewBox: '-32 0 512 512', width: '16', height: '16', ...props }, BdApi.React.createElement('path', { fill: 'currentColor', d: 'M96 448Q81 448 73 440 64 431 64 416L64 96Q64 81 73 73 81 64 96 64L217 64Q240 64 256 80L368 192Q384 208 384 231L384 416Q384 431 376 440 367 448 352 448L96 448ZM336 400L336 240 208 240 208 112 112 112 112 400 336 400Z' }))
 const RefreshSVG = () => BdApi.React.createElement('svg', { className: classes.icon.icon, ariaHidden: 'false', viewBox: '0 0 24 24', width: '24', height: '24' }, BdApi.React.createElement('path', { fill: 'none', stroke: 'currentColor', 'stroke-width': 2, 'stroke-linecap': 'round', 'stroke-linejoin': 'round', d: 'M3 12C3 16.9706 7.02944 21 12 21C14.3051 21 16.4077 20.1334 18 18.7083L21 16M21 12C21 7.02944 16.9706 3 12 3C9.69494 3 7.59227 3.86656 6 5.29168L3 8M21 21V16M21 16H16M3 3V8M3 8H8' }))
 
-const classModules = {
+const classesFilters = {
   icon: ['icon', 'active', 'buttonWrapper'],
   menu: ['menu', 'labelContainer', 'colorDefault'],
   result: ['result', 'emptyHints', 'emptyHintText'],
@@ -47,7 +47,10 @@ const classModules = {
   horizontal: ['flex', 'flexChild', 'horizontal'],
   flex: ['flex', 'alignStart', 'alignEnd'],
   title: ['title', 'h1', 'h5'],
-  container: () => BdApi.Webpack.getAllByKeys('wrapper', 'container').find(m => Object.keys(m).length === 2),
+  container: async () => {
+    await BdApi.Webpack.waitForModule(BdApi.Webpack.Filters.byKeys('wrapper', 'container'))
+    return BdApi.Webpack.getAllByKeys('wrapper', 'container').find(m => Object.keys(m).length === 2)
+  },
   medium: ['md', 'text-md/normal', 'hasLeading'],
   scroller: ['disableScrollAnchor', 'thin', 'fade'],
   look: ['button', 'lookBlank', 'colorBrand'],
@@ -56,121 +59,125 @@ const classModules = {
   visual: ['nonVisualMediaItemContainer', 'nonVisualMediaItem', 'visualMediaItemContainer'],
 }
 
-for (const key in classModules) {
-  if (typeof classModules[key] === 'function') {
-    classModules[key] = classModules[key]()
-  } else {
-    classModules[key] = BdApi.Webpack.getByKeys(...classModules[key])
+async function loadClasses() {
+  const classModules = {}
+  for (const key in classesFilters) {
+    if (typeof classesFilters[key] === 'function') {
+      classModules[key] = await classesFilters[key]()
+    } else {
+      classModules[key] = await BdApi.Webpack.waitForModule(BdApi.Webpack.Filters.byKeys(...classesFilters[key]))
+    }
+  }
+
+  classes = {
+    icon: {
+      icon: classModules.icon.icon,
+      active: classModules.icon.active,
+      button: classModules.icon.button,
+      buttonWrapper: classModules.icon.buttonWrapper,
+    },
+    menu: {
+      item: classModules.menu.item,
+      labelContainer: classModules.menu.labelContainer,
+      label: classModules.menu.label,
+      colorDefault: classModules.menu.colorDefault,
+      focused: classModules.menu.focused,
+    },
+    result: {
+      result: classModules.result.result,
+      favButton: classModules.result.favButton,
+      emptyHints: classModules.result.emptyHints,
+      emptyHint: classModules.result.emptyHint,
+      emptyHintCard: classModules.result.emptyHintCard,
+      emptyHintFavorite: classModules.result.emptyHintFavorite,
+      emptyHintText: classModules.result.emptyHintText,
+      gif: classModules.result.gif,
+      endContainer: classModules.result.endContainer,
+    },
+    roleCircle: classModules.role.roleCircle,
+    gif: {
+      gifFavoriteButton1: classModules.gif2.gifFavoriteButton,
+      size: classModules.file.size,
+      gifFavoriteButton2: classModules.gif.gifFavoriteButton,
+      selected: classModules.gif.selected,
+      showPulse: classModules.gif.showPulse,
+      icon: classModules.gif.icon,
+    },
+    image: {
+      imageAccessory: classModules.image.imageAccessory,
+      clickable: classModules.image.clickable,
+      embedMedia: classModules.embed.embedMedia,
+      imageWrapper: classModules.image.imageWrapper,
+    },
+    control: classModules.control.control,
+    control2: {
+      container: classModules.control2.container,
+      control: classModules.control2.control,
+    },
+    category: {
+      categoryFade: classModules.category.categoryFade,
+      categoryText: classModules.category.categoryText,
+      categoryName: classModules.category.categoryName,
+      categoryIcon: classModules.category.categoryIcon,
+      container: classModules.category.container,
+    },
+    textarea: {
+      channelTextArea: classModules.textarea.channelTextArea,
+      buttons: classModules.textarea.buttons,
+      button: classModules.textarea.button,
+    },
+    gutter: {
+      header: classModules.gutter.header,
+      backButton: classModules.gutter.backButton,
+      searchHeader: classModules.gutter.searchHeader,
+      content: classModules.gutter.content,
+      container: classModules.gutter.container,
+    },
+    flex: {
+      flex: classModules.horizontal.flex,
+      horizontal: classModules.horizontal.horizontal,
+      justifyStart: classModules.flex.justifyStart,
+      alignCenter: classModules.flex.alignCenter,
+      noWrap: classModules.flex.noWrap,
+    },
+    h5: classModules.title.h5,
+    container: {
+      container: classModules.container.container,
+      wrapper: classModules.container.wrapper,
+    },
+    medium: {
+      container: classModules.medium.container,
+      medium: classModules.medium.md,
+      hasLeading: classModules.medium.hasLeading,
+      icon: classModules.medium.icon,
+      input: classModules.medium.input,
+      clearButton: classModules.medium.clearButton,
+    },
+    scroller: {
+      thin: classModules.scroller.thin,
+      fade: classModules.scroller.fade,
+      content: classModules.scroller.content,
+    },
+    look: {
+      button: classModules.look.button,
+      lookBlank: classModules.look.lookBlank,
+      colorBrand: classModules.look.colorBrand,
+      grow: classModules.look.grow,
+      contents: classModules.look.contents,
+    },
+    buttons: {
+      button: classModules.button.button,
+    },
+    upload: {
+      actionBarContainer: classModules.upload.actionBarContainer,
+    },
+    visual: {
+      nonVisualMediaItemContainer: classModules.visual.nonVisualMediaItemContainer,
+    },
   }
 }
 
-const classes = {
-  icon: {
-    icon: classModules.icon.icon,
-    active: classModules.icon.active,
-    button: classModules.icon.button,
-    buttonWrapper: classModules.icon.buttonWrapper,
-  },
-  menu: {
-    item: classModules.menu.item,
-    labelContainer: classModules.menu.labelContainer,
-    label: classModules.menu.label,
-    colorDefault: classModules.menu.colorDefault,
-    focused: classModules.menu.focused,
-  },
-  result: {
-    result: classModules.result.result,
-    favButton: classModules.result.favButton,
-    emptyHints: classModules.result.emptyHints,
-    emptyHint: classModules.result.emptyHint,
-    emptyHintCard: classModules.result.emptyHintCard,
-    emptyHintFavorite: classModules.result.emptyHintFavorite,
-    emptyHintText: classModules.result.emptyHintText,
-    gif: classModules.result.gif,
-    endContainer: classModules.result.endContainer,
-  },
-  roleCircle: classModules.role.roleCircle,
-  gif: {
-    gifFavoriteButton1: classModules.gif2.gifFavoriteButton,
-    size: classModules.file.size,
-    gifFavoriteButton2: classModules.gif.gifFavoriteButton,
-    selected: classModules.gif.selected,
-    showPulse: classModules.gif.showPulse,
-    icon: classModules.gif.icon,
-  },
-  image: {
-    imageAccessory: classModules.image.imageAccessory,
-    clickable: classModules.image.clickable,
-    embedMedia: classModules.embed.embedMedia,
-    imageWrapper: classModules.image.imageWrapper,
-  },
-  control: classModules.control.control,
-  control2: {
-    container: classModules.control2.container,
-    control: classModules.control2.control,
-  },
-  category: {
-    categoryFade: classModules.category.categoryFade,
-    categoryText: classModules.category.categoryText,
-    categoryName: classModules.category.categoryName,
-    categoryIcon: classModules.category.categoryIcon,
-    container: classModules.category.container,
-  },
-  textarea: {
-    channelTextArea: classModules.textarea.channelTextArea,
-    buttons: classModules.textarea.buttons,
-    button: classModules.textarea.button,
-  },
-  gutter: {
-    header: classModules.gutter.header,
-    backButton: classModules.gutter.backButton,
-    searchHeader: classModules.gutter.searchHeader,
-    content: classModules.gutter.content,
-    container: classModules.gutter.container,
-  },
-  flex: {
-    flex: classModules.horizontal.flex,
-    horizontal: classModules.horizontal.horizontal,
-    justifyStart: classModules.flex.justifyStart,
-    alignCenter: classModules.flex.alignCenter,
-    noWrap: classModules.flex.noWrap,
-  },
-  h5: classModules.title.h5,
-  container: {
-    container: classModules.container.container,
-    wrapper: classModules.container.wrapper,
-  },
-  medium: {
-    container: classModules.medium.container,
-    medium: classModules.medium.md,
-    hasLeading: classModules.medium.hasLeading,
-    icon: classModules.medium.icon,
-    input: classModules.medium.input,
-    clearButton: classModules.medium.clearButton,
-  },
-  scroller: {
-    thin: classModules.scroller.thin,
-    fade: classModules.scroller.fade,
-    content: classModules.scroller.content,
-  },
-  look: {
-    button: classModules.look.button,
-    lookBlank: classModules.look.lookBlank,
-    colorBrand: classModules.look.colorBrand,
-    grow: classModules.look.grow,
-    contents: classModules.look.contents,
-  },
-  buttons: {
-    button: classModules.button.button,
-  },
-  upload: {
-    actionBarContainer: classModules.upload.actionBarContainer,
-  },
-  visual: {
-    nonVisualMediaItemContainer: classModules.visual.nonVisualMediaItemContainer,
-  },
-}
-
+let classes = {}
 let plugin = {}
 
 const MessageStore = BdApi.Webpack.getStore('SearchMessageStore')
@@ -200,10 +207,6 @@ const ChannelTextArea = Object.values(BdApi.Webpack.getModule((m) => Object.valu
 })))?.find((e) => e.type)
 const Permissions = BdApi.Webpack.getByKeys('computePermissions')
 const PermissionsConstants = BdApi.Webpack.getModule(BdApi.Webpack.Filters.byKeys('ADD_REACTIONS'), { searchExports: true })
-const MediaPlayerModule = BdApi.Webpack.getModule(m => m.Types?.VIDEO, { searchExports: true })
-const ImageModule = BdApi.Webpack.getAllByStrings('readyState', 'zoomable', 'minHeight', { searchExports: true })?.find(m => m.preloadImage != null)
-const FileModule = BdApi.Webpack.getByStrings('fileName', 'fileSize', 'renderAdjacentContent', 'onContextMenu', { defaultExport: false })
-const FileRenderedModule = BdApi.Webpack.getByStrings('getObscureReason', 'mediaLayoutType', { defaultExport: false })
 const FilesUpload = BdApi.Webpack.getModule(BdApi.Webpack.Filters.byKeys('addFiles'))
 const MessagesManager = BdApi.Webpack.getModule(BdApi.Webpack.Filters.byKeys('sendMessage'))
 const RestAPI = BdApi.Webpack.getModule(m => typeof m === 'object' && m.del && m.put, { searchExports: true })
@@ -3077,18 +3080,19 @@ module.exports = class FavoriteMedia {
     LocaleStore.addChangeListener(() => { this.strings = this.getLocaleStrings() })
   }
 
-  start () {
+  async start () {
     plugin = BdApi.Plugins.get('FavoriteMedia')
     this.settings = this.loadSettings()
 
+    await loadClasses()
     loadEPS()
 
     this.patchExpressionPicker()
     this.patchMessageContextMenu()
     this.patchGIFTab()
     this.patchClosePicker()
-    this.patchMedias()
     this.patchChannelTextArea()
+    this.patchMedias()
 
     this.openSettings = this.openSettings.bind(this)
     Dispatcher.subscribe('FM_OPEN_SETTINGS', this.openSettings)
@@ -3292,8 +3296,9 @@ module.exports = class FavoriteMedia {
     })
   }
 
-  patchMedias () {
+  async patchMedias () {
     // Videos & Audios
+    const MediaPlayerModule = await BdApi.Webpack.waitForModule(m => m.Types?.VIDEO, { searchExports: true })
     if (MediaPlayerModule == null) {
       BdApi.Logger.error(this.meta.name, 'MediaPlayer module not found')
     } else {
@@ -3312,6 +3317,8 @@ module.exports = class FavoriteMedia {
     }
 
     // Images
+    await BdApi.Webpack.waitForModule(BdApi.Webpack.Filters.byStrings('readyState', 'zoomable', 'minHeight'), { searchExports: true })
+    const ImageModule = BdApi.Webpack.getAllByStrings('readyState', 'zoomable', 'minHeight', { searchExports: true })?.find(m => m.preloadImage != null)
     if (ImageModule == null) {
       BdApi.Logger.error(this.meta.name, 'Image module not found')
     } else {
@@ -3347,6 +3354,7 @@ module.exports = class FavoriteMedia {
     }
 
     // Files
+    const FileModule = await BdApi.Webpack.waitForModule(BdApi.Webpack.Filters.byStrings('fileName', 'fileSize', 'renderAdjacentContent', 'onContextMenu'), { defaultExport: false })
     if (FileModule == null) {
       BdApi.Logger.error(this.meta.name, 'File module not found')
     } else {
@@ -3361,6 +3369,7 @@ module.exports = class FavoriteMedia {
     }
 
     // Files rendered
+    const FileRenderedModule = await BdApi.Webpack.waitForModule(BdApi.Webpack.Filters.byStrings('getObscureReason', 'mediaLayoutType'), { defaultExport: false })
     if (FileRenderedModule == null) {
       BdApi.Logger.error(this.meta.name, 'FileRendered module not found')
     } else {
