@@ -16,7 +16,7 @@ environment {
 prefer-no-csd
 
  cursor {
-    xcursor-theme "chromeos"
+    xcursor-theme "macOS"
     xcursor-size 24
 } 
 
@@ -209,6 +209,17 @@ window-rule {
     clip-to-geometry true
 }
 
+/*window-rule {
+    geometry-corner-radius 0
+    clip-to-geometry true
+    
+    // Target the SwayNC notification layer specifically
+    match layer="swaync"
+    
+    // Force it to stay on top of fullscreen windows
+    open-on-output "focused"
+    draw-behind-fullscreen false
+} */
 
 // ==================
 // KEYBINDINGS
@@ -229,7 +240,7 @@ binds {
     Mod+A { spawn "AyuGram"; }
     Mod+G { spawn "zen-browser" "https://www.gmail.com"; }
     Mod+M { spawn "flatpak" "run" "io.missioncenter.MissionCenter"; }
-    Mod+N { spawn "swaync-client" "-t"; }
+    Mod+N { spawn "swaync-client" "-t" "-sw"; }
     Mod+X {spawn "./.config/bspwm/bin/PowerMenu" "c";}
     //Mod+X { spawn "niripwmenu"; }
     //Mod+X { spawn "wlogout" "-b" "6" "--layout" "~/.config/wlogout/layout" "--css" "~/.config/wlogout/style.css"; }
@@ -251,7 +262,7 @@ binds {
     Mod+Shift+Alt+W { spawn "/home/prunus/.config/hypr/scripts/Wallpaper.sh"; }
     Mod+Ctrl+D {spawn "/home/prunus/.config/hypr/scripts/idk.sh";}
     //Mod+Alt+D {spawn "/home/prunus/.config/hypr/scripts/rofi-emoji.sh";}
-    Mod+Shift+W {spawn "/home/prunus/.config/hypr/scripts/WallpaperSelect.sh thm1";}
+    Mod+Ctrl+W {spawn "sh" "-c" "/home/prunus/.config/hypr/scripts/walls.sh";}
     Mod+C {spawn "kitty" "cava";}
     Mod+K {spawn "gnome-calculator";}
 
@@ -317,6 +328,9 @@ binds {
     Mod+Page_Up   { focus-workspace-up; }
     Mod+U         { focus-workspace-down; }
     Mod+I         { focus-workspace-up; }
+    
+    Mod+Shift+W { focus-workspace-up; }
+    Mod+Shift+S { focus-workspace-down; }
 
     Mod+WheelScrollDown { focus-column-right; }
     Mod+WheelScrollUp   { focus-column-left; }
@@ -348,7 +362,7 @@ binds {
     Print { spawn "grimblast" "copy" "area"; }
     Ctrl+Print { spawn "grimblast" "copy" "screen"; }
     Alt+Print { screenshot-window; }
-    Mod+Shift+S { screenshot; }
+    Mod+Ctrl+S { screenshot; }
     //Mod+Shift+S { spawn "quickshell" "-c" "/home/prunus/.config/quickshell/hyprquickshot/" "-n"; }
 
     // --- Sizing (Logical Pixels) ---

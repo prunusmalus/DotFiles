@@ -6,6 +6,9 @@
   "control-center-width": 450,
   "fit-to-screen": true,
 
+  "layer": "overlay",
+  "control-center-layer": "overlay",
+
   "notification-window-width": 400,
   "notification-icon-size": 40,
   "notification-body-image-height": 500,
@@ -72,7 +75,7 @@
         },
         {
           "label": "",
-          "command": "hyprctl dispatch exec alacritty -- -e htop ; swaync-client -cp"
+          "command": "alacritty -e htop ; swaync-client -cp"
         },
         {
           "label": "󰃟",
@@ -82,7 +85,7 @@
         },
         {
           "label": "",
-          "command": "hyprctl dispatch exec nwg-look ; swaync-client -cp"
+          "command": "nwg-look ; swaync-client -cp"
         },
         {
           "label": "",

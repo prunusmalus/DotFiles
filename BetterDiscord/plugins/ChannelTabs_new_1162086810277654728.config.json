@@ -2,11 +2,10 @@
     "settings": {
         "tabs": [
             {
-                "name": "sanea22_76566, .mokoronis",
-                "url": "/channels/@me/1511453285691953373",
+                "name": "Friends",
+                "url": "/channels/@me",
                 "selected": true,
-                "currentStatus": "none",
-                "channelId": "1511453285691953373"
+                "currentStatus": "none"
             }
         ],
         "favs": [],

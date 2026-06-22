@@ -1,34 +1,6 @@
 {
 	"all": {
 		"badgeCache": {
-			"1019596873377513532": {
-				"badges": [
-					{
-						"id": "legacy_username",
-						"description": "Originally known as ArturDerivolcov2012#8266",
-						"icon": "6de6d34650760ba5551a79732e98ed60"
-					}
-				],
-				"date": 1778776250548
-			},
-			"1082313707792638043": {
-				"badges": [
-					{
-						"id": "legacy_username",
-						"description": "Originally known as mokoroni#1073",
-						"icon": "6de6d34650760ba5551a79732e98ed60"
-					}
-				],
-				"date": 1778615753076
-			},
-			"1086270472049668117": {
-				"badges": [],
-				"date": 1778690466466
-			},
-			"1139681041351712828": {
-				"badges": [],
-				"date": 1778615757330
-			},
 			"1162086810277654728": {
 				"badges": [
 					{
@@ -38,42 +10,7 @@
 						"link": "https://discord.com/discovery/quests"
 					}
 				],
-				"date": 1780426711082
-			},
-			"1182358746127667214": {
-				"badges": [],
-				"date": 1778615767621
-			},
-			"1186650610985078878": {
-				"badges": [],
-				"date": 1778616032906
-			},
-			"1198454766938894378": {
-				"badges": [
-					{
-						"id": "quest_completed",
-						"description": "Completed a Quest",
-						"icon": "7d9ae358c8c5e118768335dbe68b4fb8",
-						"link": "https://discord.com/discovery/quests"
-					},
-					{
-						"id": "orb_profile_badge",
-						"description": "Collected the Orb Profile Badge",
-						"icon": "83d8a1eb09a8d64e59233eec5d4d5c2d"
-					}
-				],
-				"date": 1778690465109
-			},
-			"1247649806965407814": {
-				"badges": [
-					{
-						"id": "bot_commands",
-						"description": "Supports Commands",
-						"icon": "6f9e37f9029ff57aef81db857890005e",
-						"link": "https://discord.com/blog/welcome-to-the-new-era-of-discord-apps?ref=badge"
-					}
-				],
-				"date": 1778690463713
+				"date": 1781854189908
 			},
 			"1248289985745129633": {
 				"badges": [
@@ -86,93 +23,13 @@
 				],
 				"date": 1780426713050
 			},
-			"1253672220233039895": {
-				"badges": [],
-				"date": 1778615760638
-			},
-			"1265736049876009013": {
-				"badges": [
-					{
-						"id": "premium",
-						"description": "Subscriber since Dec 2, 2025",
-						"icon": "2ba85e8026a8614b640c2837bcdfe21b",
-						"link": "https://discord.com/settings/premium"
-					},
-					{
-						"id": "hypesquad_house_3",
-						"description": "HypeSquad Balance",
-						"icon": "3aa41de486fa12454c3761e8e223442e"
-					},
-					{
-						"id": "quest_completed",
-						"description": "Completed a Quest",
-						"icon": "7d9ae358c8c5e118768335dbe68b4fb8",
-						"link": "https://discord.com/discovery/quests"
-					},
-					{
-						"id": "april_fools_2026",
-						"description": "Level 15 Reached",
-						"icon": "ca105ad9cfc8580c765101d17bbb2323"
-					},
-					{
-						"id": "orb_profile_badge",
-						"description": "Collected the Orb Profile Badge",
-						"icon": "83d8a1eb09a8d64e59233eec5d4d5c2d"
-					}
-				],
-				"date": 1778690463326
-			},
 			"1344393507812409505": {
 				"badges": [],
 				"date": 1779462032393
 			},
-			"1353286956469063712": {
+			"1474466854368973106": {
 				"badges": [],
-				"date": 1778615756007
-			},
-			"1386367560714551428": {
-				"badges": [],
-				"date": 1778616034171
-			},
-			"1405550461645492377": {
-				"badges": [],
-				"date": 1778615758663
-			},
-			"1420099395411509299": {
-				"badges": [],
-				"date": 1778616023261
-			},
-			"1446979781857116241": {
-				"badges": [],
-				"date": 1778615755170
-			},
-			"1466457255531516116": {
-				"badges": [
-					{
-						"id": "quest_completed",
-						"description": "Completed a Quest",
-						"icon": "7d9ae358c8c5e118768335dbe68b4fb8",
-						"link": "https://discord.com/discovery/quests"
-					}
-				],
-				"date": 1778616030333
-			},
-			"1483016780401348770": {
-				"badges": [
-					{
-						"id": "premium",
-						"description": "Subscriber since May 1, 2026",
-						"icon": "2ba85e8026a8614b640c2837bcdfe21b",
-						"link": "https://discord.com/settings/premium"
-					},
-					{
-						"id": "guild_booster_lvl1",
-						"description": "Server boosting since May 3, 2026",
-						"icon": "51040c70d4f20a921ad6674ff86fc95c",
-						"link": "https://discord.com/settings/guild-boosting"
-					}
-				],
-				"date": 1778616031661
+				"date": 1781854097801
 			},
 			"159985870458322944": {
 				"badges": [
@@ -196,116 +53,6 @@
 				],
 				"date": 1779462030531
 			},
-			"334431713356939295": {
-				"badges": [
-					{
-						"id": "premium_tenure_60_month_v2",
-						"description": "Earned Feb 18, 2021. 5 years: Ruby",
-						"icon": "cd5e2cfd9d7f27a8cdcd3e8a8d5dc9f4",
-						"link": "https://discord.com/settings/premium"
-					},
-					{
-						"id": "guild_booster_lvl9",
-						"description": "Server boosting since Mar 20, 2021",
-						"icon": "ec92202290b48d0879b7413d2dde3bab",
-						"link": "https://discord.com/settings/guild-boosting"
-					},
-					{
-						"id": "legacy_username",
-						"description": "Originally known as Miikka#2594",
-						"icon": "6de6d34650760ba5551a79732e98ed60"
-					}
-				],
-				"date": 1778690465904
-			},
-			"480422781318856704": {
-				"badges": [
-					{
-						"id": "legacy_username",
-						"description": "Originally known as YSK#7377",
-						"icon": "6de6d34650760ba5551a79732e98ed60"
-					},
-					{
-						"id": "quest_completed",
-						"description": "Completed a Quest",
-						"icon": "7d9ae358c8c5e118768335dbe68b4fb8",
-						"link": "https://discord.com/discovery/quests"
-					},
-					{
-						"id": "april_fools_2026",
-						"description": "Level 17 Reached",
-						"icon": "ca105ad9cfc8580c765101d17bbb2323"
-					}
-				],
-				"date": 1778615763653
-			},
-			"534779986586894347": {
-				"badges": [
-					{
-						"id": "hypesquad_house_1",
-						"description": "HypeSquad Bravery",
-						"icon": "8a88d63823d8a71cd5e390baa45efa02"
-					},
-					{
-						"id": "legacy_username",
-						"description": "Originally known as CroPerFine#3091",
-						"icon": "6de6d34650760ba5551a79732e98ed60"
-					}
-				],
-				"date": 1778615764629
-			},
-			"589069080569446436": {
-				"badges": [
-					{
-						"id": "legacy_username",
-						"description": "Originally known as jesus'#6304",
-						"icon": "6de6d34650760ba5551a79732e98ed60"
-					}
-				],
-				"date": 1778615756592
-			},
-			"620296606662656032": {
-				"badges": [
-					{
-						"id": "legacy_username",
-						"description": "Originally known as Leg10N#5021",
-						"icon": "6de6d34650760ba5551a79732e98ed60"
-					},
-					{
-						"id": "quest_completed",
-						"description": "Completed a Quest",
-						"icon": "7d9ae358c8c5e118768335dbe68b4fb8",
-						"link": "https://discord.com/discovery/quests"
-					},
-					{
-						"id": "april_fools_2026",
-						"description": "Level 8 Reached",
-						"icon": "ca105ad9cfc8580c765101d17bbb2323"
-					}
-				],
-				"date": 1778615765110
-			},
-			"629050127138684946": {
-				"badges": [
-					{
-						"id": "hypesquad_house_1",
-						"description": "HypeSquad Bravery",
-						"icon": "8a88d63823d8a71cd5e390baa45efa02"
-					},
-					{
-						"id": "legacy_username",
-						"description": "Originally known as Quil#3936",
-						"icon": "6de6d34650760ba5551a79732e98ed60"
-					},
-					{
-						"id": "quest_completed",
-						"description": "Completed a Quest",
-						"icon": "7d9ae358c8c5e118768335dbe68b4fb8",
-						"link": "https://discord.com/discovery/quests"
-					}
-				],
-				"date": 1778690462429
-			},
 			"678344927997853742": {
 				"badges": [
 					{
@@ -322,48 +69,6 @@
 				],
 				"date": 1779458382815
 			},
-			"690578752840663110": {
-				"badges": [
-					{
-						"id": "legacy_username",
-						"description": "Originally known as Grand master#5217",
-						"icon": "6de6d34650760ba5551a79732e98ed60"
-					}
-				],
-				"date": 1778615763287
-			},
-			"690888274247417899": {
-				"badges": [
-					{
-						"id": "premium",
-						"description": "Subscriber since Apr 12, 2022",
-						"icon": "2ba85e8026a8614b640c2837bcdfe21b",
-						"link": "https://discord.com/settings/premium"
-					},
-					{
-						"id": "hypesquad_house_2",
-						"description": "HypeSquad Brilliance",
-						"icon": "011940fd013da3f7fb926e4a1cd2e618"
-					},
-					{
-						"id": "legacy_username",
-						"description": "Originally known as Whofrom#8985",
-						"icon": "6de6d34650760ba5551a79732e98ed60"
-					},
-					{
-						"id": "quest_completed",
-						"description": "Completed a Quest",
-						"icon": "7d9ae358c8c5e118768335dbe68b4fb8",
-						"link": "https://discord.com/discovery/quests"
-					},
-					{
-						"id": "orb_profile_badge",
-						"description": "Collected the Orb Profile Badge",
-						"icon": "83d8a1eb09a8d64e59233eec5d4d5c2d"
-					}
-				],
-				"date": 1778690464569
-			},
 			"703886990948565003": {
 				"badges": [
 					{
@@ -375,27 +80,6 @@
 				],
 				"date": 1779462031395
 			},
-			"712300627513835550": {
-				"badges": [
-					{
-						"id": "hypesquad_house_1",
-						"description": "HypeSquad Bravery",
-						"icon": "8a88d63823d8a71cd5e390baa45efa02"
-					},
-					{
-						"id": "legacy_username",
-						"description": "Originally known as Блекхол в армавир#2225",
-						"icon": "6de6d34650760ba5551a79732e98ed60"
-					},
-					{
-						"id": "quest_completed",
-						"description": "Completed a Quest",
-						"icon": "7d9ae358c8c5e118768335dbe68b4fb8",
-						"link": "https://discord.com/discovery/quests"
-					}
-				],
-				"date": 1778615761353
-			},
 			"723558575305392208": {
 				"badges": [
 					{
@@ -406,43 +90,6 @@
 					}
 				],
 				"date": 1780426710925
-			},
-			"949774510461169664": {
-				"badges": [
-					{
-						"id": "legacy_username",
-						"description": "Originally known as ЯнаМинифите 🧂#2015",
-						"icon": "6de6d34650760ba5551a79732e98ed60"
-					},
-					{
-						"id": "quest_completed",
-						"description": "Completed a Quest",
-						"icon": "7d9ae358c8c5e118768335dbe68b4fb8",
-						"link": "https://discord.com/discovery/quests"
-					}
-				],
-				"date": 1778616022444
-			},
-			"996778714912280606": {
-				"badges": [
-					{
-						"id": "legacy_username",
-						"description": "Originally known as Bokuto#8395",
-						"icon": "6de6d34650760ba5551a79732e98ed60"
-					},
-					{
-						"id": "quest_completed",
-						"description": "Completed a Quest",
-						"icon": "7d9ae358c8c5e118768335dbe68b4fb8",
-						"link": "https://discord.com/discovery/quests"
-					},
-					{
-						"id": "april_fools_2026",
-						"description": "Level 100 Reached",
-						"icon": "ca105ad9cfc8580c765101d17bbb2323"
-					}
-				],
-				"date": 1778616013458
 			}
 		}
 	}

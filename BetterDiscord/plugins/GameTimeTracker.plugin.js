@@ -1,6 +1,6 @@
 /**
  * @name GameTimeTracker
- * @version 1.2.3
+ * @version 1.3.0
  * @description Track time spent in games
  * @license MIT
  * @author Yentis
@@ -10,32 +10,57 @@
  */
 'use strict';
 
-const PLUGIN_CHANGELOG = [
-  {
-    title: '1.2.3',
-    type: 'fixed',
-    items: ['Fix playtimesummary command'],
-  },
-];
+class PluginConstants {
+  static PluginChangelog = [
+    {
+      title: 'Added',
+      type: 'added',
+      items: ['Add sort and search'],
+    },
+    {
+      title: 'Fixed',
+      type: 'fixed',
+      items: ['Fix sending messages'],
+    },
+  ];
 
-const SETTINGS_KEY = 'settings';
-const CURRENT_VERSION_INFO_KEY = 'currentVersionInfo';
-const DEFAULT_SETTINGS = {
-  games: {},
-};
+  static SettingsKey = 'settings';
+  static CurrentVersionInfoKey = 'currentVersionInfo';
+
+  static SortingType = {
+    Name: {
+      value: 'NAME',
+      label: 'Name',
+    },
+    Playtime: {
+      value: 'PLAYTIME',
+      label: 'Playtime',
+    },
+    LastPlayed: {
+      value: 'LAST_PLAYED',
+      label: 'Last played',
+    },
+  };
+
+  static SortingDirection = {
+    Ascending: {
+      value: 'ASCENDING',
+      label: 'Ascending',
+    },
+    Descending: {
+      value: 'DESCENDING',
+      label: 'Descending',
+    },
+  };
+
+  static DefaultSettings = {
+    sortingType: PluginConstants.SortingType.LastPlayed.value,
+    sortingDirection: PluginConstants.SortingDirection.Descending.value,
+    games: {},
+  };
+}
 
 class Utils {
-  static SettingItem(options) {
-    return {
-      ...options,
-      type: 'custom',
-    };
-  }
-
-  static isObject(object) {
-    return typeof object === 'object' && !!object && !Array.isArray(object);
-  }
-
   static humanReadablePlaytime(playtimeSeconds) {
     let seconds = playtimeSeconds;
 
@@ -46,6 +71,42 @@ class Utils {
     seconds -= minutes * 60;
 
     return `${hours}h ${minutes}m ${seconds}s`;
+  }
+
+  static getSortedGames(settings, search = '') {
+    const games = Object.entries(settings.games).filter(([_, game]) => {
+      return game.name.toLowerCase().includes(search.toLowerCase());
+    });
+
+    switch (settings.sortingType) {
+      case PluginConstants.SortingType.Name.value: {
+        games.sort(([_aKey, aGame], [_bKey, bGame]) => {
+          return aGame.name.localeCompare(bGame.name);
+        });
+
+        break;
+      }
+      case PluginConstants.SortingType.LastPlayed.value: {
+        games.sort(([_aKey, aGame], [_bKey, bGame]) => {
+          return (aGame.lastPlayed ?? 0) - (bGame.lastPlayed ?? 0);
+        });
+
+        break;
+      }
+      case PluginConstants.SortingType.Playtime.value: {
+        games.sort(([_aKey, aGame], [_bKey, bGame]) => {
+          return aGame.playtimeSeconds - bGame.playtimeSeconds;
+        });
+
+        break;
+      }
+    }
+
+    if (settings.sortingDirection === PluginConstants.SortingDirection.Descending.value) {
+      games.reverse();
+    }
+
+    return games;
   }
 }
 
@@ -69,23 +130,70 @@ class SettingsService extends BaseService {
     '12 1.41 1.41L13.41 14l2.12 2.12-1.41 1.41L12 15.41l-2.12 2.12-1.41-1.41L10.59 14l-2.13-2.1' +
     '2zM15.5 4l-1-1h-5l-1 1H5v2h14V4z"></path><path fill="none" d="M0 0h24v24H0z"></path></svg>';
 
-  settings = DEFAULT_SETTINGS;
+  settings = PluginConstants.DefaultSettings;
 
   start() {
-    const savedSettings = this.bdApi.Data.load(SETTINGS_KEY);
-    this.settings = Object.assign({}, DEFAULT_SETTINGS, savedSettings);
+    const savedSettings = this.bdApi.Data.load(PluginConstants.SettingsKey);
+    this.settings = Object.assign({}, PluginConstants.DefaultSettings, savedSettings);
 
     return Promise.resolve();
   }
 
   getSettingsElement() {
     const { React, UI } = this.bdApi;
-    const settings = [];
 
-    Object.entries(this.settings.games)
-      .reverse()
-      .sort(([_aKey, aGame], [_bKey, bGame]) => (bGame.lastPlayed ?? 0) - (aGame.lastPlayed ?? 0))
-      .forEach(([id, game]) => {
+    return React.createElement(() => {
+      const [search, setSearch] = React.useState('');
+      const [, forceUpdate] = React.useState({});
+      const refresh = () => forceUpdate({});
+      const settings = [];
+
+      const sortingType = {
+        id: 'sortingType',
+        name: 'Sort by',
+        type: 'dropdown',
+        value: this.settings.sortingType,
+        options: Object.values(PluginConstants.SortingType).map((type) => {
+          return {
+            label: type.label,
+            value: type.value,
+          };
+        }),
+        onChange: (value) => {
+          this.settings.sortingType = value;
+          refresh();
+        },
+      };
+      settings.push(sortingType);
+
+      const sortingDirection = {
+        id: 'sortingDirection',
+        name: 'Sort direction',
+        type: 'dropdown',
+        value: this.settings.sortingDirection,
+        options: Object.values(PluginConstants.SortingDirection).map((direction) => {
+          return {
+            label: direction.label,
+            value: direction.value,
+          };
+        }),
+        onChange: (value) => {
+          this.settings.sortingDirection = value;
+          refresh();
+        },
+      };
+      settings.push(sortingDirection);
+
+      const searchSetting = {
+        id: 'search',
+        name: 'Search',
+        type: 'text',
+        value: search,
+        onChange: (value) => setSearch(value),
+      };
+      settings.push(searchSetting);
+
+      Utils.getSortedGames(this.settings, search).forEach(([id, game]) => {
         const elementId = `GTT-Game-${id}`;
         const deleteButton = React.createElement('button', {
           id: elementId,
@@ -93,42 +201,43 @@ class SettingsService extends BaseService {
           dangerouslySetInnerHTML: { __html: SettingsService.TRASH_ICON },
           onClick: () => {
             delete this.settings.games[id];
-            this.bdApi.Data.save(SETTINGS_KEY, this.settings);
+            this.bdApi.Data.save(PluginConstants.SettingsKey, this.settings);
 
-            const element = document.getElementById(elementId);
-            if (!element) return;
-
-            const gameContainer = element.closest('.bd-setting-item');
-            gameContainer?.remove();
+            refresh();
           },
         });
 
-        const settingItem = Utils.SettingItem({
+        const settingItem = {
           id: elementId,
           name: game.name,
           note: Utils.humanReadablePlaytime(game.playtimeSeconds),
           children: [deleteButton],
-        });
+          type: 'custom',
+          value: undefined,
+        };
 
         settings.push(settingItem);
       });
 
-    if (settings.length <= 0) {
-      const setting = Utils.SettingItem({
-        id: 'noGames',
-        name: 'No games found',
-        note: 'Go play some!',
-        children: [],
+      if (settings.length <= 0) {
+        const setting = {
+          id: 'noGames',
+          name: 'No games found',
+          note: 'Go play some!',
+          children: [],
+          type: 'custom',
+          value: undefined,
+        };
+
+        settings.push(setting);
+      }
+
+      return UI.buildSettingsPanel({
+        settings,
+        onChange: () => {
+          this.bdApi.Data.save(PluginConstants.SettingsKey, this.settings);
+        },
       });
-
-      settings.push(setting);
-    }
-
-    return UI.buildSettingsPanel({
-      settings,
-      onChange: () => {
-        this.bdApi.Data.save(SETTINGS_KEY, this.settings);
-      },
     });
   }
 
@@ -140,15 +249,15 @@ class SettingsService extends BaseService {
 class ModulesService extends BaseService {
   dispatcher;
   messageModule;
-  channelModule;
+  selectedChannelStore;
 
   start() {
     this.dispatcher = BdApi.Webpack.getModule(BdApi.Webpack.Filters.byKeys('dispatch', 'subscribe'), {
       searchExports: true,
     });
 
-    this.messageModule = BdApi.Webpack.getModule(BdApi.Webpack.Filters.byKeys('sendMessage'));
-    this.channelModule = BdApi.Webpack.getStore('SelectedChannelStore');
+    this.messageModule = BdApi.Webpack.getModule(BdApi.Webpack.Filters.byKeys('sendMessage', 'sendBotMessage'));
+    this.selectedChannelStore = this.bdApi.Webpack.Stores.SelectedChannelStore;
 
     Object.entries(this).forEach(([key, value]) => {
       if (value !== undefined) return;
@@ -204,7 +313,7 @@ class GameService extends BaseService {
       games[id] = trackedGame;
     });
 
-    this.bdApi.Data.save(SETTINGS_KEY, this.settingsService.settings);
+    this.bdApi.Data.save(PluginConstants.SettingsKey, this.settingsService.settings);
   };
 
   start(modulesService, settingsService) {
@@ -223,40 +332,92 @@ class GameService extends BaseService {
 
 class CommandsService extends BaseService {
   start(modulesService, settingsService) {
+    const options = [
+      {
+        name: 'type',
+        description: 'How the summary should be sent',
+        required: true,
+        type: this.bdApi.Commands.Types.OptionTypes.STRING.valueOf(),
+        choices: [
+          {
+            name: 'clipboard',
+            value: 'clipboard',
+          },
+          {
+            name: 'message',
+            value: 'message',
+          },
+          {
+            name: 'clyde',
+            value: 'clyde',
+          },
+        ],
+      },
+      {
+        name: 'sort',
+        description: 'How the games should be sorted',
+        required: false,
+        type: this.bdApi.Commands.Types.OptionTypes.STRING.valueOf(),
+        choices: Object.values(PluginConstants.SortingType).map((type) => {
+          return {
+            name: type.label,
+            value: type.value,
+          };
+        }),
+      },
+      {
+        name: 'direction',
+        description: 'In what direction the games should be sorted',
+        required: false,
+        type: this.bdApi.Commands.Types.OptionTypes.STRING.valueOf(),
+        choices: Object.values(PluginConstants.SortingDirection).map((direction) => {
+          return {
+            name: direction.label,
+            value: direction.value,
+          };
+        }),
+      },
+      {
+        name: 'search',
+        description: 'Filter games by name',
+        required: false,
+        type: this.bdApi.Commands.Types.OptionTypes.STRING.valueOf(),
+      },
+    ];
+
     const command = {
       id: 'PlayTimeSummary',
       name: 'playtimesummary',
       description: 'Send GameTimeTracker playtime summary',
-      options: [
-        {
-          name: 'type',
-          description: 'How the summary should be sent',
-          required: true,
-          type: this.bdApi.Commands.Types.OptionTypes.STRING,
-          choices: [
-            {
-              name: 'clipboard',
-              value: 'clipboard',
-            },
-            {
-              name: 'message',
-              value: 'message',
-            },
-            {
-              name: 'clyde',
-              value: 'clyde',
-            },
-          ],
-        },
-      ],
+      options,
       execute: (event) => {
         try {
-          const channelId = modulesService.channelModule.getCurrentlySelectedChannelId() ?? '';
+          const channelId = modulesService.selectedChannelStore.getCurrentlySelectedChannelId() ?? '';
           if (!channelId) return;
 
-          const games = Object.values(settingsService.settings.games).sort(
-            (a, b) => b.playtimeSeconds - a.playtimeSeconds
-          );
+          const settings = settingsService.settings;
+          const options = {
+            type: 'message',
+            sort: settings.sortingType,
+            direction: settings.sortingDirection,
+            search: '',
+          };
+
+          event.forEach((option) => {
+            const value = option.value?.trim() ?? '';
+            if (value === '') return;
+
+            options[option.name] = value;
+          });
+
+          const games = Utils.getSortedGames(
+            {
+              ...settings,
+              sortingType: options.sort,
+              sortingDirection: options.direction,
+            },
+            options.search
+          ).map(([_, game]) => game);
 
           games.push({
             name: '---------\nTotal',
@@ -267,18 +428,16 @@ class CommandsService extends BaseService {
             .map((game) => `${game.name} - ${Utils.humanReadablePlaytime(game.playtimeSeconds)}`)
             .join('\n');
 
-          const type = event[0]?.value ?? 'message';
-
-          if (type === 'message') {
+          if (options.type === 'message') {
             modulesService.messageModule.sendMessage(channelId, {
               content,
               invalidEmojis: [],
               tts: false,
               validNonShortcutEmojis: [],
             });
-          } else if (type === 'clipboard') {
+          } else if (options.type === 'clipboard') {
             DiscordNative.clipboard.copy(content);
-          } else if (type === 'clyde') {
+          } else if (options.type === 'clyde') {
             modulesService.messageModule.sendBotMessage(channelId, content);
           }
         } catch (error) {
@@ -325,13 +484,14 @@ class GameTimeTrackerPlugin {
   }
 
   showChangelogIfNeeded() {
-    const currentVersionInfo = this.bdApi.Data.load(CURRENT_VERSION_INFO_KEY) ?? {};
+    const currentVersionInfo = this.bdApi.Data.load(PluginConstants.CurrentVersionInfoKey) ?? {};
     const UI = this.bdApi.UI;
 
     if (currentVersionInfo.hasShownChangelog !== true || currentVersionInfo.version !== this.meta.version) {
       UI.showChangelogModal({
         title: `${this.meta.name} Changelog`,
-        changes: PLUGIN_CHANGELOG,
+        changes: PluginConstants.PluginChangelog,
+        subtitle: '',
       });
 
       const newVersionInfo = {
@@ -339,7 +499,7 @@ class GameTimeTrackerPlugin {
         hasShownChangelog: true,
       };
 
-      this.bdApi.Data.save(CURRENT_VERSION_INFO_KEY, newVersionInfo);
+      this.bdApi.Data.save(PluginConstants.CurrentVersionInfoKey, newVersionInfo);
     }
   }
 

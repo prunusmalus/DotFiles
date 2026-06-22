@@ -2,7 +2,7 @@
  * @name CustomStatusPresets
  * @author DevilBro
  * @authorId 278543574059057154
- * @version 1.3.6
+ * @version 1.3.8
  * @description Allows you to save Custom Statuses as Quick Select and select them by right-clicking the Status Bubble
  * @invite Jx3TjNS
  * @donate https://www.paypal.me/MircoWittrien
@@ -64,9 +64,12 @@ module.exports = (_ => {
 		var _this;
 		var presets = {};
 		
+		var saveCustomStatus = false;
+		
 		const ClearAfterValues = {
 			HOURS_1: 3600000,
 			HOURS_4: 14400000,
+			HOURS_24: 86400000,
 			MINUTES_30: 1800000,
 			DONT_CLEAR: "DONT_CLEAR",
 			TODAY: "TODAY"
@@ -214,7 +217,7 @@ module.exports = (_ => {
 								BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.Select, {
 									className: BDFDB.disCN.flexchild,
 									value: ClearAfterValues[presets[id].clearAfter] || presets[id].clearAfter,
-									options: Object.entries(ClearAfterValues).map(entry => ({value: entry[1], label: !entry[1] || entry[1] == ClearAfterValues.DONT_CLEAR ? BDFDB.LanguageUtils.LanguageStrings.NEVER : entry[1] == ClearAfterValues.TODAY ? BDFDB.LanguageUtils.LanguageStrings.TODAY : BDFDB.LanguageUtils.LanguageStringsFormat("CLEAR_AFTER", `${entry[1]/3600000}h`)})),
+									options: Object.entries(ClearAfterValues).map(entry => ({value: entry[1], label: !entry[1] || entry[1] == ClearAfterValues.DONT_CLEAR ? BDFDB.LanguageUtils.LanguageStrings.NEVER : entry[1] == ClearAfterValues.TODAY ? BDFDB.LanguageUtils.LanguageStrings.TODAY : `${BDFDB.LanguageUtils.LanguageStrings.CLEAR_AFTER} ${entry[1]/3600000}h`})),
 									onChange: value => {
 										presets[id].clearAfter = value;
 										BDFDB.DataUtils.save(presets, _this, "presets");
@@ -309,6 +312,26 @@ module.exports = (_ => {
 			}
 			
 			onStart () {
+				let SettingsStore = BDFDB.DiscordUtils.getSettingsStore();
+				if (SettingsStore) BDFDB.PatchUtils.patch(this, SettingsStore, "updateAsync", {after: e => {
+					if (e.methodArguments[0] != "status" || !saveCustomStatus) return;
+					let newSettings = {value: undefined};
+					e.methodArguments[1](newSettings);
+					if (newSettings.customStatus) {
+						saveCustomStatus = false;
+						let id = BDFDB.NumberUtils.generateId(Object.keys(presets));
+						let clearAfter = Object.entries(ClearAfterValues).find(n => n[1] == (newSettings.customStatus.expiresAtMs - newSettings.customStatus.createdAtMs));
+						presets[id] = {
+							pos: Object.keys(presets).length,
+							clearAfter: clearAfter ? clearAfter[1] : ClearAfterValues.DONT_CLEAR,
+							emojiInfo: {name: newSettings.customStatus.emojiName, id: newSettings.customStatus.emojiId != "0" && newSettings.customStatus.emojiId ? newSettings.customStatus.emojiId : null},
+							text: newSettings.customStatus.text
+						};
+						BDFDB.DataUtils.save(presets, this, "presets");
+						id = BDFDB.NumberUtils.generateId(Object.keys(presets));
+					}
+				}});
+						
 				this.forceUpdateAll();
 			}
 			
@@ -431,19 +454,9 @@ module.exports = (_ => {
 				e.returnvalue.props.actions.splice(-1, 0, {
 					text: this.labels.modal_savepreset,
 					onClick: event => {
-						BDFDB.PatchUtils.patch(this, BDFDB.LibraryModules.CustomStatusStore, "update", {instead: e2 => {
-							let id = BDFDB.NumberUtils.generateId(Object.keys(presets));
-							presets[id] = {
-								pos: Object.keys(presets).length,
-								clearAfter: e2.methodArguments[0].clearAfter,
-								emojiInfo: e2.methodArguments[0].emojiInfo,
-								text: e2.methodArguments[0].text
-							};
-							BDFDB.DataUtils.save(presets, this, "presets");
-							if (!event.shiftKey) e.instance.props.onClose();
-							else id = BDFDB.NumberUtils.generateId(Object.keys(presets));
-						}}, {once: true});
+						saveCustomStatus = true;
 						e.returnvalue.props.actions[e.returnvalue.props.actions.length-1].onClick();
+						if (!event.shiftKey) e.instance.props.onClose();
 					}
 				});
 			}

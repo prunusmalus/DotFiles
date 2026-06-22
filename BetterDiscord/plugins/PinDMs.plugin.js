@@ -2,7 +2,7 @@
  * @name PinDMs
  * @author DevilBro
  * @authorId 278543574059057154
- * @version 2.0.7
+ * @version 2.0.8
  * @description Allows you to pin DMs, making them appear at the top of your DMs/ServerList
  * @invite Jx3TjNS
  * @donate https://www.paypal.me/MircoWittrien
@@ -58,6 +58,8 @@ module.exports = (_ => {
 	} : (([Plugin, BDFDB]) => {
 		var hoveredCategory, draggedCategory, releasedCategory;
 		var hoveredChannel, draggedChannel, releasedChannel;
+		
+		var pinnedChannels = {};
 		
 		var channelListIsRenderendering;
 		
@@ -175,6 +177,8 @@ module.exports = (_ => {
 						e.returnValue = BDFDB.ArrayUtils.removeCopies(dms.concat(e.returnValue));
 					}
 				}});
+				
+				pinnedChannels = BDFDB.DataUtils.load(this, "pinned", BDFDB.UserUtils.me.id) || {};
 				
 				this.forceUpdateAll();
 			}
@@ -388,7 +392,7 @@ module.exports = (_ => {
 					}, after: e2 => {
 						if (e2.methodArguments[0] != 0) {
 							let id = e.instance.props.privateChannelIds[e2.methodArguments[1]];
-							e2.returnValue = e.instance.props.channels[id] ? BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.PrivateChannelItems.DirectMessage, Object.assign({
+							e2.returnValue = e.instance.props.channels[id] ? BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.PrivateChannelItems.PrivateChannel, Object.assign({
 								key: id,
 								channel: e.instance.props.channels[id],
 								selected: e.instance.props.selectedChannelId == id
@@ -670,14 +674,13 @@ module.exports = (_ => {
 			}
 			
 			getPinnedChannels (type) {
-				return ((BDFDB.DataUtils.load(this, "pinned", BDFDB.UserUtils.me.id) || {})[type] || {});
+				return pinnedChannels[type] || {};
 			}
 			
 			savePinnedChannels (channels, type) {
-				let pinned = BDFDB.DataUtils.load(this, "pinned", BDFDB.UserUtils.me.id) || {};
-				if (BDFDB.ObjectUtils.is(channels) && !BDFDB.ObjectUtils.isEmpty(channels)) pinned[type] = channels;
-				else delete pinned[type];
-				if (!BDFDB.ObjectUtils.isEmpty(pinned)) BDFDB.DataUtils.save(pinned, this, "pinned", BDFDB.UserUtils.me.id);
+				if (BDFDB.ObjectUtils.is(channels) && !BDFDB.ObjectUtils.isEmpty(channels)) pinnedChannels[type] = channels;
+				else delete pinnedChannels[type];
+				if (!BDFDB.ObjectUtils.isEmpty(pinnedChannels)) BDFDB.DataUtils.save(pinnedChannels, this, "pinned", BDFDB.UserUtils.me.id);
 				else BDFDB.DataUtils.remove(this, "pinned", BDFDB.UserUtils.me.id);
 			}
 
@@ -877,7 +880,7 @@ module.exports = (_ => {
 					newData[sortedDMs[pos]] = parseInt(pos);
 					if (BDFDB.LibraryStores.ChannelStore.getChannel(sortedDMs[pos])) existingDMs.push(sortedDMs[pos]);
 				}
-				if (!BDFDB.equals(data, newData)) this.savePinnedChannels(newData, this);
+				if (!BDFDB.equals(data, newData)) this.savePinnedChannels(newData, type);
 				return this.sortDMsByTime(existingDMs, type);
 			}
 
