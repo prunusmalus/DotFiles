@@ -242,27 +242,23 @@ binds {
     Mod+M { spawn "flatpak" "run" "io.missioncenter.MissionCenter"; }
     Mod+N { spawn "swaync-client" "-t" "-sw"; }
     Mod+X {spawn "./.config/bspwm/bin/PowerMenu" "c";}
-    //Mod+X { spawn "niripwmenu"; }
-    //Mod+X { spawn "wlogout" "-b" "6" "--layout" "~/.config/wlogout/layout" "--css" "~/.config/wlogout/style.css"; }
-    //Mod+H { spawn "kitty nvim /home/prunus/.config/niri/config.kdl"; }
+
     Mod+Alt+S { spawn "steam"; }
     Mod+Shift+R { spawn "pavucontrol"; }
     Mod+Alt+V {spawn "viber";}
-    Mod+H { spawn "kitty" "sh" "-c" "nvim /home/prunus/.config/niri/config.kdl"; }
-    Mod+Shift+F {spawn "/home/prunus/.config/hypr/scripts/BookSelect.sh" "c";}
+    Mod+H { spawn "kitty" "sh" "-c" "nvim ~/.config/niri/config.kdl"; }
+    Mod+Shift+F {spawn "~/.config/hypr/scripts/BookSelect.sh" "c";}
     Mod+L {spawn "hyprlock";}
 
     // --- Scripts & Menus ---
     Mod+R {spawn "rofi" "-show" "drun";}
-    //Mod+R {spawn "/home/prunus/.config/hypr/bin/RofiLauncher"; }
-    //Mod+Alt+C {spawn "clipcat-menu";}
-    Mod+Alt+C { spawn "/home/prunus/.config/hypr/scripts/cliphist.sh" "c"; }
-    Mod+Alt+W { spawn "/home/prunus/.config/hypr/scripts/cliphist.sh" "w"; }
-    Mod+Alt+D { spawn "/home/prunus/.config/hypr/scripts/rofi-emoji.sh"; }
-    Mod+Shift+Alt+W { spawn "/home/prunus/.config/hypr/scripts/Wallpaper.sh"; }
-    Mod+Ctrl+D {spawn "/home/prunus/.config/hypr/scripts/idk.sh";}
-    //Mod+Alt+D {spawn "/home/prunus/.config/hypr/scripts/rofi-emoji.sh";}
-    Mod+Ctrl+W {spawn "sh" "-c" "/home/prunus/.config/hypr/scripts/walls.sh";}
+    Mod+Alt+C { spawn "~/.config/hypr/scripts/cliphist.sh" "c"; }
+    Mod+Alt+W { spawn "~/.config/hypr/scripts/cliphist.sh" "w"; }
+    Mod+Alt+D { spawn "~/.config/hypr/scripts/rofi-emoji.sh"; }
+    Mod+Shift+Alt+W { spawn "~/.config/hypr/scripts/Wallpaper.sh"; }
+    Mod+Ctrl+D {spawn "~/.config/hypr/scripts/idk.sh";}
+    //Mod+Alt+D {spawn "~/.config/hypr/scripts/rofi-emoji.sh";}
+    Mod+Ctrl+W {spawn "sh" "-c" "~/.config/hypr/scripts/walls.sh";}
     Mod+C {spawn "kitty" "cava";}
     Mod+K {spawn "gnome-calculator";}
 
@@ -363,7 +359,7 @@ binds {
     Ctrl+Print { spawn "grimblast" "copy" "screen"; }
     Alt+Print { screenshot-window; }
     Mod+Ctrl+S { screenshot; }
-    //Mod+Shift+S { spawn "quickshell" "-c" "/home/prunus/.config/quickshell/hyprquickshot/" "-n"; }
+    //Mod+Shift+S { spawn "quickshell" "-c" "~/.config/quickshell/hyprquickshot/" "-n"; }
 
     // --- Sizing (Logical Pixels) ---
     Mod+Minus { set-column-width "-10%"; }
