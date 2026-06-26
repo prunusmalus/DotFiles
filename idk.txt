@@ -1,0 +1,3223 @@
+[34m [1m.[0m
+[1;90m├── [0m[34m [1mBetterDiscord[0m
+[1;90m│   ├── [0m[34m [1mdata[0m
+[1;90m│   │   ├── [0m betterdiscord.asar
+[1;90m│   │   ├── [0m[34m [1mcanary[0m
+[1;90m│   │   ├── [0m[34m [1mdevelopment[0m
+[1;90m│   │   ├── [0m[34m [1mptb[0m
+[1;90m│   │   └── [0m[34m [1mstable[0m
+[1;90m│   ├── [0m[34m [1mplugins[0m
+[1;90m│   │   ├── [0m[36m 0BDFDB.config.json[0m
+[1;90m│   │   ├── [0m[36m 0BDFDB.data.json[0m
+[1;90m│   │   ├── [0m[33m [1m0BDFDB.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1m0BDFDB.raw.css[0m
+[1;90m│   │   ├── [0m[33m [1mAllCallTimeCounter.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mAlwaysExpandRoles.plugin.js[0m
+[1;90m│   │   ├── [0m[36m APlatformIndicators.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mAPlatformIndicators.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mARestoreBlockedUserList.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mAudioOptions.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mAutoScroll.plugin.js[0m
+[1;90m│   │   ├── [0m[36m AvatarSettingsButton.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mAvatarSettingsButton.plugin.js[0m
+[1;90m│   │   ├── [0m[36m BackgroundManager.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mBackgroundManager.plugin.js[0m
+[1;90m│   │   ├── [0m[34m [1mBetterAnimations[0m
+[1;90m│   │   ├── [0m[36m BetterAnimations.config.json[0m
+[1;90m│   │   ├── [0m[36m BetterChannelList.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mBetterChannelList.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mBetterFolders.plugin.js[0m
+[1;90m│   │   ├── [0m[36m BetterFormattingRedux.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mBetterFormattingRedux.plugin.js[0m
+[1;90m│   │   ├── [0m[36m BetterFriendList.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mBetterFriendList.plugin.js[0m
+[1;90m│   │   ├── [0m[36m BetterGuildTooltip.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mBetterGuildTooltip.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mBetterImageViewer.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mBetterMediaPlayer.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mBetterMentions.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mBetterNsfwTag.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mBetterSearchPage.plugin.js[0m
+[1;90m│   │   ├── [0m[36m BetterTTS.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mBetterTTS.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mBetterVolume.plugin.js[0m
+[1;90m│   │   ├── [0m[36m BypassBlockedOrIgnored.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mBypassBlockedOrIgnored.plugin.js[0m
+[1;90m│   │   ├── [0m[36m CallTimeCounter.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mCallTimeCounter.plugin.js[0m
+[1;90m│   │   ├── [0m[36m ChannelsPreview.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mChannelsPreview.plugin.js[0m
+[1;90m│   │   ├── [0m[36m ChannelTabs.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mChannelTabs.plugin.js[0m
+[1;90m│   │   ├── [0m[36m ChannelTabs_new_1162086810277654728.config.json[0m
+[1;90m│   │   ├── [0m[36m CharCounter.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mCharCounter.plugin.js[0m
+[1;90m│   │   ├── [0m[36m ChatAliases.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mChatAliases.plugin.js[0m
+[1;90m│   │   ├── [0m[36m ChatFilter.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mChatFilter.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mClickableMentions.plugin.js[0m
+[1;90m│   │   ├── [0m[36m CollapsibleUI.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mCollapsibleUI.plugin.js[0m
+[1;90m│   │   ├── [0m[36m CompleteTimestamps.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mCompleteTimestamps.plugin.js[0m
+[1;90m│   │   ├── [0m[36m Copier.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mCopier.plugin.js[0m
+[1;90m│   │   ├── [0m[36m CustomQuoter.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mCustomQuoter.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mCustomStatusPresets.plugin.js[0m
+[1;90m│   │   ├── [0m[36m DateViewer.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mDateViewer.plugin.js[0m
+[1;90m│   │   ├── [0m[36m DiscordEffects.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mDiscordEffects.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mDiscordFreeEmojis.plugin.js[0m
+[1;90m│   │   ├── [0m[36m DoNotTrack.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mDoNotTrack.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mDoubleClickToEdit.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mDynamicChatButtons.plugin.js[0m
+[1;90m│   │   ├── [0m[36m EditChannels.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mEditChannels.plugin.js[0m
+[1;90m│   │   ├── [0m[36m EditImageUploads.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mEditImageUploads.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mEditRoles.plugin.js[0m
+[1;90m│   │   ├── [0m[36m EditServers.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mEditServers.plugin.js[0m
+[1;90m│   │   ├── [0m[36m EditUsers.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mEditUsers.plugin.js[0m
+[1;90m│   │   ├── [0m[36m EmbedMoreImages.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mEmbedMoreImages.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mEmojiStatistics.plugin.js[0m
+[1;90m│   │   ├── [0m[36m EmoteReplacer.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mEmoteReplacer.plugin.js[0m
+[1;90m│   │   ├── [0m[36m FactOfTheDay.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mFactOfTheDay.plugin.js[0m
+[1;90m│   │   ├── [0m[36m FavoriteMedia.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mFavoriteMedia.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mFileNameRandomization.plugin.js[0m
+[1;90m│   │   ├── [0m[36m FreeEmojis.config.json[0m
+[1;90m│   │   ├── [0m[36m FriendCodes.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mFriendCodes.plugin.js[0m
+[1;90m│   │   ├── [0m[36m FriendNotifications.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mFriendNotifications.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mfriends-since.plugin.js[0m
+[1;90m│   │   ├── [0m[36m FullscreenToggle.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mFullscreenToggle.plugin.js[0m
+[1;90m│   │   ├── [0m[36m GameActivityToggle.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mGameActivityToggle.plugin.js[0m
+[1;90m│   │   ├── [0m[36m GameTimeTracker.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mGameTimeTracker.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mGifCaptioner.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mHideChannels.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mHideChatIcons.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mImageFolder.plugin.js[0m
+[1;90m│   │   ├── [0m[36m ImageUtilities.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mImageUtilities.plugin.js[0m
+[1;90m│   │   ├── [0m[36m InMyVoice.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mInsertTimestamps.plugin.js[0m
+[1;90m│   │   ├── [0m[36m InvisibleTyping.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mInvisibleTyping.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mJumpToTop.plugin.js[0m
+[1;90m│   │   ├── [0m[36m LastFMRichPresence.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mLastFMRichPresence.plugin.js[0m
+[1;90m│   │   ├── [0m[36m LastMessageDate.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mLastMessageDate.plugin.js[0m
+[1;90m│   │   ├── [0m[36m LazyLoadChannels.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mLazyLoadChannels.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mLiveTyping.plugin.js[0m
+[1;90m│   │   ├── [0m[36m MemberCount.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mMemberCount.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mMemberCounter.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mMentionFix.plugin.js[0m
+[1;90m│   │   ├── [0m[36m MessagePeek.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mMessagePeek.plugin.js[0m
+[1;90m│   │   ├── [0m[36m MessageScanAI.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mMessageScanAI.plugin.js[0m
+[1;90m│   │   ├── [0m[36m MessageUtilities.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mMessageUtilities.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mMiniChat.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mMoreQuickReacts.plugin.js[0m
+[1;90m│   │   ├── [0m[36m MoreRoleColors.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mMoreRoleColors.plugin.js[0m
+[1;90m│   │   ├── [0m[36m NoMosaic.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mNoMosaic.plugin.js[0m
+[1;90m│   │   ├── [0m[36m NotificationSounds.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mNotificationSounds.plugin.js[0m
+[1;90m│   │   ├── [0m[36m NotifyWhenMuted.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mNotifyWhenMuted.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mOnlineFriendCount.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mOpenInApp.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mOpenSteamLinksInApp.plugin.js[0m
+[1;90m│   │   ├── [0m[36m PeekMessageLinks.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mPeekMessageLinks.plugin.js[0m
+[1;90m│   │   ├── [0m[36m PermissionsViewer.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mPermissionsViewer.plugin.js[0m
+[1;90m│   │   ├── [0m[36m PersonalPins.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mPersonalPins.plugin.js[0m
+[1;90m│   │   ├── [0m[36m PinDMs.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mPinDMs.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mPreviewMessage.plugin.js[0m
+[1;90m│   │   ├── [0m[36m PriorityDM.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mPriorityDM.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mQuickMention.plugin.js[0m
+[1;90m│   │   ├── [0m[36m Quoter.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mQuoter.plugin.js[0m
+[1;90m│   │   ├── [0m[36m ReadAllNotificationsButton.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mReadAllNotificationsButton.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mRevealAllSpoilers.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mRoleExplorer.plugin.js[0m
+[1;90m│   │   ├── [0m[36m RoleMembers.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mRoleMembers.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mSendStickersAsLinks.plugin.js[0m
+[1;90m│   │   ├── [0m[36m ServerConfig.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mServerConfig.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mServerCounter.plugin.js[0m
+[1;90m│   │   ├── [0m[36m ServerDetails.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mServerDetails.plugin.js[0m
+[1;90m│   │   ├── [0m[36m ServerFolders.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mServerFolders.plugin.js[0m
+[1;90m│   │   ├── [0m[36m ServerHider.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mServerHider.plugin.js[0m
+[1;90m│   │   ├── [0m[36m ShowBadgesInChat.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mShowBadgesInChat.plugin.js[0m
+[1;90m│   │   ├── [0m[36m ShowConnections.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mShowConnections.plugin.js[0m
+[1;90m│   │   ├── [0m[36m ShowPing.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mShowPing.plugin.js[0m
+[1;90m│   │   ├── [0m[36m ShowSpectators.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mShowSpectators.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mSnowfall.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mSoundpackControl.plugin.js[0m
+[1;90m│   │   ├── [0m[36m SpellCheck.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mSpellCheck.plugin.js[0m
+[1;90m│   │   ├── [0m[36m SplitLargeMessages.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mSplitLargeMessages.plugin.js[0m
+[1;90m│   │   ├── [0m[36m SpotifyControls.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mSpotifyControls.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mSpotifyEnhance.plugin.js[0m
+[1;90m│   │   ├── [0m[36m SpotifyListenAlong.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mSpotifyListenAlong.plugin.js[0m
+[1;90m│   │   ├── [0m[36m StaffTag.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mStaffTag.plugin.js[0m
+[1;90m│   │   ├── [0m[36m StartUpPage.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mStartUpPage.plugin.js[0m
+[1;90m│   │   ├── [0m[36m StatusEverywhereV2.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mStatusEverywhereV2.plugin.js[0m
+[1;90m│   │   ├── [0m[36m StickerEmojiPreview.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mStickerEmojiPreview.plugin.js[0m
+[1;90m│   │   ├── [0m[36m Summarizer.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mSummarizer.plugin.js[0m
+[1;90m│   │   ├── [0m[36m Tabbys.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mTabbys.plugin.js[0m
+[1;90m│   │   ├── [0m[36m TimedLightDarkMode.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mTimedLightDarkMode.plugin.js[0m
+[1;90m│   │   ├── [0m[36m Timezones.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mTimezones.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mtoggleYourStuff.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mTopPagination.plugin.js[0m
+[1;90m│   │   ├── [0m[36m TopRoleEverywhere.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mTopRoleEverywhere.plugin.js[0m
+[1;90m│   │   ├── [0m[36m Translator.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mTranslator.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mTwitchPreview.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mUncompressedImages.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mUnsuppressEmbeds.plugin.js[0m
+[1;90m│   │   ├── [0m[36m UrbanDictionary.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mUserNotes.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mVideoCompressor.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mViewProfilePicture.plugin.js[0m
+[1;90m│   │   ├── [0m[36m VoiceActivity.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mVoiceActivity.plugin.js[0m
+[1;90m│   │   ├── [0m[36m VoiceEvents.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mVoiceEvents.plugin.js[0m
+[1;90m│   │   ├── [0m[33m [1mVoiceHub.plugin.js[0m
+[1;90m│   │   ├── [0m[36m VoiceMessages.config.json[0m
+[1;90m│   │   ├── [0m[33m [1mVoiceMessages.plugin.js[0m
+[1;90m│   │   ├── [0m[36m ZeresPluginLibrary.config.json[0m
+[1;90m│   │   └── [0m[33m [1mZipPreview.plugin.js[0m
+[1;90m│   └── [0m[34m [1mthemes[0m
+[1;90m│       ├── [0m[33m [1mAlternativeVistaAutoUpdate.theme.css[0m
+[1;90m│       ├── [0m[33m [1mamoled-cord.theme.css[0m
+[1;90m│       ├── [0m[33m [1mAzurite.theme.css[0m
+[1;90m│       ├── [0m[33m [1mBubbleThemev2.theme.css[0m
+[1;90m│       ├── [0m[33m [1mcaelestia.theme.css[0m
+[1;90m│       ├── [0m[33m [1mClearVision-v7-BetterDiscord.theme.css[0m
+[1;90m│       ├── [0m[33m [1mCyan.theme.css[0m
+[1;90m│       ├── [0m[33m [1mcyberpunk2077.theme.css[0m
+[1;90m│       ├── [0m[33m [1mDark+.theme.css[0m
+[1;90m│       ├── [0m[33m [1mdiscord-mica.theme.css[0m
+[1;90m│       ├── [0m[33m [1mDiscord11.theme.css[0m
+[1;90m│       ├── [0m[33m [1mdiscord16.theme.css[0m
+[1;90m│       ├── [0m[33m [1mdiscordia.theme.css[0m
+[1;90m│       ├── [0m[33m [1mDiscordPlus.theme.css[0m
+[1;90m│       ├── [0m[33m [1mdtm-08.theme.css[0m
+[1;90m│       ├── [0m[33m [1mdtm-16.theme.css[0m
+[1;90m│       ├── [0m[33m [1mdtm-18.theme.css[0m
+[1;90m│       ├── [0m[33m [1mEris.theme.css[0m
+[1;90m│       ├── [0m[33m [1mExponent.theme.css[0m
+[1;90m│       ├── [0m[33m [1mFallout4Terminal.theme.css[0m
+[1;90m│       ├── [0m[33m [1mFluent-Discord.theme.css[0m
+[1;90m│       ├── [0m[33m [1mFluent.theme.css[0m
+[1;90m│       ├── [0m[33m [1mGitHub-Dark.theme.css[0m
+[1;90m│       ├── [0m[33m [1mglass_local.theme.css[0m
+[1;90m│       ├── [0m[33m [1m'Glass Wave.theme.css'[0m
+[1;90m│       ├── [0m[33m [1mHorizontalServerList.theme.css[0m
+[1;90m│       ├── [0m[33m [1mkaleidoscope.theme.css[0m
+[1;90m│       ├── [0m[33m [1mMaterial-Discord.theme.css[0m
+[1;90m│       ├── [0m[33m [1m'Material Blue Discord.theme.css'[0m
+[1;90m│       ├── [0m[33m [1mMaterialDesign.theme.css[0m
+[1;90m│       ├── [0m[33m [1mmidnight.theme.css[0m
+[1;90m│       ├── [0m MinecraftDefault-Bold.ttf
+[1;90m│       ├── [0m[33m [1mMinimalCord.theme.css[0m
+[1;90m│       ├── [0m[33m [1mNewRemTheme.theme.css[0m
+[1;90m│       ├── [0m[33m [1mNieR-Light-Source.theme.css[0m
+[1;90m│       ├── [0m[33m [1mNineX.theme.css[0m
+[1;90m│       ├── [0m[33m [1mNord.theme.css[0m
+[1;90m│       ├── [0m[33m [1mNotAnotherAnimeTheme.theme.css[0m
+[1;90m│       ├── [0m[33m [1mOldCord.theme.css[0m
+[1;90m│       ├── [0m[33m [1mOSX.theme.css[0m
+[1;90m│       ├── [0m[33m [1mpiOS.theme.css[0m
+[1;90m│       ├── [0m[33m [1mRoundedDiscord.theme.css[0m
+[1;90m│       ├── [0m[33m [1mroundmoledV2.theme.css[0m
+[1;90m│       ├── [0m[33m [1mshine.theme.css[0m
+[1;90m│       ├── [0m[33m [1msimplify.theme.css[0m
+[1;90m│       ├── [0m[33m [1mSlate.theme.css[0m
+[1;90m│       ├── [0m[33m [1mSpotiCord.theme.css[0m
+[1;90m│       ├── [0m[33m [1mSpotify-Discord.theme.css[0m
+[1;90m│       ├── [0m[33m [1msurCord.theme.css[0m
+[1;90m│       ├── [0m[33m [1msystem24.theme.css[0m
+[1;90m│       ├── [0m[33m [1mT1.theme.css[0m
+[1;90m│       ├── [0m[33m [1mtokyo-night.theme.css[0m
+[1;90m│       ├── [0m[33m [1mTranslucence.theme.css[0m
+[1;90m│       ├── [0m[33m [1mUltra.theme.css[0m
+[1;90m│       ├── [0m[33m [1mUnity.theme.css[0m
+[1;90m│       └── [0m[33m [1mYoutube_Nation.theme.css[0m
+[1;90m├── [0m[34m [1mbspwm[0m
+[1;90m│   ├── [0m[34m [1mbin[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mAndroidMount[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mAnimatedWall[0m
+[1;90m│   │   ├── [0m[32m [1mbluetooth-polybar.sh[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mBrightness[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mBspwm-ScratchPad[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mExternalRules[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mHideBar[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mHideNode[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mKeyBoardL[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mMediaControl[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mMonitorSetup[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mNetManagerDM[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mOpenApps[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mPowerMenu[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mRiceEditor[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mRiceSelector[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mrofi-bluetooth[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mRofiLauncher[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mRofiPass[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mScreenLocker[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mScreenShoTer[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mSetSysVars[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mSoftReload[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mtarget[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mTerm[0m
+[1;90m│   │   ├── [0m[32m [1mTheme.sh[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mUpdates[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mVolume[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mWallSelect[0m
+[1;90m│   │   ├── [0m[32m󰡯 [1mWallSync[0m
+[1;90m│   │   └── [0m[32m󰡯 [1mWeather[0m
+[1;90m│   ├── [0m[32m [1mbspwmrc[0m
+[1;90m│   ├── [0m[34m [1mconfig[0m
+[1;90m│   │   ├── [0m[34m [1massets[0m
+[1;90m│   │   ├── [0m󰡯 dunstrc
+[1;90m│   │   ├── [0m FirstMessage.txt
+[1;90m│   │   ├── [0m jgmenu.txt
+[1;90m│   │   ├── [0m󰡯 jgmenurc
+[1;90m│   │   ├── [0m[34m [1mmodules[0m
+[1;90m│   │   ├── [0m󱁻 NetManagerDM.ini
+[1;90m│   │   ├── [0m󱁻 picom-animations.conf
+[1;90m│   │   ├── [0m󱁻 picom.conf
+[1;90m│   │   ├── [0m[34m [1mrofi-themes[0m
+[1;90m│   │   ├── [0m[34m [1mst[0m
+[1;90m│   │   ├── [0m󱁻 sxhkdrc
+[1;90m│   │   ├── [0m󱁻 system.ini
+[1;90m│   │   └── [0m󰡯 xsettingsd
+[1;90m│   ├── [0m[34m [1meww[0m
+[1;90m│   │   ├── [0m[34m [1mcheatsheet[0m
+[1;90m│   │   ├── [0m[33m [1mcolors.scss[0m
+[1;90m│   │   ├── [0m[33m [1meww.scss[0m
+[1;90m│   │   ├── [0m eww.yuck
+[1;90m│   │   ├── [0m[34m [1mplayer[0m
+[1;90m│   │   └── [0m[34m [1mprofilecard[0m
+[1;90m│   └── [0m[34m [1mrices[0m
+[1;90m│       ├── [0m[34m [1maline[0m
+[1;90m│       ├── [0m[34m [1mandrea[0m
+[1;90m│       ├── [0m[34m [1mbrenda[0m
+[1;90m│       ├── [0m[34m [1mcristina[0m
+[1;90m│       ├── [0m[34m [1mcynthia[0m
+[1;90m│       ├── [0m[34m [1mdaniela[0m
+[1;90m│       ├── [0m[34m [1memilia[0m
+[1;90m│       ├── [0m[34m [1mh4ck3r[0m
+[1;90m│       ├── [0m[34m [1misabel[0m
+[1;90m│       ├── [0m[34m [1mjan[0m
+[1;90m│       ├── [0m[34m [1mkarla[0m
+[1;90m│       ├── [0m[34m [1mmarisol[0m
+[1;90m│       ├── [0m[34m [1mmelissa[0m
+[1;90m│       ├── [0m[34m [1mpamela[0m
+[1;90m│       ├── [0m[34m [1msilvia[0m
+[1;90m│       ├── [0m[34m [1mvarinka[0m
+[1;90m│       ├── [0m[34m [1myael[0m
+[1;90m│       └── [0m[34m [1mz0mbi3[0m
+[1;90m├── [0m[34m [1mcava[0m
+[1;90m│   ├── [0m[32m󱁻 [1mconfig[0m
+[1;90m│   ├── [0m[34m [1moldd[0m
+[1;90m│   │   ├── [0m[32m󱁻 [1mconfig[0m
+[1;90m│   │   ├── [0m[34m [1mshaders[0m
+[1;90m│   │   └── [0m[34m [1mthemes[0m
+[1;90m│   ├── [0m[34m [1mshaders[0m
+[1;90m│   │   ├── [0m[32m [1mbar_spectrum.frag[0m
+[1;90m│   │   ├── [0m[32m [1meye_of_phi.frag[0m
+[1;90m│   │   ├── [0m[32m [1mnormalized_bars.frag[0m
+[1;90m│   │   ├── [0m[32m [1mnorthern_lights.frag[0m
+[1;90m│   │   ├── [0m[32m [1mpass_through.vert[0m
+[1;90m│   │   ├── [0m[32m [1mspectrogram.frag[0m
+[1;90m│   │   └── [0m[32m [1mwinamp_line_style_spectrum.frag[0m
+[1;90m│   └── [0m[34m [1mthemes[0m
+[1;90m│       ├── [0m[32m󰡯 [1msolarized_dark[0m
+[1;90m│       └── [0m[32m󰡯 [1mtricolor[0m
+[1;90m├── [0m[34m [1mclipcat[0m
+[1;90m│   ├── [0m[33m clipcat-menu.toml[0m
+[1;90m│   ├── [0m[33m clipcatctl.toml[0m
+[1;90m│   └── [0m[33m clipcatd.toml[0m
+[1;90m├── [0m[34m [1mdriftwm[0m
+[1;90m│   ├── [0m[33m config.toml[0m
+[1;90m│   ├── [0m[33m config1.toml[0m
+[1;90m│   ├── [0m[34m [1mscripts[0m
+[1;90m│   │   ├── [0m[32m [1maudio_wake.sh[0m
+[1;90m│   │   ├── [0m[32m [1mbattery_notify.sh[0m
+[1;90m│   │   ├── [0m[32m [1midle.sh[0m
+[1;90m│   │   ├── [0m[32m [1mlock.sh[0m
+[1;90m│   │   ├── [0m[32m [1mpacman_update_notify.sh[0m
+[1;90m│   │   ├── [0m[32m [1mspotlight.sh[0m
+[1;90m│   │   ├── [0m[32m [1mswaync-launch.sh[0m
+[1;90m│   │   ├── [0m[34m [1mwidgets[0m
+[1;90m│   │   └── [0m[32m [1mwindow-search.sh[0m
+[1;90m│   └── [0m[34m [1mwallpapers[0m
+[1;90m│       └── [0m boho_dawn.glsl
+[1;90m├── [0m[32m [1mfind_hardcoded_paths.sh[0m
+[1;90m├── [0m[34m [1mfish[0m
+[1;90m│   ├── [0m[34m [1mcompletions[0m
+[1;90m│   ├── [0m[34m [1mconf.d[0m
+[1;90m│   │   ├── [0m aliases.fish
+[1;90m│   │   ├── [0m fish_frozen_key_bindings.fish
+[1;90m│   │   ├── [0m fish_frozen_theme.fish
+[1;90m│   │   └── [0m personal.fish
+[1;90m│   ├── [0m config.fish
+[1;90m│   ├── [0m󰡯 fish_variables
+[1;90m│   ├── [0m[34m [1mfunctions[0m
+[1;90m│   │   ├── [0m arch.fish
+[1;90m│   │   ├── [0m[32m [1mchange_style.sh[0m
+[1;90m│   │   ├── [0m[32m [1mffimg.sh[0m
+[1;90m│   │   ├── [0m[32m [1mffstyle.sh[0m
+[1;90m│   │   ├── [0m[32m [1mfish_prompt.fish[0m
+[1;90m│   │   ├── [0m fish_user_key_bindings.fish
+[1;90m│   │   └── [0m[32m [1mfunctions.fish[0m
+[1;90m│   └── [0m[34m [1mstarship[0m
+[1;90m│       ├── [0m[33m starship-gruvbox.toml[0m
+[1;90m│       ├── [0m[33m starship-os_logo.toml[0m
+[1;90m│       ├── [0m[33m starship-simple.toml[0m
+[1;90m│       └── [0m[33m starship-tokyonight.toml[0m
+[1;90m├── [0m[34m [1mgtk-3.0[0m
+[1;90m│   ├── [0m󰡯 bookmarks
+[1;90m│   ├── [0m[33m [1mcolors.css[0m
+[1;90m│   ├── [0m[33m [1mdank-colors.css[0m
+[1;90m│   ├── [0m[33m [1mgtk.css[0m
+[1;90m│   ├── [0m gtk.css.backup
+[1;90m│   ├── [0m gtk.css.backup.1762035624
+[1;90m│   ├── [0m gtk.css.backup.1762113587
+[1;90m│   └── [0m󱁻 settings.ini
+[1;90m├── [0m[34m [1mgtk-4.0[0m
+[1;90m│   ├── [0m[33m [1mcolors.css[0m
+[1;90m│   ├── [0m[33m [1mdank-colors.css[0m
+[1;90m│   ├── [0m[33m [1mgtk-Dark.css[0m
+[1;90m│   ├── [0m[33m [1mgtk-Light.css[0m
+[1;90m│   ├── [0m[33m [1mgtk.css[0m
+[1;90m│   ├── [0m gtk.css.backup
+[1;90m│   ├── [0m󱁻 settings.ini
+[1;90m│   └── [0m[34m [1mwindows-assets[0m
+[1;90m│       ├── [0m[35m titlebutton-close-active-dark.png[0m
+[1;90m│       ├── [0m[35m titlebutton-close-active-dark@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-close-active.png[0m
+[1;90m│       ├── [0m[35m titlebutton-close-active@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-close-backdrop-dark.png[0m
+[1;90m│       ├── [0m[35m titlebutton-close-backdrop-dark@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-close-backdrop-hover-dark.png[0m
+[1;90m│       ├── [0m[35m titlebutton-close-backdrop-hover-dark@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-close-backdrop-hover.png[0m
+[1;90m│       ├── [0m[35m titlebutton-close-backdrop-hover@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-close-backdrop.png[0m
+[1;90m│       ├── [0m[35m titlebutton-close-backdrop@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-close-dark.png[0m
+[1;90m│       ├── [0m[35m titlebutton-close-dark@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-close-hover-dark.png[0m
+[1;90m│       ├── [0m[35m titlebutton-close-hover-dark@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-close-hover.png[0m
+[1;90m│       ├── [0m[35m titlebutton-close-hover@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-close.png[0m
+[1;90m│       ├── [0m[35m titlebutton-close@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-maximize-active-dark.png[0m
+[1;90m│       ├── [0m[35m titlebutton-maximize-active-dark@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-maximize-active.png[0m
+[1;90m│       ├── [0m[35m titlebutton-maximize-active@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-maximize-backdrop-dark.png[0m
+[1;90m│       ├── [0m[35m titlebutton-maximize-backdrop-dark@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-maximize-backdrop-hover-dark.png[0m
+[1;90m│       ├── [0m[35m titlebutton-maximize-backdrop-hover-dark@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-maximize-backdrop-hover.png[0m
+[1;90m│       ├── [0m[35m titlebutton-maximize-backdrop-hover@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-maximize-backdrop.png[0m
+[1;90m│       ├── [0m[35m titlebutton-maximize-backdrop@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-maximize-dark.png[0m
+[1;90m│       ├── [0m[35m titlebutton-maximize-dark@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-maximize-hover-dark.png[0m
+[1;90m│       ├── [0m[35m titlebutton-maximize-hover-dark@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-maximize-hover.png[0m
+[1;90m│       ├── [0m[35m titlebutton-maximize-hover@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-maximize.png[0m
+[1;90m│       ├── [0m[35m titlebutton-maximize@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-minimize-active-dark.png[0m
+[1;90m│       ├── [0m[35m titlebutton-minimize-active-dark@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-minimize-active.png[0m
+[1;90m│       ├── [0m[35m titlebutton-minimize-active@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-minimize-backdrop-dark.png[0m
+[1;90m│       ├── [0m[35m titlebutton-minimize-backdrop-dark@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-minimize-backdrop-hover-dark.png[0m
+[1;90m│       ├── [0m[35m titlebutton-minimize-backdrop-hover-dark@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-minimize-backdrop-hover.png[0m
+[1;90m│       ├── [0m[35m titlebutton-minimize-backdrop-hover@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-minimize-backdrop.png[0m
+[1;90m│       ├── [0m[35m titlebutton-minimize-backdrop@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-minimize-dark.png[0m
+[1;90m│       ├── [0m[35m titlebutton-minimize-dark@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-minimize-hover-dark.png[0m
+[1;90m│       ├── [0m[35m titlebutton-minimize-hover-dark@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-minimize-hover.png[0m
+[1;90m│       ├── [0m[35m titlebutton-minimize-hover@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-minimize.png[0m
+[1;90m│       ├── [0m[35m titlebutton-minimize@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-restore-active-dark.png[0m
+[1;90m│       ├── [0m[35m titlebutton-restore-active-dark@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-restore-active.png[0m
+[1;90m│       ├── [0m[35m titlebutton-restore-active@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-restore-backdrop-dark.png[0m
+[1;90m│       ├── [0m[35m titlebutton-restore-backdrop-dark@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-restore-backdrop-hover-dark.png[0m
+[1;90m│       ├── [0m[35m titlebutton-restore-backdrop-hover-dark@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-restore-backdrop-hover.png[0m
+[1;90m│       ├── [0m[35m titlebutton-restore-backdrop-hover@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-restore-backdrop.png[0m
+[1;90m│       ├── [0m[35m titlebutton-restore-backdrop@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-restore-dark.png[0m
+[1;90m│       ├── [0m[35m titlebutton-restore-dark@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-restore-hover-dark.png[0m
+[1;90m│       ├── [0m[35m titlebutton-restore-hover-dark@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-restore-hover.png[0m
+[1;90m│       ├── [0m[35m titlebutton-restore-hover@2.png[0m
+[1;90m│       ├── [0m[35m titlebutton-restore.png[0m
+[1;90m│       └── [0m[35m titlebutton-restore@2.png[0m
+[1;90m├── [0m[34m [1mgtk-themes[0m
+[1;90m├── [0m[34m [1mhypr[0m
+[1;90m│   ├── [0m[34m [1massets[0m
+[1;90m│   │   ├── [0m[35m Catppuccin.png[0m
+[1;90m│   │   ├── [0m[35m Everforest.png[0m
+[1;90m│   │   ├── [0m[35m Gruvbox.png[0m
+[1;90m│   │   ├── [0m[35m Neon.png[0m
+[1;90m│   │   └── [0m[35m TokyoNight.png[0m
+[1;90m│   ├── [0m[34m [1mconf.d[0m
+[1;90m│   │   ├── [0m󱁻 input.conf
+[1;90m│   │   ├── [0m󱁻 keybindings.conf
+[1;90m│   │   ├── [0m󱁻 monitor.conf
+[1;90m│   │   ├── [0m󱁻 startup.conf
+[1;90m│   │   └── [0m󱁻 windowrules.conf
+[1;90m│   ├── [0m[34m [1mconfs[0m
+[1;90m│   ├── [0m[34m [1mconfss[0m
+[1;90m│   │   ├── [0m[34m [1mfish[0m
+[1;90m│   │   ├── [0m[34m [1mkitty[0m
+[1;90m│   │   ├── [0m[34m [1mrofi[0m
+[1;90m│   │   └── [0m[34m [1mswaync[0m
+[1;90m│   ├── [0m[34m [1mdms[0m
+[1;90m│   │   ├── [0m󱁻 colors.conf
+[1;90m│   │   ├── [0m󱁻 cursor.conf
+[1;90m│   │   ├── [0m󱁻 layout.conf
+[1;90m│   │   ├── [0m[36m󱁻 [1moutputs.conf[0m [1;90m->[0m [36m/home/prunus/.config/hypr/dms/profiles/[0mprofile_1771622848090_pc5syf.conf
+[1;90m│   │   ├── [0m[34m [1mprofiles[0m
+[1;90m│   │   └── [0m󱁻 windowrules.conf
+[1;90m│   ├── [0m hypridle.conf
+[1;90m│   ├── [0m hyprland.conf
+[1;90m│   ├── [0m hyprland.conf.backup.2025-11-01_22-14-22
+[1;90m│   ├── [0m hyprland.conf.backup1771621729
+[1;90m│   ├── [0m hyprland.conf.backup1771622839
+[1;90m│   ├── [0m hyprland.conf.save
+[1;90m│   ├── [0m[34m [1mhyprlock[0m
+[1;90m│   │   ├── [0m󰡯 ab67616d0000b273e45ac7a22ccaf02cc77545a8
+[1;90m│   │   ├── [0m[35m Arch-chan_to.png[0m
+[1;90m│   │   ├── [0m[32m [1mblazinscripts.sh[0m
+[1;90m│   │   ├── [0m[35m music.webp[0m
+[1;90m│   │   └── [0m[35m pfp.jpg[0m
+[1;90m│   ├── [0m hyprlock.conf
+[1;90m│   ├── [0m[34m [1mhyprselect[0m
+[1;90m│   │   └── [0m[32m [1mhyprselect.so[0m
+[1;90m│   ├── [0m[34m [1micons[0m
+[1;90m│   │   ├── [0m[34m [1mbrightness[0m
+[1;90m│   │   ├── [0m[35m done.png[0m
+[1;90m│   │   ├── [0m[35m error.png[0m
+[1;90m│   │   ├── [0m[35m monitor.png[0m
+[1;90m│   │   ├── [0m[35m pc.png[0m
+[1;90m│   │   ├── [0m[34m [1mvol[0m
+[1;90m│   │   └── [0m[35m warning.png[0m
+[1;90m│   ├── [0m[34m [1mlockscreens[0m
+[1;90m│   │   ├── [0m󱁻 hyprlock-1.conf
+[1;90m│   │   ├── [0m󱁻 hyprlock-2.conf
+[1;90m│   │   └── [0m󱁻 hyprlock-3.conf
+[1;90m│   ├── [0m[33m pyprland.toml[0m
+[1;90m│   ├── [0m[34m [1mquickshell[0m
+[1;90m│   ├── [0m[34m [1mscheme[0m
+[1;90m│   │   └── [0m󱁻 current.conf
+[1;90m│   ├── [0m[34m [1mscripts[0m
+[1;90m│   │   ├── [0m[32m [1madd_user.sh[0m
+[1;90m│   │   ├── [0m[32m [1mapps.sh[0m
+[1;90m│   │   ├── [0m[32m [1mBookSelect.sh[0m
+[1;90m│   │   ├── [0m[32m [1mbrightness.sh[0m
+[1;90m│   │   ├── [0m[32m [1mbrowser.sh[0m
+[1;90m│   │   ├── [0m[32m [1mcava.sh[0m
+[1;90m│   │   ├── [0m[32m [1mchange_wallpaper_engine.sh[0m
+[1;90m│   │   ├── [0m[32m [1mcliphist.sh[0m
+[1;90m│   │   ├── [0m[32m [1mdefault_browser.sh[0m
+[1;90m│   │   ├── [0m[32m [1medit-dotfiles.sh[0m
+[1;90m│   │   ├── [0m[32m [1mhyprconf-v2.sh[0m
+[1;90m│   │   ├── [0m[32m [1mhyprlock.sh[0m
+[1;90m│   │   ├── [0m[32m [1midk.sh[0m
+[1;90m│   │   ├── [0m[32m [1mkeybinds.sh[0m
+[1;90m│   │   ├── [0m[32m [1mmenu.sh[0m
+[1;90m│   │   ├── [0m[32m [1mmonitor.sh[0m
+[1;90m│   │   ├── [0m[32m [1mnightlight.sh[0m
+[1;90m│   │   ├── [0m[32m [1mnotification.sh[0m
+[1;90m│   │   ├── [0m[32m [1mpkgupdate.sh[0m
+[1;90m│   │   ├── [0m[32m [1mpolkit.sh[0m
+[1;90m│   │   ├── [0m[32m [1mpower.sh[0m
+[1;90m│   │   ├── [0m[32m [1mpowermenu.sh[0m
+[1;90m│   │   ├── [0m[32m [1mpowermenu_theme_select.sh[0m
+[1;90m│   │   ├── [0m[32m [1mrecord_area.sh[0m
+[1;90m│   │   ├── [0m[32m [1mrecord_region.sh[0m
+[1;90m│   │   ├── [0m[32m [1mRefresh.sh[0m
+[1;90m│   │   ├── [0m[32m [1mrofi-emoji.sh[0m
+[1;90m│   │   ├── [0m[32m [1mrofi_theme.sh[0m
+[1;90m│   │   ├── [0m[32m [1mscreenn.sh[0m
+[1;90m│   │   ├── [0m[32m [1mscreenshot.sh[0m
+[1;90m│   │   ├── [0m[32m [1mscrenn.sh[0m
+[1;90m│   │   ├── [0m[32m [1msddm_avatar.sh[0m
+[1;90m│   │   ├── [0m[32m [1msddm_theme.sh[0m
+[1;90m│   │   ├── [0m[32m [1msettings.sh[0m
+[1;90m│   │   ├── [0m[32m [1mstartup.sh[0m
+[1;90m│   │   ├── [0m[32m [1msystem.sh[0m
+[1;90m│   │   ├── [0m[32m [1msystemupdate.sh[0m
+[1;90m│   │   ├── [0m[32m [1mtest.sh[0m
+[1;90m│   │   ├── [0m[32m [1mtest0.sh[0m
+[1;90m│   │   ├── [0m[32m [1mtheme_select.sh[0m
+[1;90m│   │   ├── [0m[32m [1muninstall.sh[0m
+[1;90m│   │   ├── [0m[32m [1muptime.sh[0m
+[1;90m│   │   ├── [0m[32m [1mvolumecontrol.sh[0m
+[1;90m│   │   ├── [0m[32m [1mwallcache.sh[0m
+[1;90m│   │   ├── [0m[32m [1mWallpaper.sh[0m
+[1;90m│   │   ├── [0m[32m [1mWallpaperSelect.sh[0m
+[1;90m│   │   ├── [0m[32m [1mWallpaperSelectNew.sh[0m
+[1;90m│   │   ├── [0m[32m [1mwalls.sh[0m
+[1;90m│   │   ├── [0m[32m [1mwaybar-layout.sh[0m
+[1;90m│   │   ├── [0m[32m [1mwaybar-reload.sh[0m
+[1;90m│   │   └── [0m[32m [1mWeather.sh[0m
+[1;90m│   ├── [0m[34m [1mshaders[0m
+[1;90m│   │   ├── [0m bloom.glsl
+[1;90m│   │   ├── [0m disable.glsl
+[1;90m│   │   ├── [0m rounded_corners.glsl
+[1;90m│   │   ├── [0m vibrance.glsl
+[1;90m│   │   └── [0m vignette.glsl
+[1;90m│   ├── [0m[34m [1msounds[0m
+[1;90m│   │   ├── [0m[36m [1merror.wav[0m
+[1;90m│   │   ├── [0m[36m poweroff1.mp3[0m
+[1;90m│   │   ├── [0m screen-capture.oga
+[1;90m│   │   ├── [0m[36m [1msystem-startup.wav[0m
+[1;90m│   │   └── [0m[36m [1mupdate.wav[0m
+[1;90m│   ├── [0m󱁻 userprefs.conf
+[1;90m│   ├── [0m󱁻 variables.conf
+[1;90m│   └── [0m[34m [1mworkflows[0m
+[1;90m│       ├── [0m󱁻 default.conf
+[1;90m│       ├── [0m󱁻 gaming.conf
+[1;90m│       └── [0m󱁻 powersaver.conf
+[1;90m├── [0m idk.txt
+[1;90m├── [0m[34m [1mkitty[0m
+[1;90m│   ├── [0m[34m [1mcolors[0m
+[1;90m│   │   ├── [0m󱁻 Catppuccin.conf
+[1;90m│   │   ├── [0m󱁻 Everforest.conf
+[1;90m│   │   ├── [0m󱁻 Gruvbox.conf
+[1;90m│   │   ├── [0m󱁻 Neon.conf
+[1;90m│   │   └── [0m󱁻 TokyoNight.conf
+[1;90m│   ├── [0m󱁻 dank-tabs.conf
+[1;90m│   ├── [0m󱁻 dank-theme.conf
+[1;90m│   ├── [0m icon.icns
+[1;90m│   ├── [0m󱁻 kitty.conf
+[1;90m│   ├── [0m kitty.conf.backup.2025-11-01_22-14-22
+[1;90m│   └── [0m[34m [1mthemes[0m
+[1;90m│       └── [0m󱁻 meowrch.conf
+[1;90m├── [0m[34m [1mKvantum[0m
+[1;90m│   ├── [0m[34m [1mCatppuccin[0m
+[1;90m│   │   ├── [0m Catppuccin.kvconfig
+[1;90m│   │   └── [0m[35m󰕙 Catppuccin.svg[0m
+[1;90m│   ├── [0m[34m [1mEverforest[0m
+[1;90m│   │   ├── [0m Everforest.kvconfig
+[1;90m│   │   └── [0m[35m󰕙 Everforest.svg[0m
+[1;90m│   ├── [0m[34m [1mGruvbox[0m
+[1;90m│   │   ├── [0m Gruvbox.kvconfig
+[1;90m│   │   └── [0m[35m󰕙 Gruvbox.svg[0m
+[1;90m│   ├── [0m kvantum.kvconfig
+[1;90m│   ├── [0m[34m [1mNordic-Darker[0m
+[1;90m│   │   ├── [0m Nordic-Darker.kvconfig
+[1;90m│   │   └── [0m[35m󰕙 Nordic-Darker.svg[0m
+[1;90m│   └── [0m[34m [1mTokyoNight[0m
+[1;90m│       ├── [0m TokyoNight.kvconfig
+[1;90m│       └── [0m[35m󰕙 TokyoNight.svg[0m
+[1;90m├── [0m LICENSE
+[1;90m├── [0m[34m [1mmisc[0m
+[1;90m├── [0m[34m [1mniri[0m
+[1;90m│   ├── [0m[32m [1mauto-resize.sh[0m
+[1;90m│   ├── [0m config.kdl
+[1;90m│   └── [0m[34m [1mdms[0m
+[1;90m│       └── [0m colors.kdl
+[1;90m├── [0m[34m [1mniripwmenu[0m
+[1;90m│   ├── [0m config.yaml
+[1;90m│   ├── [0m[35m logoff.png[0m
+[1;90m│   ├── [0m[35m reboot.png[0m
+[1;90m│   ├── [0m[35m shutdown.png[0m
+[1;90m│   └── [0m[33m [1mstyle.css[0m
+[1;90m├── [0m[34m [1mnvim[0m
+[1;90m│   ├── [0m[33m [1minit.lua[0m
+[1;90m│   ├── [0m[33m [1mkeymaps.md[0m
+[1;90m│   ├── [0m[36m lazy-lock.json[0m
+[1;90m│   ├── [0m[34m [1mlua[0m
+[1;90m│   │   ├── [0m[34m [1mplugins[0m
+[1;90m│   │   └── [0m[34m [1mshell-ninja[0m
+[1;90m│   └── [0m[33m󰂺 [1mREADME.md[0m
+[1;90m├── [0m[34m [1mnwg-look[0m
+[1;90m│   └── [0m󱁻 config
+[1;90m├── [0m[34m [1mqt5ct[0m
+[1;90m│   ├── [0m[34m [1mcolors[0m
+[1;90m│   │   ├── [0m caelestia.colors
+[1;90m│   │   └── [0m󱁻 matugen.conf
+[1;90m│   ├── [0m[34m [1mqss[0m
+[1;90m│   └── [0m qt5ct.conf
+[1;90m├── [0m[34m [1mqt6ct[0m
+[1;90m│   ├── [0m[34m [1mcolors[0m
+[1;90m│   │   ├── [0m caelestia.colors
+[1;90m│   │   └── [0m󱁻 matugen.conf
+[1;90m│   ├── [0m[34m [1mqss[0m
+[1;90m│   └── [0m qt6ct.conf
+[1;90m├── [0m[34m [1mquickshell[0m
+[1;90m│   ├── [0m[32m [1mconfig.json[0m
+[1;90m│   ├── [0m[32m [1mGlobalStates.qml[0m
+[1;90m│   ├── [0m[34m [1mhyprquickshot[0m
+[1;90m│   │   ├── [0m[32m [1mdefault.nix[0m
+[1;90m│   │   ├── [0m[32m [1mflake.lock[0m
+[1;90m│   │   ├── [0m[32m [1mflake.nix[0m
+[1;90m│   │   ├── [0m[34m [1micons[0m
+[1;90m│   │   ├── [0m[32m [1mLICENSE.md[0m
+[1;90m│   │   ├── [0m[32m󰂺 [1mREADME.md[0m
+[1;90m│   │   ├── [0m[34m [1mshaders[0m
+[1;90m│   │   ├── [0m[32m [1mshell.qml[0m
+[1;90m│   │   └── [0m[34m󰣞 [1msrc[0m
+[1;90m│   ├── [0m[34m [1mmodules[0m
+[1;90m│   │   ├── [0m[34m [1mcommon[0m
+[1;90m│   │   └── [0m[34m [1moverview[0m
+[1;90m│   ├── [0m[32m [1mqml_color.json[0m
+[1;90m│   ├── [0m[34m [1mservices[0m
+[1;90m│   │   ├── [0m[32m [1mAppSearch.qml[0m
+[1;90m│   │   ├── [0m[32m [1mConfigLoader.qml[0m
+[1;90m│   │   ├── [0m[32m [1mHyprlandData.qml[0m
+[1;90m│   │   ├── [0m[32m [1mHyprlandKeybinds.qml[0m
+[1;90m│   │   └── [0m[32m [1mMaterialThemeLoader.qml[0m
+[1;90m│   └── [0m[32m [1mshell.qml[0m
+[1;90m├── [0m[33m󰂺 [1mREADME.md[0m
+[1;90m├── [0m[34m [1mrofi[0m
+[1;90m│   ├── [0m[34m [1massets[0m
+[1;90m│   │   ├── [0m[35m style-1.png[0m
+[1;90m│   │   ├── [0m[35m style-2.png[0m
+[1;90m│   │   └── [0m[35m style-3.png[0m
+[1;90m│   ├── [0m[34m [1mcolors[0m
+[1;90m│   │   ├── [0m Catppuccin.rasi
+[1;90m│   │   ├── [0m Everforest.rasi
+[1;90m│   │   ├── [0m Gruvbox.rasi
+[1;90m│   │   └── [0m Neon.rasi
+[1;90m│   ├── [0m config.rasi
+[1;90m│   ├── [0m emoji.rasi
+[1;90m│   ├── [0m[34m [1mmenu[0m
+[1;90m│   │   ├── [0m menu.rasi
+[1;90m│   │   ├── [0m style-1.rasi
+[1;90m│   │   ├── [0m style-2.rasi
+[1;90m│   │   └── [0m style-3.rasi
+[1;90m│   ├── [0m rofi-confirm.rasi
+[1;90m│   ├── [0m rofi-vars.rasi
+[1;90m│   ├── [0m selecting.rasi
+[1;90m│   ├── [0m theme.rasi
+[1;90m│   └── [0m[34m [1mthemes[0m
+[1;90m│       ├── [0m[33m󰂺 [1mREADME.md[0m
+[1;90m│       ├── [0m rofi-books.rasi
+[1;90m│       ├── [0m rofi-clipboard.rasi
+[1;90m│       ├── [0m rofi-colors.rasi
+[1;90m│       ├── [0m rofi-edit-dots.rasi
+[1;90m│       ├── [0m rofi-emoji.rasi
+[1;90m│       ├── [0m rofi-hyprlock-theme.rasi
+[1;90m│       ├── [0m rofi-keybinds.rasi
+[1;90m│       ├── [0m rofi-powertheme.rasi
+[1;90m│       ├── [0m rofi-screenshots.rasi
+[1;90m│       ├── [0m rofi-select_theme.rasi
+[1;90m│       ├── [0m rofi-theme-select.rasi
+[1;90m│       ├── [0m rofi-wall-2.rasi
+[1;90m│       ├── [0m rofi-wall-engine.rasi
+[1;90m│       ├── [0m rofi-wall.rasi
+[1;90m│       ├── [0m rofi-waybar.rasi
+[1;90m│       └── [0m rofi-window.rasi
+[1;90m├── [0m[32m [1mscript.sh[0m
+[1;90m├── [0m[34m [1mspicetify[0m
+[1;90m│   ├── [0m[32m󱁻 [1m'config-xpui (Copy).ini'[0m
+[1;90m│   ├── [0m[32m󱁻 [1mconfig-xpui.ini[0m
+[1;90m│   ├── [0m[34m [1mCustomApps[0m
+[1;90m│   │   ├── [0m[34m [1meternal-jukebox[0m
+[1;90m│   │   ├── [0m[34m [1mmarketplace[0m
+[1;90m│   │   ├── [0m[31m marketplace-dist.zip[0m
+[1;90m│   │   ├── [0m[34m [1mmarketplace-tmp[0m
+[1;90m│   │   ├── [0m[34m [1mplaylist-maker[0m
+[1;90m│   │   ├── [0m[34m [1mvisualizer[0m
+[1;90m│   │   └── [0m[34m [1mwave-visualizer[0m
+[1;90m│   ├── [0m[34m [1mExtensions[0m
+[1;90m│   ├── [0m[32m [1msnippets.txt[0m
+[1;90m│   └── [0m[34m [1mThemes[0m
+[1;90m│       ├── [0m[34m [1mcaelestia[0m
+[1;90m│       ├── [0m[34m [1mLucid[0m
+[1;90m│       ├── [0m[34m [1mlucid[0m
+[1;90m│       ├── [0m[34m [1mLucid1[0m
+[1;90m│       └── [0m[34m [1mspicetify-glassify[0m
+[1;90m├── [0m[34m [1mswaync[0m
+[1;90m│   ├── [0m[33m [1mcolors.css[0m
+[1;90m│   ├── [0m[36m config.json[0m
+[1;90m│   ├── [0m[34m [1micons[0m
+[1;90m│   │   ├── [0m[35m bolt.png[0m
+[1;90m│   │   ├── [0m[35m brightness-20.png[0m
+[1;90m│   │   ├── [0m[35m brightness-40.png[0m
+[1;90m│   │   ├── [0m[35m brightness-60.png[0m
+[1;90m│   │   ├── [0m[35m brightness-80.png[0m
+[1;90m│   │   ├── [0m[35m brightness-100.png[0m
+[1;90m│   │   ├── [0m[35m gamemode.png[0m
+[1;90m│   │   ├── [0m[35m microphone-mute.png[0m
+[1;90m│   │   ├── [0m[35m microphone.png[0m
+[1;90m│   │   ├── [0m[35m music.png[0m
+[1;90m│   │   ├── [0m[35m palette.png[0m
+[1;90m│   │   ├── [0m[35m picture.png[0m
+[1;90m│   │   ├── [0m[35m play.png[0m
+[1;90m│   │   ├── [0m[35m timer.png[0m
+[1;90m│   │   ├── [0m[35m volume-high.png[0m
+[1;90m│   │   ├── [0m[35m volume-low.png[0m
+[1;90m│   │   ├── [0m[35m volume-mid.png[0m
+[1;90m│   │   ├── [0m[35m volume-mute.png[0m
+[1;90m│   │   └── [0m[35m wand.png[0m
+[1;90m│   ├── [0m[34m [1moldddd[0m
+[1;90m│   │   ├── [0m[34m [1mcolors[0m
+[1;90m│   │   ├── [0m[36m config.json[0m
+[1;90m│   │   ├── [0m[34m [1micons[0m
+[1;90m│   │   ├── [0m[34m [1moldd[0m
+[1;90m│   │   └── [0m[33m [1mstyle.css[0m
+[1;90m│   ├── [0m[34m [1mscripts[0m
+[1;90m│   │   ├── [0m[36m [1minhibit.sh[0m [31m->[0m [4;31m../../../.local/bin/caffeine[0m
+[1;90m│   │   ├── [0m[32m [1mquiet.sh[0m
+[1;90m│   │   ├── [0m[32m [1mupdate_inhibit.sh[0m
+[1;90m│   │   ├── [0m[32m [1mupdate_mic.sh[0m
+[1;90m│   │   └── [0m[32m [1mupdate_quiet.sh[0m
+[1;90m│   ├── [0m[33m [1mstyle.css[0m
+[1;90m│   └── [0m[34m [1mthemes[0m
+[1;90m│       └── [0m[34m [1mnova-dark[0m
+[1;90m├── [0m[34m [1mWalls[0m
+[1;90m│   ├── [0m[34m [1m01.06.2026[0m
+[1;90m│   │   ├── [0m[34m [1m00[0m
+[1;90m│   │   └── [0m[34m [1m01[0m
+[1;90m│   ├── [0m[34m [1m20.05.2026[0m
+[1;90m│   │   ├── [0m[35m __original_drawn_by_taiyakiki_5687__4952c8fce62e899dc09a5a890d3266d9.jpg[0m
+[1;90m│   │   ├── [0m[35m '__original_ upscaled.jpg'[0m
+[1;90m│   │   ├── [0m[35m neighborhood.png[0m
+[1;90m│   │   ├── [0m[35m neon-shacks-nord.png[0m
+[1;90m│   │   ├── [0m[35m neon-shacks-tn-nord.png[0m
+[1;90m│   │   ├── [0m[35m neon_girl_abstract_neon_face_top_eyes.png[0m
+[1;90m│   │   ├── [0m[35m neosamurai.webp[0m
+[1;90m│   │   ├── [0m[35m Nepal_5160x2160.png[0m
+[1;90m│   │   ├── [0m[35m netbsd.png[0m
+[1;90m│   │   ├── [0m󰡯 newfile
+[1;90m│   │   ├── [0m[35m night.jpg[0m
+[1;90m│   │   ├── [0m[35m night_clouds_field_house_lonely_farm.jpg[0m
+[1;90m│   │   ├── [0m[35m night_moon.png[0m
+[1;90m│   │   ├── [0m[35m night_sunset_sky_blue_reflection_sun.jpg[0m
+[1;90m│   │   ├── [0m[35m Nijika.png[0m
+[1;90m│   │   ├── [0m[35m niko-photos-tGTVxeOr_Rs-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m nix-wallpaper.png[0m
+[1;90m│   │   ├── [0m[35m nix.png[0m
+[1;90m│   │   ├── [0m[35m nixos.png[0m
+[1;90m│   │   ├── [0m[35m njnyritp3z5d1.jpg[0m
+[1;90m│   │   ├── [0m[35m nn4n9msixhe91.jpg[0m
+[1;90m│   │   ├── [0m[35m Nocturne-of-Steel-and-Glass.png[0m
+[1;90m│   │   ├── [0m[35m nord-chainsaw.png[0m
+[1;90m│   │   ├── [0m[35m nord-princess-zelda.jpg[0m
+[1;90m│   │   ├── [0m[35m nord-shards.png[0m
+[1;90m│   │   ├── [0m[35m nord-street.png[0m
+[1;90m│   │   ├── [0m[35m nord.png[0m
+[1;90m│   │   ├── [0m[35m nord_minimal_cat.png[0m
+[1;90m│   │   ├── [0m[35m not-so-gruv-city.jpg[0m
+[1;90m│   │   ├── [0m[35m nvgruvgreen.png[0m
+[1;90m│   │   ├── [0m[35m nvim-smaller.png[0m
+[1;90m│   │   ├── [0m[35m nvim.png[0m
+[1;90m│   │   ├── [0m[35m 'Ocean Wallpaper GIF.gif'[0m
+[1;90m│   │   ├── [0m[35m octopus.jpg[0m
+[1;90m│   │   ├── [0m[35m odysee.jpg[0m
+[1;90m│   │   ├── [0m[35m okarun-dandadan-5120x2880-19863.png[0m
+[1;90m│   │   ├── [0m[35m onedark-bash.png[0m
+[1;90m│   │   ├── [0m[35m orbit.png[0m
+[1;90m│   │   ├── [0m[35m orthvrq3xgb91.jpg[0m
+[1;90m│   │   ├── [0m[35m os-x-lion-pink-3840x2160-24061.jpg[0m
+[1;90m│   │   ├── [0m[35m os-x-mavericks-tide-3840x2160-24077.jpg[0m
+[1;90m│   │   ├── [0m[35m os-x-mountain-lion-3840x2160-24069.jpg[0m
+[1;90m│   │   ├── [0m[35m os-x-mountain-lion-3840x2160-24070.jpg[0m
+[1;90m│   │   ├── [0m[35m output5.png[0m
+[1;90m│   │   ├── [0m[35m oversized-cat.jpg[0m
+[1;90m│   │   ├── [0m[35m pacman-ghosts.png[0m
+[1;90m│   │   ├── [0m[35m pacman-nord.png[0m
+[1;90m│   │   ├── [0m[35m Pages.png[0m
+[1;90m│   │   ├── [0m[35m painting_clock_furniture_crimson_table_vase_flowers.png[0m
+[1;90m│   │   ├── [0m[35m painting_clouds_hill_trees_field_sky_clouds_buildings_trees.jpg[0m
+[1;90m│   │   ├── [0m[35m painting_mountains_forest_grass_field_snow_green.jpg[0m
+[1;90m│   │   ├── [0m[35m painting_mountains_trees_sky_bushes_building_flowers_people_day_light_sea.jpg[0m
+[1;90m│   │   ├── [0m[35m painting_sky_building_blue_brown_mountain.png[0m
+[1;90m│   │   ├── [0m[35m palms.jpg[0m
+[1;90m│   │   ├── [0m[35m Pamela-3.png[0m
+[1;90m│   │   ├── [0m[35m panel.jpg[0m
+[1;90m│   │   ├── [0m[35m parrot.jpg[0m
+[1;90m│   │   ├── [0m[35m pastel-car.png[0m
+[1;90m│   │   ├── [0m[35m pastel-city.png[0m
+[1;90m│   │   ├── [0m[35m pastel-window.png[0m
+[1;90m│   │   ├── [0m[35m paul-pastourmatzis-KT3WlrL_bsg-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m paysage_troyon.jpg[0m
+[1;90m│   │   ├── [0m[35m peiwen-yu-Etpd8Le6b8E.jpg[0m
+[1;90m│   │   ├── [0m[35m penguins_distro_windows_arch_blue_nord.png[0m
+[1;90m│   │   ├── [0m[35m people_field_abstract_mountain_forest_buildings_blue_green.jpg[0m
+[1;90m│   │   ├── [0m[35m people_human_women_woman_gta_car_phone_talking_adult_pink_mercedes.jpg[0m
+[1;90m│   │   ├── [0m[35m perfect-blue.jpg[0m
+[1;90m│   │   ├── [0m[35m perfectblue_purple_girl_flowers_fish_hands.png[0m
+[1;90m│   │   ├── [0m[35m persepolis-irl-gruvbox.png[0m
+[1;90m│   │   ├── [0m[35m persepolis-shirdal.png[0m
+[1;90m│   │   ├── [0m[35m pexels-eberhardgross-1287145.jpg[0m
+[1;90m│   │   ├── [0m[35m pexels-frans-van-heerden-201846-688890.jpg[0m
+[1;90m│   │   ├── [0m[35m pexels-robshumski-1903702.jpg[0m
+[1;90m│   │   ├── [0m[35m pexels-rpnickson-2559941.jpg[0m
+[1;90m│   │   ├── [0m[35m pexels-stywo-1668246.jpg[0m
+[1;90m│   │   ├── [0m[35m philosophy.png[0m
+[1;90m│   │   ├── [0m[35m picture.png[0m
+[1;90m│   │   ├── [0m[35m pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m pilot_mountains_sonntag.jpg[0m
+[1;90m│   │   ├── [0m[35m pine-2.jpg[0m
+[1;90m│   │   ├── [0m[35m pine.png[0m
+[1;90m│   │   ├── [0m[35m pink-abstract.jpg[0m
+[1;90m│   │   ├── [0m[35m pink-clouds.png[0m
+[1;90m│   │   ├── [0m[35m pixel-earth.png[0m
+[1;90m│   │   ├── [0m[35m pixel.jpg[0m
+[1;90m│   │   ├── [0m[35m pixelart_landscape.jpg[0m
+[1;90m│   │   ├── [0m[35m PJbX0MG.png[0m
+[1;90m│   │   ├── [0m[35m plane.png[0m
+[1;90m│   │   ├── [0m[35m plane_sunset.png[0m
+[1;90m│   │   ├── [0m[35m planet-artwork-science-fiction-astronaut-1552527-wallhere.com.jpg[0m
+[1;90m│   │   ├── [0m[35m planet_teal_space_dark_stars.jpg[0m
+[1;90m│   │   ├── [0m[35m plate-dark.jpg[0m
+[1;90m│   │   ├── [0m[35m platform.jpg[0m
+[1;90m│   │   ├── [0m[35m polar_light_sky_night_purple_mountains_field_art_lake_forest_trees_stars_grass.png[0m
+[1;90m│   │   ├── [0m[35m pompeii.png[0m
+[1;90m│   │   ├── [0m[35m Powerline.png[0m
+[1;90m│   │   ├── [0m[35m prpl3_garuda_walls.jpg[0m
+[1;90m│   │   ├── [0m[35m prpl3_iponxr_walls.jpg[0m
+[1;90m│   │   ├── [0m[35m prpl3_nn_walls.jpg[0m
+[1;90m│   │   ├── [0m[35m purple-car.jpg[0m
+[1;90m│   │   ├── [0m[35m purple-girl.png[0m
+[1;90m│   │   ├── [0m[35m purple_forest_flowers_trees_violets.jpg[0m
+[1;90m│   │   ├── [0m[35m purple_gasstation_abstract_dark_night.jpg[0m
+[1;90m│   │   ├── [0m[35m purple_plane_landscape.png[0m
+[1;90m│   │   ├── [0m[35m python-minim.png[0m
+[1;90m│   │   ├── [0m[35m qcqKfdZ.png[0m
+[1;90m│   │   ├── [0m[35m QHlpuw6.png[0m
+[1;90m│   │   ├── [0m[35m qJYK2SS.jpeg[0m
+[1;90m│   │   ├── [0m[35m r0uv3dhl6p871.jpg[0m
+[1;90m│   │   ├── [0m[32m [1mRaiden_shogun.png[0m
+[1;90m│   │   ├── [0m[35m rails-2.jpg[0m
+[1;90m│   │   ├── [0m[35m rails.jpg[0m
+[1;90m│   │   ├── [0m[35m railway.jpg[0m
+[1;90m│   │   ├── [0m[35m rain.png[0m
+[1;90m│   │   ├── [0m[35m rain_girl.jpg[0m
+[1;90m│   │   ├── [0m[35m rain_road_tree_foggy_bush_flowers_girl_umbrela_grey_outside_mountain.jpg[0m
+[1;90m│   │   ├── [0m[35m random.jpg[0m
+[1;90m│   │   ├── [0m[35m random_wallpaper-1.jpg[0m
+[1;90m│   │   ├── [0m[35m random_wallpaper.jpg[0m
+[1;90m│   │   ├── [0m[35m ratm.png[0m
+[1;90m│   │   ├── [0m[35m rbUCFdO.jpeg[0m
+[1;90m│   │   ├── [0m[35m rebellious_tower.png[0m
+[1;90m│   │   ├── [0m[35m red-moon.png[0m
+[1;90m│   │   ├── [0m[35m red_dark_samurai_knifes_katanas_sticks_minimalism.png[0m
+[1;90m│   │   ├── [0m[35m red_hole_person_grass_dark_grey.jpg[0m
+[1;90m│   │   ├── [0m[35m result_3.png[0m
+[1;90m│   │   ├── [0m[35m retro2_live.gif[0m
+[1;90m│   │   ├── [0m[35m retro_market.png[0m
+[1;90m│   │   ├── [0m[35m reze-chainsaw-man-reze-arc-movie-8k-wallpaper-uhdpaper.com-87@5@i.jpg[0m
+[1;90m│   │   ├── [0m[35m richard-horvath-_nWaeTF6qo0-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m richard-horvath-cPccYbPrF-A-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m rick-tokyonight.png[0m
+[1;90m│   │   ├── [0m[35m rick.png[0m
+[1;90m│   │   ├── [0m[35m riot_01.jpg[0m
+[1;90m│   │   ├── [0m[35m riot_03.jpg[0m
+[1;90m│   │   ├── [0m[35m riot_04.jpg[0m
+[1;90m│   │   ├── [0m[35m riot_09.jpg[0m
+[1;90m│   │   ├── [0m[35m riot_13.jpg[0m
+[1;90m│   │   ├── [0m[35m river.jpg[0m
+[1;90m│   │   ├── [0m[35m rm-rf.jpg[0m
+[1;90m│   │   ├── [0m[35m 'road (copy).jpg'[0m
+[1;90m│   │   ├── [0m[35m road-2.jpg[0m
+[1;90m│   │   ├── [0m[35m road-3.jpg[0m
+[1;90m│   │   ├── [0m[35m road.jpg[0m
+[1;90m│   │   ├── [0m[35m road_car_bar_cafee_city_night.png[0m
+[1;90m│   │   ├── [0m[35m road_dark_car_trees_night_highway_fog_lights.jpg[0m
+[1;90m│   │   ├── [0m[35m road_evening_light_art_night_cars_mountains.jpg[0m
+[1;90m│   │   ├── [0m[35m road_path_grass_field_clouds_sky_forest_nature_landscape_wallpaper_background_4k_hd_nature-t2.jpg[0m
+[1;90m│   │   ├── [0m[35m road_trees_green_fog_car_lights_evening.jpg[0m
+[1;90m│   │   ├── [0m[35m robot-home.png[0m
+[1;90m│   │   ├── [0m[35m robot_parking_desert_cars_sky_person.jpg[0m
+[1;90m│   │   ├── [0m[35m rocket.png[0m
+[1;90m│   │   ├── [0m[35m rocket_launch.jpg[0m
+[1;90m│   │   ├── [0m[35m 'rockman (copy).png'[0m
+[1;90m│   │   ├── [0m[35m rockman.png[0m
+[1;90m│   │   ├── [0m[32m [1mrocky_land.jpg[0m
+[1;90m│   │   ├── [0m[35m room.jpg[0m
+[1;90m│   │   ├── [0m[35m roque.gif[0m
+[1;90m│   │   ├── [0m[35m rose.jpg[0m
+[1;90m│   │   ├── [0m[35m rose01.png[0m
+[1;90m│   │   ├── [0m[35m rosepine.png[0m
+[1;90m│   │   ├── [0m[35m rubiks-cube.png[0m
+[1;90m│   │   ├── [0m[35m ruines.jpg[0m
+[1;90m│   │   ├── [0m[35m ruins-2.png[0m
+[1;90m│   │   ├── [0m[35m run.jpg[0m
+[1;90m│   │   ├── [0m[35m russia_sunset_buildings_clouds_beautiful_evening_night_sky.jpg[0m
+[1;90m│   │   ├── [0m[35m Ryo.png[0m
+[1;90m│   │   ├── [0m[35m s4vitar.png[0m
+[1;90m│   │   ├── [0m[35m s4vitar_old.png[0m
+[1;90m│   │   ├── [0m[35m S46eL4s.png[0m
+[1;90m│   │   ├── [0m[35m sabequeeugostodevoce.webp[0m
+[1;90m│   │   ├── [0m[35m Sakai.Yoshikuni.full.1290448.jpg[0m
+[1;90m│   │   ├── [0m[35m Sakura.png[0m
+[1;90m│   │   ├── [0m[35m sakura_nature_japan_dark_white_tree.png[0m
+[1;90m│   │   ├── [0m[35m samurai-anime-girl-katana-kimono-sci-fi-4k-wallpaper-uhdpaper.com-311@5@d.jpg[0m
+[1;90m│   │   ├── [0m[35m samurai-cherry-blossom-sunrise-fantasy-hd-wallpaper-uhdpaper.com-823@2@b.jpg[0m
+[1;90m│   │   ├── [0m[35m samurai-silhouette-fantasy-hd-wallpaper-uhdpaper.com-165@3@a.jpg[0m
+[1;90m│   │   ├── [0m[35m samurai.jpg[0m
+[1;90m│   │   ├── [0m[35m Samurai_4k_WALLPAPER.png[0m
+[1;90m│   │   ├── [0m[35m samurai_warrior_silhouette_216195_3840x2160.jpg[0m
+[1;90m│   │   ├── [0m[35m sand_dune_sunrise_sun_sky_dark_person.png[0m
+[1;90m│   │   ├── [0m[35m saso-tusar-s-k-2N90yuY.jpg[0m
+[1;90m│   │   ├── [0m[35m satellite.jpg[0m
+[1;90m│   │   ├── [0m[35m satellites.png[0m
+[1;90m│   │   ├── [0m[35m 'satellites compressed.png'[0m
+[1;90m│   │   ├── [0m[35m saturn-rings.jpg[0m
+[1;90m│   │   ├── [0m[35m scary_girl_eyes_fog_foggy_forest_ship_sea_tree_red_eyes_night.png[0m
+[1;90m│   │   ├── [0m[35m sci-fi-soldier-uhdpaper.com-4K-4.1010.jpg[0m
+[1;90m│   │   ├── [0m[35m sea.jpg[0m
+[1;90m│   │   ├── [0m[35m sea_clouds_blue_waves_white.png[0m
+[1;90m│   │   ├── [0m[35m sea_sky_clouds_sand_beach_beacon_sunset_purple.jpg[0m
+[1;90m│   │   ├── [0m[35m Search_1774462447.jpg[0m
+[1;90m│   │   ├── [0m[35m Search_1774462624.jpg[0m
+[1;90m│   │   ├── [0m[35m Search_1774462824.jpg[0m
+[1;90m│   │   ├── [0m[35m Search_1774464511.jpg[0m
+[1;90m│   │   ├── [0m[35m Search_1774465361.png[0m
+[1;90m│   │   ├── [0m[35m Search_1774469620.png[0m
+[1;90m│   │   ├── [0m[35m Search_1774474005.jpg[0m
+[1;90m│   │   ├── [0m[35m Search_1774475118.jpg[0m
+[1;90m│   │   ├── [0m[35m Search_1774475278.jpg[0m
+[1;90m│   │   ├── [0m[35m Search_1774475792.jpg[0m
+[1;90m│   │   ├── [0m[35m Search_1774475918.jpg[0m
+[1;90m│   │   ├── [0m[35m Search_1774475928.jpg[0m
+[1;90m│   │   ├── [0m[35m seaside.jpg[0m
+[1;90m│   │   ├── [0m[35m sebastian-unrau-sp-p7uuT0tw-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m secluded-grove-pixel.png[0m
+[1;90m│   │   ├── [0m[35m sheng-l-q2dUSl9S4Xg-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m shiny-colors.png[0m
+[1;90m│   │   ├── [0m[35m sign_concrete_staircase_japanese_sky.jpg[0m
+[1;90m│   │   ├── [0m[35m silas-baisch-OCzvgBqCJKY-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m silent-hero-of-hallownest.3840x2160.gif[0m
+[1;90m│   │   ├── [0m[35m silhuouette_person_standing_dark_firefly_night.png[0m
+[1;90m│   │   ├── [0m[35m skeleton_clouds_blue_night_skulls_water.png[0m
+[1;90m│   │   ├── [0m[35m skull-2.png[0m
+[1;90m│   │   ├── [0m[35m skull-3.png[0m
+[1;90m│   │   ├── [0m[35m skull.jpg[0m
+[1;90m│   │   ├── [0m[35m skull.png[0m
+[1;90m│   │   ├── [0m[35m sky_field_flowers_sunset_clouds_green_white.png[0m
+[1;90m│   │   ├── [0m[35m sky_field_grass_trees_flowers_green_blue_hill_evening_outside.png[0m
+[1;90m│   │   ├── [0m[35m sky_purple_clouds_art_blue_road_field_night_grey_stars_city.png[0m
+[1;90m│   │   ├── [0m[35m sky_sun_tree_waterfall_mountains_water_clouds_rocks_hill_red_tokyo.png[0m
+[1;90m│   │   ├── [0m[35m sky_tree_grass_green_teal_building_lights.jpg[0m
+[1;90m│   │   ├── [0m[35m skyisred.png[0m
+[1;90m│   │   ├── [0m[35m slovenia-hilltop-3840x2160-23639.jpg[0m
+[1;90m│   │   ├── [0m[35m smile-2.png[0m
+[1;90m│   │   ├── [0m[35m smile.png[0m
+[1;90m│   │   ├── [0m[35m snake.png[0m
+[1;90m│   │   ├── [0m[35m snow-mountains-3840x2160-25476.jpg[0m
+[1;90m│   │   ├── [0m[35m snow.jpg[0m
+[1;90m│   │   ├── [0m[35m snow_north_house_polar_lights_winter_white.png[0m
+[1;90m│   │   ├── [0m[35m snow_road_white_machines_robots_abstract_futuristic.jpg[0m
+[1;90m│   │   ├── [0m[35m snow_tree_white_winter_sky.png[0m
+[1;90m│   │   ├── [0m[35m snowy-mountain-nature-river-reflection-scenery-hd-wallpaper-uhdpaper.com-630@2@b.jpg[0m
+[1;90m│   │   ├── [0m[35m 'solar-system (copy).jpg'[0m
+[1;90m│   │   ├── [0m[35m solar-system-minimal.png[0m
+[1;90m│   │   ├── [0m[35m solar-system.jpg[0m
+[1;90m│   │   ├── [0m[35m Solitary-Glow.png[0m
+[1;90m│   │   ├── [0m[35m [1msolo.mp4[0m
+[1;90m│   │   ├── [0m[35m [1msolo_1080p.mp4[0m
+[1;90m│   │   ├── [0m[35m Soothing-nature-backgrounds-2.jpg[0m
+[1;90m│   │   ├── [0m[35m sousou-no-frieren-8.jpg[0m
+[1;90m│   │   ├── [0m[35m space-bullet.jpg[0m
+[1;90m│   │   ├── [0m[35m space-piano.png[0m
+[1;90m│   │   ├── [0m[35m space-shuttle.png[0m
+[1;90m│   │   ├── [0m[35m space.png[0m
+[1;90m│   │   ├── [0m[35m spaceship-start.jpg[0m
+[1;90m│   │   ├── [0m[35m spaceship_maze.jpg[0m
+[1;90m│   │   ├── [0m[35m 'Space Stars GIF.gif'[0m
+[1;90m│   │   ├── [0m[35m spideerman_gwen_city_buildings_evening_sky.png[0m
+[1;90m│   │   ├── [0m[35m spider_wasp.jpg[0m
+[1;90m│   │   ├── [0m[35m spooky_spill.jpg[0m
+[1;90m│   │   ├── [0m[35m staircase.jpg[0m
+[1;90m│   │   ├── [0m[35m stairs.jpg[0m
+[1;90m│   │   ├── [0m[35m star_citizen-crusader-orison_city-01.jpg[0m
+[1;90m│   │   ├── [0m[35m staringcat.png[0m
+[1;90m│   │   ├── [0m[35m starry-sky-orange-3840x2160-21277.jpg[0m
+[1;90m│   │   ├── [0m[35m starry-sky-purple-3840x2160-21278.jpg[0m
+[1;90m│   │   ├── [0m[35m starry-sky-red-3840x2160-21272.jpg[0m
+[1;90m│   │   ├── [0m[35m starry-sky.png[0m
+[1;90m│   │   ├── [0m[35m stray-close.jpg[0m
+[1;90m│   │   ├── [0m[35m stray.jpg[0m
+[1;90m│   │   ├── [0m[35m STRAY_KITTY_CLUB-teal.png[0m
+[1;90m│   │   ├── [0m[35m 'street (copy).jpg'[0m
+[1;90m│   │   ├── [0m[35m Street-2.png[0m
+[1;90m│   │   ├── [0m[35m Street.jpg[0m
+[1;90m│   │   ├── [0m[35m street.jpg[0m
+[1;90m│   │   ├── [0m[35m street.png[0m
+[1;90m│   │   ├── [0m[35m stripes.png[0m
+[1;90m│   │   ├── [0m[35m sudo_linux_penguin_minimalism_penguin_dark_black.jpg[0m
+[1;90m│   │   └── [0m[35m Suki.png[0m
+[1;90m│   ├── [0m[34m [1mTokyoNight[0m
+[1;90m│   │   ├── [0m[35m sunforest.jpg[0m
+[1;90m│   │   ├── [0m[35m sunset-beach.jpg[0m
+[1;90m│   │   ├── [0m[35m sunset-scenery-minimalist.jpg[0m
+[1;90m│   │   ├── [0m[35m sunset.jpg[0m
+[1;90m│   │   ├── [0m[35m sunset.png[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_1.png'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_2.png'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_3.png'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_4.png'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_5.jpg'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_6.png'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_7.png'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_8.png'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_9.png'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_10.png'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_11.png'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_12.png'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_13.png'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_14.png'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_15.png'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_16.png'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_17.png'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_18.png'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_19.png'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_20.png'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_21.jpg'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_22.jpg'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_23.jpg'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_24.jpg'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Abstract_25.jpg'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Landscape_1.jpg'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Landscape_2.jpg'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Landscape_3.jpg'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Landscape_4.jpg'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Landscape_5.jpg'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Landscape_6.jpg'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Landscape_7.jpg'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Landscape_8.jpg'[0m
+[1;90m│   │   ├── [0m[35m 'Surface Landscape_10.jpg'[0m
+[1;90m│   │   ├── [0m[35m sushi.jpg[0m
+[1;90m│   │   ├── [0m[35m sve.png[0m
+[1;90m│   │   ├── [0m[35m switch.jpg[0m
+[1;90m│   │   ├── [0m[35m switch_swirl.jpg[0m
+[1;90m│   │   ├── [0m[35m sword-samurai.jpg[0m
+[1;90m│   │   ├── [0m[35m sword.png[0m
+[1;90m│   │   ├── [0m[35m table.png[0m
+[1;90m│   │   ├── [0m[35m takopi.png[0m
+[1;90m│   │   ├── [0m[35m tall_buildings_blue_sky_field_trees_city.jpg[0m
+[1;90m│   │   ├── [0m[35m tangerines.jpg[0m
+[1;90m│   │   ├── [0m[35m tanjiro-kamado-gruv.jpg[0m
+[1;90m│   │   ├── [0m[35m TeachInvadersGruvbox.png[0m
+[1;90m│   │   ├── [0m[35m teal_girl_buildings_baloons_red_green_sky_standing_looking.jpeg[0m
+[1;90m│   │   ├── [0m[35m teapot-2.jpg[0m
+[1;90m│   │   ├── [0m[35m teapots.jpg[0m
+[1;90m│   │   ├── [0m[35m technical.jpg[0m
+[1;90m│   │   ├── [0m[35m 'Technology Wallpaper GIF.gif'[0m
+[1;90m│   │   ├── [0m[35m tele.jpg[0m
+[1;90m│   │   ├── [0m[35m temple-sky.jpg[0m
+[1;90m│   │   ├── [0m[35m tetris.png[0m
+[1;90m│   │   ├── [0m[35m tetris_gruvbox.png[0m
+[1;90m│   │   ├── [0m[35m tetris_gruvbox_brighter.png[0m
+[1;90m│   │   ├── [0m[35m tetris_gruvbox_brighter_lighter.png[0m
+[1;90m│   │   ├── [0m[35m Texto_do_seu_paragrafo_Papel_de_parede_20250930_123931_0000.png[0m
+[1;90m│   │   ├── [0m[35m The_Artists_Garden_at_Eragny.png[0m
+[1;90m│   │   ├── [0m[35m The_Backwater.png[0m
+[1;90m│   │   ├── [0m[35m thecastle.png[0m
+[1;90m│   │   ├── [0m[35m this-wallpaper-is-not-available.png[0m
+[1;90m│   │   ├── [0m[35m thumb-1920-86108.jpg[0m
+[1;90m│   │   ├── [0m[35m thumb-1920-87483.jpg[0m
+[1;90m│   │   ├── [0m[35m thumb-1920-546174.jpg[0m
+[1;90m│   │   ├── [0m[35m thumb-1920-931366.jpg[0m
+[1;90m│   │   ├── [0m[35m thumb-1920-1144063.png[0m
+[1;90m│   │   ├── [0m[35m thumb-arch_nz.png[0m
+[1;90m│   │   ├── [0m[35m thumb-archbtw.png[0m
+[1;90m│   │   ├── [0m[35m thumb-archtv.png[0m
+[1;90m│   │   ├── [0m[35m thumb-astize_cc0_split1.png[0m
+[1;90m│   │   ├── [0m[35m thumb-feather.png[0m
+[1;90m│   │   ├── [0m[35m thumb-geology.png[0m
+[1;90m│   │   ├── [0m[35m thumb-simple.png[0m
+[1;90m│   │   ├── [0m[35m thumb-waves.png[0m
+[1;90m│   │   ├── [0m[35m thumb-wire2.png[0m
+[1;90m│   │   ├── [0m[35m ti81ai4bbtmd1.jpg[0m
+[1;90m│   │   ├── [0m[35m tiger_japan_china_white_art_eyes_abstract_minimalism_rage_angry_light_purple_blue.jpg[0m
+[1;90m│   │   ├── [0m[35m timbers.jpg[0m
+[1;90m│   │   ├── [0m[35m timon-studler--L3q2Uuz6oY.jpg[0m
+[1;90m│   │   ├── [0m[35m titlwinzbst81.jpg[0m
+[1;90m│   │   ├── [0m[35m toan-chu-YKN_G9L9nMA-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m TokyoSimplistic.jpg[0m
+[1;90m│   │   ├── [0m[35m tools.jpg[0m
+[1;90m│   │   ├── [0m[35m totoro_bus_stand.png[0m
+[1;90m│   │   ├── [0m[35m towashi.png[0m
+[1;90m│   │   ├── [0m[35m traf-ukTd6UiQbLQ.jpg[0m
+[1;90m│   │   ├── [0m[35m tree.jpg[0m
+[1;90m│   │   ├── [0m[35m tree_field_foggy_moon_clouds.jpg[0m
+[1;90m│   │   ├── [0m[35m tree_monochrome_black_white_snow.jpg[0m
+[1;90m│   │   ├── [0m[35m tree_purple_sky_clouds_night_road_lake.jpg[0m
+[1;90m│   │   ├── [0m[35m tree_stones_light_1359768_3840x2400.jpg[0m
+[1;90m│   │   ├── [0m[35m trees_fog_foggy_hill_grass.jpg[0m
+[1;90m│   │   ├── [0m[35m trees_japan_lake_forest_house.png[0m
+[1;90m│   │   ├── [0m[35m triangle.png[0m
+[1;90m│   │   ├── [0m[35m trisquel-gnu-linux.png[0m
+[1;90m│   │   ├── [0m[35m tTIlCNT.jpeg[0m
+[1;90m│   │   ├── [0m[35m tux-magenta-pink.png[0m
+[1;90m│   │   ├── [0m[35m tux.png[0m
+[1;90m│   │   ├── [0m[35m tux_linux_gun_penguin_windows_xp.jpg[0m
+[1;90m│   │   ├── [0m[35m tyler-lastovich-ddLiNMqWAOM-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m typewriter.jpg[0m
+[1;90m│   │   ├── [0m[35m UbuntuGnome.png[0m
+[1;90m│   │   ├── [0m[35m uchiha-clan-logo.png[0m
+[1;90m│   │   ├── [0m[35m un174-wallpaper.cam.jpg[0m
+[1;90m│   │   ├── [0m[35m underwater.png[0m
+[1;90m│   │   ├── [0m[35m undrwater_monsters_statues_face_water.png[0m
+[1;90m│   │   ├── [0m[35m unicat.png[0m
+[1;90m│   │   ├── [0m[35m Untitled-1.png[0m
+[1;90m│   │   ├── [0m[35m Untitled.png[0m
+[1;90m│   │   ├── [0m[35m Untitled1.png[0m
+[1;90m│   │   ├── [0m[35m Untitled62_20250703205830.png[0m
+[1;90m│   │   ├── [0m[35m Untitled62_20250703205924.png[0m
+[1;90m│   │   ├── [0m[35m Untitled_.png[0m
+[1;90m│   │   ├── [0m[35m urban_architecture.jpg[0m
+[1;90m│   │   ├── [0m[35m usrbinsh.jpg[0m
+[1;90m│   │   ├── [0m[35m v1-background-dark.jpg[0m
+[1;90m│   │   ├── [0m[35m v2osk-eKTUtA74uN0-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m vadim-sherbakov-NQSWvyVRIJk.jpg[0m
+[1;90m│   │   ├── [0m[35m van-chilling-cyberpunk.png[0m
+[1;90m│   │   ├── [0m[35m VghSL9k.png[0m
+[1;90m│   │   ├── [0m[35m View_of_Vent_in_the_Ventertal.jpg[0m
+[1;90m│   │   ├── [0m[35m village-square.jpg[0m
+[1;90m│   │   ├── [0m[35m village.jpg[0m
+[1;90m│   │   ├── [0m[35m vim.png[0m
+[1;90m│   │   ├── [0m[35m voyager-15.jpg[0m
+[1;90m│   │   ├── [0m[35m voyager-16.jpg[0m
+[1;90m│   │   ├── [0m[35m voyager-20.jpg[0m
+[1;90m│   │   ├── [0m[35m voyager-21.jpg[0m
+[1;90m│   │   ├── [0m[35m voyager-tophat-panda-cover-beauty-flats.jpg[0m
+[1;90m│   │   ├── [0m[35m voyager-tophat-panda-cover-beauty-line-prev-1.jpg[0m
+[1;90m│   │   ├── [0m[35m voyager-tophat-panda-cover-beauty-psd.jpg[0m
+[1;90m│   │   ├── [0m[35m voyager-tophat-panda-cover-beauty-sketch.jpg[0m
+[1;90m│   │   ├── [0m[35m voyager-tophx-panda-cover.jpg[0m
+[1;90m│   │   ├── [0m[35m waifu1.png[0m
+[1;90m│   │   ├── [0m[35m 'wall (copy).jpg'[0m
+[1;90m│   │   ├── [0m[35m wall-05.png[0m
+[1;90m│   │   ├── [0m[35m wall-06.png[0m
+[1;90m│   │   ├── [0m[35m wall.jpg[0m
+[1;90m│   │   ├── [0m[35m wall.png[0m
+[1;90m│   │   ├── [0m[35m wall_secondary.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-0wvm5q.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-1p5z71.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-1p9vg9.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-1pl9ew.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-1pol63.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-1pww8g.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-1q3ve1.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-1q83qg.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-1qprxg.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-2e2xyx.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-2e3ymx.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-2ylv8x.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-2yv9rm.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-3klvq6.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-3kqvp9.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-3qqlzv.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-3qqqkv.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-3zzjl3.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-4g7l5e.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-4gxwl0.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-4xyrko.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-5g3pl8.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-5g9p88.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-5w9jj8.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-5wx7x5.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-5wz6v5.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-5yzd98.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-5yzpe5.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-6d7yxx.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-6dkjxx.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-6dlpr7.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-6dmqvq.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-6dvkpl.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-6dwkzx.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-6dzrdq.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-6kyjm6.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-6ldldq.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-6lkl5q.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-6o9mwq.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-7jpjzv.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-7p6g99.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-7p53ve.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-7pje5o.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-8g5q31.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-8g57g1.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-8geypo.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-8gg1do.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-8gg5v2.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-8oeyxy.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-9d3r28.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-9dl5y1.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-9doexd.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-9drjlw.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-9ode5x.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-9oovg8.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-21k2d6.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-21y95g.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-21y596.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-21yp59.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-45ql23.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-73j97v.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-85meoy.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-96mxgx.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-96y9qk.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-211xrg.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-739xme.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-831z11.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-852dmj.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-73153v.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-729873.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-963988.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-968771.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-d6e1pg.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-d6o6xj.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-d6y12l.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-d8pjjm.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-d61y3l.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-d838pm.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-d8633m.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-dgz21m.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-dp37gg.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-dpxowm.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-e7m8zl.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-e8x6jl.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-e8xe1r.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-e883zo.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-exdx5l.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-exj7kl.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-exkvg8.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-exqx9k.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-g8m1ld.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-gpgyw3.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-gpo1g3.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-gpwmed.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-gw87kd.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-gwpgv3.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-gwwdm3.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-j3emxy.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-j5z6v5.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-j52rjm.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-jee86m.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-jeedjw.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-jeej1q.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-jeeq3q.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-jeew7y.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-jewvzy.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-jexqqm.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-jx9xy5.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-jxqyrq.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-k8x8y7.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-k89p2m.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-k875o6.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-k876q6.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-kwwzq7.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-kx5z9m.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-kxkdp7.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-kxy5e1.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-kxyge1.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-l8r85q.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-l817vr.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-lm15jy.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-ly8xmy.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-ly353y.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-lyz6pl.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-m3xdg1.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-m9g7o9.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-m9qm51.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-m35zw8.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-ml3ek1.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-ml3prm.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-nmge21.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-nzepoo.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-o3d1g9.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-o5g1m7.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-o5o827.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-o5omyl.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-o5oomm.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-o323wp.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-og3p6m.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-og9wlm.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-og5165.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-ogd28l.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-ogylom.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-ox27x9.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-oxrzzp.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-p9zjrj.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-p9zv13.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-p89y83.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-pkrqze_3840x2160.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-po9xy3.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-polerm.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-q6lolq.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-q6rjkd.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-q62rz5.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-qdmolq.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-qdxpjd.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-qrjxdq.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-qrzjjl.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-qrzz57.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-qzgkzd.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-qzwj77.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-qzwr9d.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-r2dz6w.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-r25zq1.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-r26ejm.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-r77gz7.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-rqgp7j.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-rqr9yq.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-rqrrkj.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-rrljjq.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-rrv6r7.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-rrv7x7.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-v9kmm3.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-v973e3.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-vmk698.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-vpp19p.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-vppwv3.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-vpqk88.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-vpz668.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-vq5p2p.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-vqqkk8.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-vqy7rl.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-w5el6r.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-w5q8px.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-w55m8x.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-w55o3q.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-w55zwx.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-w557rr.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-w587zr_3840x2160.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-we1re6.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-wewl9r.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-wewog7.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-weyk16.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-wq17yq.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-x6qd9l.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-x6w3vl.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-x6xygl.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-x6ym6z.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-x8evzo.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-x8zqlo.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-x866ko.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-xe6ew3.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-xe6qdv.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-xe8wgd.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-xe65ko.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-xeeomd.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-xl951o.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-y8o7zg_1920x1080.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-y8vlyk_1920x1080.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-y83vyd.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-ymp23d.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-yq7x3x.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-yqm7x7.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-yqxppd.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-yx5wyg.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-yxyy9x.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-yxzjpg.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-z8xwxj_1920x1080.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-z85eoy.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-z839rg.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-zpx3xw.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-zpxjjo.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-zy1xjw.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-zy3peo_1920x1080.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-zyeqev.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-zyq3zy.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-zyqvpo.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven-zyqx1v.png[0m
+[1;90m│   │   ├── [0m[35m wallhaven-zyryev.jpg[0m
+[1;90m│   │   ├── [0m[35m wallhaven.png[0m
+[1;90m│   │   ├── [0m[35m wallpape.jpg[0m
+[1;90m│   │   ├── [0m[35m 'wallpaper (copy).png'[0m
+[1;90m│   │   ├── [0m[35m wallpaper-1.jpg[0m
+[1;90m│   │   ├── [0m[35m wallpaper-2.png[0m
+[1;90m│   │   ├── [0m[35m wallpaper-3.png[0m
+[1;90m│   │   ├── [0m[35m wallpaper-4.png[0m
+[1;90m│   │   ├── [0m[35m wallpaper-5.jpg[0m
+[1;90m│   │   ├── [0m[35m wallpaper-6.png[0m
+[1;90m│   │   ├── [0m[35m wallpaper-theme-converter9.png[0m
+[1;90m│   │   ├── [0m[35m wallpaper.jpg[0m
+[1;90m│   │   ├── [0m[35m wallpaper.png[0m
+[1;90m│   │   ├── [0m[35m 'wallpaper 1.png'[0m
+[1;90m│   │   ├── [0m[35m 'wallpaper 2.png'[0m
+[1;90m│   │   ├── [0m[35m wallpaper3-dark.png[0m
+[1;90m│   │   ├── [0m[35m 'wallpaper 3.png'[0m
+[1;90m│   │   ├── [0m[35m 'wallpaper 4.png'[0m
+[1;90m│   │   ├── [0m[35m 'wallpaper 5.png'[0m
+[1;90m│   │   ├── [0m[35m Wallpaper21.jpg[0m
+[1;90m│   │   ├── [0m[35m wallpaper177.png[0m
+[1;90m│   │   ├── [0m[35m wallpaper666.png[0m
+[1;90m│   │   ├── [0m[35m wallpaper697.png[0m
+[1;90m│   │   ├── [0m[35m wallpaper721.png[0m
+[1;90m│   │   ├── [0m[35m wallpaper806.png[0m
+[1;90m│   │   ├── [0m[35m wallpaper810.png[0m
+[1;90m│   │   ├── [0m[35m wallpaper814.png[0m
+[1;90m│   │   ├── [0m[35m wallpaper2088.png[0m
+[1;90m│   │   ├── [0m[35m wallpaper2106.png[0m
+[1;90m│   │   ├── [0m[35m wallpaper2222.png[0m
+[1;90m│   │   ├── [0m[35m wallpaper3198.png[0m
+[1;90m│   │   ├── [0m[35m wallpaper3315.png[0m
+[1;90m│   │   ├── [0m[35m wallpaper3322.png[0m
+[1;90m│   │   ├── [0m[35m wallpaper3370.png[0m
+[1;90m│   │   ├── [0m[35m wallpaper_linux_generated_gruvbox.png[0m
+[1;90m│   │   ├── [0m[35m wallpaper_nord_1.png[0m
+[1;90m│   │   ├── [0m[35m 'wallpaperflare.com_wallpaper (1).jpg'[0m
+[1;90m│   │   ├── [0m[35m 'wallpaperflare.com_wallpaper (2).jpg'[0m
+[1;90m│   │   ├── [0m[35m 'wallpaperflare.com_wallpaper (3).jpg'[0m
+[1;90m│   │   ├── [0m[35m 'wallpaperflare.com_wallpaper (4).jpg'[0m
+[1;90m│   │   ├── [0m[35m wallpaperflare.com_wallpaper.jpg[0m
+[1;90m│   │   ├── [0m[35m 'Wallpaper GIF (1).gif'[0m
+[1;90m│   │   ├── [0m[35m 'Wallpaper GIF (3).gif'[0m
+[1;90m│   │   ├── [0m[35m 'Wallpaper GIF (4).gif'[0m
+[1;90m│   │   ├── [0m[35m 'Wallpaper GIF (5).gif'[0m
+[1;90m│   │   ├── [0m[35m 'Wallpaper GIF.gif'[0m
+[1;90m│   │   ├── [0m[35m wallpapersden.com_field-grass-landscape_2048x1367.jpg[0m
+[1;90m│   │   ├── [0m[35m wanderer.jpg[0m
+[1;90m│   │   ├── [0m[35m wano_vector.png[0m
+[1;90m│   │   ├── [0m[35m war-in-space.png[0m
+[1;90m│   │   ├── [0m[35m warm_forest.png[0m
+[1;90m│   │   ├── [0m[35m washerwoman_on_the_danube_schindler.jpg[0m
+[1;90m│   │   ├── [0m[35m watchtower-mountains-and-forests.jpg[0m
+[1;90m│   │   ├── [0m[35m waterfall-1.jpg[0m
+[1;90m│   │   ├── [0m[35m waterfall-3.jpg[0m
+[1;90m│   │   ├── [0m[35m waterfall.jpg[0m
+[1;90m│   │   ├── [0m[35m waterfall.png[0m
+[1;90m│   │   ├── [0m[35m waterfall2.png[0m
+[1;90m│   │   ├── [0m[35m wave.jpg[0m
+[1;90m│   │   ├── [0m[35m waves.png[0m
+[1;90m│   │   ├── [0m[35m waves_colored.png[0m
+[1;90m│   │   ├── [0m[35m waves_crashing_waves_on_the_ocean.jpg[0m
+[1;90m│   │   ├── [0m[35m waves_dracula_flipped.png[0m
+[1;90m│   │   ├── [0m[35m waves_right_colored.png[0m
+[1;90m│   │   ├── [0m[35m wesley-pribadi-iS1NV9yN0Lg-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m White-Mountain.jpg[0m
+[1;90m│   │   ├── [0m[35m White.png[0m
+[1;90m│   │   ├── [0m[35m white.png[0m
+[1;90m│   │   ├── [0m[35m white_black_pattern_abstract.jpg[0m
+[1;90m│   │   ├── [0m[35m white_building_stone_mountain_people.png[0m
+[1;90m│   │   ├── [0m[35m whiteland.jpg[0m
+[1;90m│   │   ├── [0m[35m whoami_2.0.png[0m
+[1;90m│   │   ├── [0m[35m wide-girl.png[0m
+[1;90m│   │   ├── [0m[35m wide_tokyonight_lines.png[0m
+[1;90m│   │   ├── [0m[35m wide_tokyonight_skyline.jpg[0m
+[1;90m│   │   ├── [0m[35m wil-stewart-pHANr-CpbYM-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m window-samurai.jpg[0m
+[1;90m│   │   ├── [0m[35m Windows-2.png[0m
+[1;90m│   │   ├── [0m[35m windows-black.png[0m
+[1;90m│   │   ├── [0m[35m windows-error.jpg[0m
+[1;90m│   │   ├── [0m[35m windows-magenta-blue.png[0m
+[1;90m│   │   ├── [0m[35m windows-magenta-pink.png[0m
+[1;90m│   │   ├── [0m[35m windows.png[0m
+[1;90m│   │   ├── [0m[35m Windows.png[0m
+[1;90m│   │   ├── [0m[35m WitchBroom_Meyers_6043.jpg[0m
+[1;90m│   │   ├── [0m[35m wlxLXzZ.jpg[0m
+[1;90m│   │   ├── [0m[35m wolf.jpg[0m
+[1;90m│   │   ├── [0m[35m woman_hair_blue_person_small_finger_eyes_snow_stars_bridge_rock_cliff_blade_runner_purple.png[0m
+[1;90m│   │   ├── [0m[35m wood.jpg[0m
+[1;90m│   │   ├── [0m[35m woods.jpg[0m
+[1;90m│   │   ├── [0m[35m woolves_white_black_crimson_rage_japanese.jpg[0m
+[1;90m│   │   ├── [0m[35m wow_rose-pine.png[0m
+[1;90m│   │   ├── [0m[35m wp7034860-minimalist-universe-wallpapers_1.jpg[0m
+[1;90m│   │   ├── [0m[35m wp7164600-avogado6-wallpapers.png[0m
+[1;90m│   │   ├── [0m[35m wp11058332.png[0m
+[1;90m│   │   ├── [0m[35m wp11058333.png[0m
+[1;90m│   │   ├── [0m[35m wp13721109-gtr-cartoon-wallpapers.jpg[0m
+[1;90m│   │   ├── [0m[35m wp13882649-cyberpunk-2077-trauma-team-wallpapers.png[0m
+[1;90m│   │   ├── [0m[35m xander-ashwell-bhTjAUHHvSg.jpg[0m
+[1;90m│   │   ├── [0m[35m xavier-cuenca-w4-3.jpg[0m
+[1;90m│   │   ├── [0m[35m xbKG64E.png[0m
+[1;90m│   │   ├── [0m[35m XHLcJvl.png[0m
+[1;90m│   │   ├── [0m[35m xxxtentacion.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_2B_from_nier-automata_on_a_black_sport_motorbike_da_ecebc7b3-e06c-426a-b1ad-5ce1086b9a7c.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_A_anime-style_illustration_of_a_anime-women_with_gr_5c7124e9-a119-4e06-8376-713425a132fc.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_A_anime-style_illustration_of_a_anime-women_with_gr_89ddfcc3-f0df-4be5-a2ff-f33361c495e4.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_A_anime-style_illustration_of_a_anime-women_with_wh_990de635-4503-4bed-85c5-805fff290f40.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_A_anime-style_illustration_of_a_anime-women_with_wh_42557011-ca01-4139-9c26-4d0e66cd08ca.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_A_anime-style_illustration_of_a_anime-women_with_wh_dc4993b5-9f9e-4126-af94-7d3b48f27727.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_a_black-pomeranian_sitting_on_a_bench_in_the_forest_f5dbc776-f92e-422f-847d-f8c472454561.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_a_black-pomeranian_sitting_on_the_edge_of_a_river_w_eb62e0e5-5049-4aa5-bdd9-a25f1fb221a7.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_A_black_and_white_dot_illustration_of_an_women_in_a_f95624ca-6b26-4d37-9f90-56b8746d2c97.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_A_blue-haired_elf-woman_is_looking_at_an_enormous_r_20209f4b-47bc-4163-aab7-c85c7d35ff02.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_a_burning-meteor_next_to_planet-earth_on_a_black_ba_e2df33b5-07d7-450c-8e46-8676fbd0aff3.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_a_colored_pencil-sketch_a_landscape_at_night_y2k_da_197456eb-cf9e-4b4f-9a31-e9bc563f35b5.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_a_front-view_portrait_of_a_women_in_a_japanese-scho_83ed6b57-a999-477b-9dc7-aec0f4e36452.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_a_green-frog_wearing_a_kimono_on_a_field_sunset_and_0a9a17e2-67f9-4014-bdbb-26cb7c6147fb.jpg[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_a_grim-man_in_gladiator-armor_in_the_style_of_manga_14f02100-a5ca-4c0c-893d-1df95ef919ba.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_a_grim-man_in_gladiator-armor_in_the_style_of_manga_5472092b-f21f-44c5-9ad9-edc8b6f83af3.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_a_japanese-women_in_a_christmas-dress_sitting_on_a__1a520c35-62f6-4f19-9db5-58fb6560d421.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_a_Japanese_goth-women_with_blonde-ponytail_kneeing__6fbe724e-722b-400d-b60d-e0cb08291e4a.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_A_manga-style_illustration_of_an_anime_girl_with_bl_e5caf134-f420-4bac-8eff-98cdd27bc175.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_a_orange-frog_wearing_a_kimono_on_a_field_sunset_an_69b09f1d-e590-4f25-b240-b0d7c1a58fff.jpg[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_a_renaissance-painting_of_Ichigo_from_Bleach_sittin_2335cb21-46b1-42fa-aee0-b75bf65868ac.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_a_Skeleton_wearing_a_black_buttons-shirt_and_glowin_0483d254-f0e8-4871-b9d2-9c5431afd034.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_a_Skeleton_wearing_a_black_buttons-shirt_and_glowin_2ae95887-05d5-4728-84ad-0e39e743de14.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_a_Skeleton_wearing_a_black_buttons-shirt_and_glowin_5a52080e-3161-44c6-a97c-348ee4c525eb.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_a_Skeleton_wearing_a_black_buttons-shirt_and_glowin_9446d5c6-630b-4882-922e-e9597139c943.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_A_yakuza_wearing_a_black_suit_holding_a_pistole_dem_dc668c4a-92a3-45f0-a352-31b088db8243.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_An_anime-women_with_white_eyes_and_blue_hair_in_a_w_130d246c-7928-4c25-a891-a4f962ef7c72.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_Batman_in_knight-armor_kneeing_in_high-grass_in_the_b202c4f1-f71c-42b3-b61e-b6ebcc145562.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_coal_drawing_of_a_futuristic_city_landscape_black_a_13c35b89-7ebd-4d4c-b073-7e195aef79cf.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_pink-flowers_cave_05cd88e2-ba5e-4f8d-9e08-dbb4211c001e.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_pink-flowers_mount-fuji_669ad486-917f-41df-95af-6ba0a0c027e5.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_spider-man_in_knight-armor_kneeing_in_high-grass_in_13527468-133e-4666-a0b5-bf81e806da99.png[0m
+[1;90m│   │   ├── [0m[35m yessirsupra_Wolverine_in_knight-armor_kneeing_in_high-grass_in__73d90f1e-6298-44fd-8d79-fd00ef4d93c6.png[0m
+[1;90m│   │   ├── [0m[35m yh.png[0m
+[1;90m│   │   ├── [0m[35m Yotsuba.png[0m
+[1;90m│   │   ├── [0m[35m YRAJQAT4Dg-avesta-rezaeizadeh-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m z9xEMao.jpg[0m
+[1;90m│   │   ├── [0m[35m zelda.png[0m
+[1;90m│   │   ├── [0m[35m zelda_botw.png[0m
+[1;90m│   │   ├── [0m[35m zGfbjaw.png[0m
+[1;90m│   │   └── [0m[35m ZWQJMPI.jpeg[0m
+[1;90m│   ├── [0m[34m [1mwall[0m
+[1;90m│   │   ├── [0m[35m explore-with-joshua-oI6EJabIYYQ.jpg[0m
+[1;90m│   │   ├── [0m[35m eye.png[0m
+[1;90m│   │   ├── [0m[35m eyes_floating_trough_eternity_galaxy.png[0m
+[1;90m│   │   ├── [0m[35m F5u9L4iagAAcmDb.jpg[0m
+[1;90m│   │   ├── [0m[35m f7uah100h03b1.jpg[0m
+[1;90m│   │   ├── [0m[35m F8jZ7JU.png[0m
+[1;90m│   │   ├── [0m[35m Fallen-Angels-237.jpg[0m
+[1;90m│   │   ├── [0m[35m falling.png[0m
+[1;90m│   │   ├── [0m[35m falltree.jpg[0m
+[1;90m│   │   ├── [0m[35m Fantasy-Autumn.png[0m
+[1;90m│   │   ├── [0m[35m fantasy-city.jpg[0m
+[1;90m│   │   ├── [0m[35m fantasy-mountain1.jpg[0m
+[1;90m│   │   ├── [0m[35m fantasy-woods.jpg[0m
+[1;90m│   │   ├── [0m[35m 'Fantasy Landscape GIF.gif'[0m
+[1;90m│   │   ├── [0m[35m fd5kmcn6l.jpg[0m
+[1;90m│   │   ├── [0m[35m feather.png[0m
+[1;90m│   │   ├── [0m[35m felix-bacher--jEEnRx38wo.jpg[0m
+[1;90m│   │   ├── [0m[35m ferns-green.jpg[0m
+[1;90m│   │   ├── [0m[35m fiHyx5j.png[0m
+[1;90m│   │   ├── [0m[35m finalizer.png[0m
+[1;90m│   │   ├── [0m[35m fingerprint.png[0m
+[1;90m│   │   ├── [0m[35m firefox.png[0m
+[1;90m│   │   ├── [0m[35m fireplace.gif[0m
+[1;90m│   │   ├── [0m[35m firewatch.jpg[0m
+[1;90m│   │   ├── [0m[35m first.png[0m
+[1;90m│   │   ├── [0m[35m flamingo-cat.png[0m
+[1;90m│   │   ├── [0m[35m flatppuccin_4k_macchiato.png[0m
+[1;90m│   │   ├── [0m[35m flower-1.jpg[0m
+[1;90m│   │   ├── [0m[35m flower-basket.jpg[0m
+[1;90m│   │   ├── [0m[35m flower.jpg[0m
+[1;90m│   │   ├── [0m[35m flower.png[0m
+[1;90m│   │   ├── [0m[35m flowers-2.jpg[0m
+[1;90m│   │   ├── [0m[35m flowers.jpg[0m
+[1;90m│   │   ├── [0m[35m fly_agaric_mushroom_fall_foliage_117318_1920x1080.jpg[0m
+[1;90m│   │   ├── [0m[35m fog_forest_alt_2.png[0m
+[1;90m│   │   ├── [0m[35m foggy-city.jpg[0m
+[1;90m│   │   ├── [0m[35m foggy_car_forest_blue_night_road.jpg[0m
+[1;90m│   │   ├── [0m[35m foggy_valley_2.png[0m
+[1;90m│   │   ├── [0m[35m fondo1.jpg[0m
+[1;90m│   │   ├── [0m[35m forest-2.jpg[0m
+[1;90m│   │   ├── [0m[35m forest-3.jpg[0m
+[1;90m│   │   ├── [0m[35m forest-4.jpg[0m
+[1;90m│   │   ├── [0m[35m forest-5.jpg[0m
+[1;90m│   │   ├── [0m[35m forest-6.jpg[0m
+[1;90m│   │   ├── [0m[35m forest-7.jpg[0m
+[1;90m│   │   ├── [0m[35m forest-bridge.jpg[0m
+[1;90m│   │   ├── [0m[35m forest-cabin.jpg[0m
+[1;90m│   │   ├── [0m[35m forest-foggy-misty-cloudy.png[0m
+[1;90m│   │   ├── [0m[35m forest-moss.png[0m
+[1;90m│   │   ├── [0m[35m forest-mountain-cloudy-valley.png[0m
+[1;90m│   │   ├── [0m[35m forest-river.jpg[0m
+[1;90m│   │   ├── [0m[35m forest.jpg[0m
+[1;90m│   │   ├── [0m[35m forest_castle.png[0m
+[1;90m│   │   ├── [0m[35m forest_dark_winter.jpg[0m
+[1;90m│   │   ├── [0m[35m fox.png[0m
+[1;90m│   │   ├── [0m[35m fractal.png[0m
+[1;90m│   │   ├── [0m[35m free.jpg[0m
+[1;90m│   │   ├── [0m[35m freebsd.png[0m
+[1;90m│   │   ├── [0m[35m FreshCake_computerFiles.jpg[0m
+[1;90m│   │   ├── [0m[35m FreshCake_cornerWizard.jpg[0m
+[1;90m│   │   ├── [0m[35m FreshCake_forestWallpaper.jpg[0m
+[1;90m│   │   ├── [0m[35m frieren_gruvbox.png[0m
+[1;90m│   │   ├── [0m[35m fsociety.jpg[0m
+[1;90m│   │   ├── [0m[35m funny86.png[0m
+[1;90m│   │   ├── [0m[35m Fur.jpg[0m
+[1;90m│   │   ├── [0m[35m future-town.jpg[0m
+[1;90m│   │   ├── [0m[35m futurism.jpg[0m
+[1;90m│   │   ├── [0m[35m G2KH4ZyaIAQ8L0K.jpg[0m
+[1;90m│   │   ├── [0m[35m G5uBmitWkAAyk8s.jpg[0m
+[1;90m│   │   ├── [0m[35m G5uBmiuXUAAhFRP.jpg[0m
+[1;90m│   │   ├── [0m[35m G5uBmivWkAAQ0ue.jpg[0m
+[1;90m│   │   ├── [0m[35m G5uBml1W8AA-m9P.jpg[0m
+[1;90m│   │   ├── [0m[35m galaxy.png[0m
+[1;90m│   │   ├── [0m[35m gamepad.png[0m
+[1;90m│   │   ├── [0m[35m ganapathy-kumar-JxBcs2O6-C0.jpg[0m
+[1;90m│   │   ├── [0m[35m gankutsuou.jpg[0m
+[1;90m│   │   ├── [0m[35m gantaro-9eTP3GF4liQ.jpg[0m
+[1;90m│   │   ├── [0m[35m garrett-parker-DlkF4-dbCOU.jpg[0m
+[1;90m│   │   ├── [0m[35m gas-station-minimalism-artist-artwork-wallpaper.jpg[0m
+[1;90m│   │   ├── [0m[35m gasstation_foggy_car_person_abstract_minimalism.jpg[0m
+[1;90m│   │   ├── [0m[35m GeOeVabWQAAdDn2.jpg[0m
+[1;90m│   │   ├── [0m[35m geology.png[0m
+[1;90m│   │   ├── [0m[35m geometric-5120x2880-25541.jpg[0m
+[1;90m│   │   ├── [0m[35m geometric-frosted-5120x2880-25542.jpg[0m
+[1;90m│   │   ├── [0m[35m geometric-overlap-5120x2880-25540.jpg[0m
+[1;90m│   │   ├── [0m[35m geometryGruvbox.png[0m
+[1;90m│   │   ├── [0m[35m GfJxoaVboAAeEjY.jpg[0m
+[1;90m│   │   ├── [0m[35m GfKoBULakAAqYIZ.jpg[0m
+[1;90m│   │   ├── [0m[35m GGbQ2GOaIAAMSDZ.jpg[0m
+[1;90m│   │   ├── [0m[35m ghibli-japanese-walled-garden.png[0m
+[1;90m│   │   ├── [0m[35m Ghibli.png[0m
+[1;90m│   │   ├── [0m[35m ghjhjghg.jpg[0m
+[1;90m│   │   ├── [0m[35m ghostty.png[0m
+[1;90m│   │   ├── [0m[35m gif0.gif[0m
+[1;90m│   │   ├── [0m[35m girl-outline.png[0m
+[1;90m│   │   ├── [0m[35m girl-reading-book.png[0m
+[1;90m│   │   ├── [0m[35m girl.jpg[0m
+[1;90m│   │   ├── [0m[35m girl.png[0m
+[1;90m│   │   ├── [0m[35m girl_rain_road_cars_lights_hair_eyes_jacket_fog_evening.png[0m
+[1;90m│   │   ├── [0m[35m girl_robot_room_tech_computers_white_window.jpg[0m
+[1;90m│   │   ├── [0m[35m girl_sky_car_pink_road.png[0m
+[1;90m│   │   ├── [0m[35m girl_umbrella_road_water_mountain_fence_house.png[0m
+[1;90m│   │   ├── [0m[35m 'Girl Manga GIF (2).gif'[0m
+[1;90m│   │   ├── [0m[35m 'Girl Manga GIF.gif'[0m
+[1;90m│   │   ├── [0m[35m girls_grass_sunset_trees_mountains_fireflies.jpg[0m
+[1;90m│   │   ├── [0m[35m gjghjgmnbmb.jpg[0m
+[1;90m│   │   ├── [0m[35m GLT-5.png[0m
+[1;90m│   │   ├── [0m[35m glt_gruvbox.png[0m
+[1;90m│   │   ├── [0m[35m GmH5RD4bcAMigfh.jpg[0m
+[1;90m│   │   ├── [0m[35m gnu.jpg[0m
+[1;90m│   │   ├── [0m[35m gnulinux.png[0m
+[1;90m│   │   ├── [0m[35m GnUpeXQaAAA3I_z.jpg[0m
+[1;90m│   │   ├── [0m[35m golden-hour-desert-3840x2160-25452.jpg[0m
+[1;90m│   │   ├── [0m[35m good_fellas.png[0m
+[1;90m│   │   ├── [0m[35m got_bw.jpg[0m
+[1;90m│   │   ├── [0m[35m gradient-synth-cat.png[0m
+[1;90m│   │   ├── [0m[35m grass.jpg[0m
+[1;90m│   │   ├── [0m[35m gray_trees.jpg[0m
+[1;90m│   │   ├── [0m[35m great-wave-of-kanagawa-gruvbox.png[0m
+[1;90m│   │   ├── [0m[35m greek.png[0m
+[1;90m│   │   ├── [0m[35m green-road-nature-4k-a6-1920x1080.jpg[0m
+[1;90m│   │   ├── [0m[35m Green_Peace.png[0m
+[1;90m│   │   ├── [0m[35m green_sea.jpg[0m
+[1;90m│   │   ├── [0m[35m grey_lain_wallpaper.jpg[0m
+[1;90m│   │   ├── [0m[35m GRKhVw7acAALFuA-colorized.png[0m
+[1;90m│   │   ├── [0m[35m GRKhVw7acAALFuA.jpg[0m
+[1;90m│   │   ├── [0m[35m group_people_futuristic_fantastic_night_green_blue.jpg[0m
+[1;90m│   │   ├── [0m[35m GrUglH4asAALkm8.jpg[0m
+[1;90m│   │   ├── [0m[35m gruv-abstract-maze.png[0m
+[1;90m│   │   ├── [0m[35m gruv-commit.png[0m
+[1;90m│   │   ├── [0m[35m gruv-dev-minimal.png[0m
+[1;90m│   │   ├── [0m[35m gruv-estimate.png[0m
+[1;90m│   │   ├── [0m[35m gruv-focus.png[0m
+[1;90m│   │   ├── [0m[35m gruv-kanji.png[0m
+[1;90m│   │   ├── [0m[35m gruv-limits.png[0m
+[1;90m│   │   ├── [0m[35m gruv-material.png[0m
+[1;90m│   │   ├── [0m[35m gruv-mistakes.png[0m
+[1;90m│   │   ├── [0m[35m gruv-portal-cake.png[0m
+[1;90m│   │   ├── [0m[35m gruv-samurai-cyberpunk2077.png[0m
+[1;90m│   │   ├── [0m[35m gruv-sushi-streets.jpg[0m
+[1;90m│   │   ├── [0m[35m gruv-understand.png[0m
+[1;90m│   │   ├── [0m[35m gruv-wallhaven-011km1.png[0m
+[1;90m│   │   ├── [0m[35m gruv-wallhaven-4gmevq.png[0m
+[1;90m│   │   ├── [0m[35m gruv-wallhaven-4yj28l.png[0m
+[1;90m│   │   ├── [0m[35m gruv-wallhaven-l3y2p2.png[0m
+[1;90m│   │   ├── [0m[35m gruv-wallhaven-m9e9m1.png[0m
+[1;90m│   │   ├── [0m[35m gruv-wallhaven-pkzoj3.png[0m
+[1;90m│   │   ├── [0m[35m gruv.jpg[0m
+[1;90m│   │   ├── [0m[35m gruvb99810.png[0m
+[1;90m│   │   ├── [0m[35m gruvb_solarsys.png[0m
+[1;90m│   │   ├── [0m[35m gruvbox-forest.jpg[0m
+[1;90m│   │   ├── [0m[35m gruvbox-linux.png[0m
+[1;90m│   │   ├── [0m[35m gruvbox-nix.png[0m
+[1;90m│   │   ├── [0m[35m gruvbox-pacman-full.png[0m
+[1;90m│   │   ├── [0m[35m gruvbox-pacman-ghosts.png[0m
+[1;90m│   │   ├── [0m[35m gruvbox-rainbow-nix.png[0m
+[1;90m│   │   ├── [0m[35m gruvbox15.png[0m
+[1;90m│   │   ├── [0m[35m gruvbox_astro.jpg[0m
+[1;90m│   │   ├── [0m[35m gruvbox_forest-4.png[0m
+[1;90m│   │   ├── [0m[35m gruvbox_girl.png[0m
+[1;90m│   │   ├── [0m[35m gruvbox_grid.png[0m
+[1;90m│   │   ├── [0m[35m gruvbox_image11.png[0m
+[1;90m│   │   ├── [0m[35m gruvbox_image31.png[0m
+[1;90m│   │   ├── [0m[35m gruvbox_image40.png[0m
+[1;90m│   │   ├── [0m[35m gruvbox_image44.png[0m
+[1;90m│   │   ├── [0m[35m gruvbox_image46.png[0m
+[1;90m│   │   ├── [0m[35m gruvbox_image55.png[0m
+[1;90m│   │   ├── [0m[35m gruvbox_kubuntuGear.jpg[0m
+[1;90m│   │   ├── [0m[35m gruvbox_minimal_space.png[0m
+[1;90m│   │   ├── [0m[35m gruvbox_spac.jpg[0m
+[1;90m│   │   ├── [0m[35m gruvbox_tux.png[0m
+[1;90m│   │   ├── [0m[35m gruvbox_ubuntu-splash.jpg[0m
+[1;90m│   │   ├── [0m[35m gruvbox_ubuntu.png[0m
+[1;90m│   │   ├── [0m[35m gruvbox_void_linux.png[0m
+[1;90m│   │   ├── [0m[35m gruvLamp.png[0m
+[1;90m│   │   ├── [0m[35m gruvy-night.jpg[0m
+[1;90m│   │   ├── [0m[35m gruvy.jpg[0m
+[1;90m│   │   ├── [0m[35m Gu0T9O7X0AA_1IH.jpg[0m
+[1;90m│   │   ├── [0m[35m guitar-island-3840x2160-25355.jpg[0m
+[1;90m│   │   ├── [0m[35m guitar.png[0m
+[1;90m│   │   ├── [0m[35m guts-neon-iconic-5120x2880-21415.png[0m
+[1;90m│   │   ├── [0m[35m guy_sleeping_colored.png[0m
+[1;90m│   │   ├── [0m[35m GvLu6Nza0AAEOW_.jpg[0m
+[1;90m│   │   ├── [0m[35m Gvz3QIjbYAAymrY.jpg[0m
+[1;90m│   │   ├── [0m[35m GWCFepSXoAAFdcC.jpg[0m
+[1;90m│   │   ├── [0m[35m GyUrrjIa4AA2LlJ.jpg[0m
+[1;90m│   │   ├── [0m[35m Gz7iqLDa8AA7eZ1.jpg[0m
+[1;90m│   │   ├── [0m[35m h2fgmdaw5p871.jpg[0m
+[1;90m│   │   ├── [0m[35m hanged_man_tree.jpg[0m
+[1;90m│   │   ├── [0m[35m hannu-keski-hakuni-vgxIfXwsUAE.jpg[0m
+[1;90m│   │   ├── [0m[35m HApzTLx.png[0m
+[1;90m│   │   ├── [0m[35m harmony.png[0m
+[1;90m│   │   ├── [0m[35m hashtags-black.png[0m
+[1;90m│   │   ├── [0m[35m hashtags-new.png[0m
+[1;90m│   │   ├── [0m[35m haz-mat.png[0m
+[1;90m│   │   ├── [0m[35m hello-worlds.png[0m
+[1;90m│   │   ├── [0m[35m herb-notebook.png[0m
+[1;90m│   │   ├── [0m[35m here-is-some-ultrakill-wallpapers-i-edited-feel-free-to-use-v0-twdfwpxisngd1.png[0m
+[1;90m│   │   ├── [0m[35m hewlett-packard.png[0m
+[1;90m│   │   ├── [0m[35m hgjhgjghj.jpg[0m
+[1;90m│   │   ├── [0m[35m hgjjhggh.jpg[0m
+[1;90m│   │   ├── [0m[35m hlgruvblu.png[0m
+[1;90m│   │   ├── [0m[35m hlgruvgreen.png[0m
+[1;90m│   │   ├── [0m[35m hlgruvorange.png[0m
+[1;90m│   │   ├── [0m[35m HOGi.png[0m
+[1;90m│   │   ├── [0m[35m 'hollow-knight (copy).png'[0m
+[1;90m│   │   ├── [0m[35m hollow-knight.jpg[0m
+[1;90m│   │   ├── [0m[35m hollow-knight.png[0m
+[1;90m│   │   ├── [0m[35m hollow.jpg[0m
+[1;90m│   │   ├── [0m[35m hotline-miami.jpg[0m
+[1;90m│   │   ├── [0m[35m house-garden.png[0m
+[1;90m│   │   ├── [0m[35m house-pixel-art-4k-o8.jpg[0m
+[1;90m│   │   ├── [0m[35m house.jpg[0m
+[1;90m│   │   ├── [0m[35m house_building_moon_sky_city_pink_japanese.png[0m
+[1;90m│   │   ├── [0m[35m house_people_old_trees_snow_mansion_people.jpg[0m
+[1;90m│   │   ├── [0m[35m houseonthesideofalake.jpg[0m
+[1;90m│   │   ├── [0m[35m houses.png[0m
+[1;90m│   │   ├── [0m[35m houssam-korichi-L2BqGjfX-Yw.jpg[0m
+[1;90m│   │   ├── [0m[35m howl050.jpg[0m
+[1;90m│   │   ├── [0m[35m HTB.png[0m
+[1;90m│   │   ├── [0m[35m Hu4tueK.png[0m
+[1;90m│   │   ├── [0m[35m husky.png[0m
+[1;90m│   │   ├── [0m[35m hut-2.jpg[0m
+[1;90m│   │   ├── [0m[35m hut.jpg[0m
+[1;90m│   │   ├── [0m[35m hut.png[0m
+[1;90m│   │   ├── [0m[35m hyprlock.png[0m
+[1;90m│   │   ├── [0m[35m idyllic-procession.jpg[0m
+[1;90m│   │   ├── [0m[35m ign-0008.png[0m
+[1;90m│   │   ├── [0m[35m ign-0011.png[0m
+[1;90m│   │   ├── [0m[35m ign-waifu.png[0m
+[1;90m│   │   ├── [0m[35m ign_anime-girls-with-gun.png[0m
+[1;90m│   │   ├── [0m[35m ign_anime-girls.png[0m
+[1;90m│   │   ├── [0m[35m ign_batman.png[0m
+[1;90m│   │   ├── [0m[35m ign_black.jpg[0m
+[1;90m│   │   ├── [0m[35m ign_car.png[0m
+[1;90m│   │   ├── [0m[35m ign_chainsaw-man.png[0m
+[1;90m│   │   ├── [0m[35m ign_chineseIG.png[0m
+[1;90m│   │   ├── [0m[35m ign_chomusuke.png[0m
+[1;90m│   │   ├── [0m[35m ign_manInStreet.png[0m
+[1;90m│   │   ├── [0m[35m ign_megumin_dark.png[0m
+[1;90m│   │   ├── [0m[35m ign_soupKong.png[0m
+[1;90m│   │   ├── [0m[35m ign_spiderman.jpg[0m
+[1;90m│   │   ├── [0m[35m ign_travelling.jpg[0m
+[1;90m│   │   ├── [0m[35m II.png[0m
+[1;90m│   │   ├── [0m[35m image.png[0m
+[1;90m│   │   ├── [0m[35m image1.png[0m
+[1;90m│   │   ├── [0m[35m image1s.jpg[0m
+[1;90m│   │   ├── [0m[35m image2.png[0m
+[1;90m│   │   ├── [0m[35m image16.png[0m
+[1;90m│   │   ├── [0m[35m image21.png[0m
+[1;90m│   │   ├── [0m[35m 'Imagen no guardada 2.png'[0m
+[1;90m│   │   ├── [0m[35m images.jpg[0m
+[1;90m│   │   ├── [0m[35m IMG_5037.png[0m
+[1;90m│   │   ├── [0m[35m IMG_6856.png[0m
+[1;90m│   │   ├── [0m[35m index.png[0m
+[1;90m│   │   ├── [0m[35m ingo-stiller-3tkxfe2GocY.jpg[0m
+[1;90m│   │   ├── [0m[35m iQNsuIC.png[0m
+[1;90m│   │   ├── [0m[35m itachi-uchiha-moon-5120x2880-25777.jpg[0m
+[1;90m│   │   ├── [0m[35m iuh3jkasndjans.jpg[0m
+[1;90m│   │   ├── [0m[35m jack-anstey-XVoyX7l9ocY-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m jake-weirick-EsvpmQ4zp5Y.jpg[0m
+[1;90m│   │   ├── [0m[35m jakob-owens-n5wwck8ES4w.jpg[0m
+[1;90m│   │   ├── [0m[35m jakub-sejkora-utqJcneoFjo.jpg[0m
+[1;90m│   │   ├── [0m[35m japan-alley.png[0m
+[1;90m│   │   ├── [0m[35m japan3.jpg[0m
+[1;90m│   │   ├── [0m[35m japan_samurai_snow_lamps_pink_dark_people.png[0m
+[1;90m│   │   ├── [0m[35m japan_trees_fog_house_temple_buda_snow_red.jpg[0m
+[1;90m│   │   ├── [0m[35m jars.jpg[0m
+[1;90m│   │   ├── [0m[35m jeremy-hynes-_RnbxS6vUb8.jpg[0m
+[1;90m│   │   ├── [0m[35m jmp3w2up1z0d1.jpg[0m
+[1;90m│   │   ├── [0m[35m jms-kFHz9Xh3PPU-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m johannes-plenio-DKix6Un55mw-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m johannes-plenio-RwHv7LgeC7s-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m johannes-plenio-RwHv7LgeC7s.jpg[0m
+[1;90m│   │   ├── [0m[35m john-fowler-03Pv2Ikm5Hk-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m john-towner-3Kv48NS4WUU-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m john-towner-JgOeRuGD_Y4-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m jonas-denil-_PKzBUfuhgg.jpg[0m
+[1;90m│   │   ├── [0m[35m jonatan-pie-3l3RwQdHRHg-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m joshua-sortino-Rnqa6jOpnHw.jpg[0m
+[1;90m│   │   ├── [0m[35m joyboy.png[0m
+[1;90m│   │   ├── [0m[35m jr-korpa-YXQew2KZjzY.jpg[0m
+[1;90m│   │   ├── [0m[35m jujutsu_kaisen_2.jpg[0m
+[1;90m│   │   ├── [0m[35m julentto-photography-Yr1SCCRJXIY.jpg[0m
+[1;90m│   │   ├── [0m[35m jXW1QWa.png[0m
+[1;90m│   │   ├── [0m[35m JylGcDt.png[0m
+[1;90m│   │   ├── [0m[35m kace-rodriguez-p3OzJuT_Dks.jpg[0m
+[1;90m│   │   ├── [0m[35m kakashi-cyberpunk-ninja-hd-wallpaper-uhdpaper.com-319@2@b.jpg[0m
+[1;90m│   │   ├── [0m[35m kakashi-hatake-ai-7680x4320-18785.jpg[0m
+[1;90m│   │   ├── [0m[35m kalen-emsley-Bkci_8qcdvQ-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m kali.png[0m
+[1;90m│   │   ├── [0m[35m kateryna-sheliuk-6gI-RJ_WsHk.jpg[0m
+[1;90m│   │   ├── [0m[35m kateryna-sheliuk-dGFVlulYvK0.jpg[0m
+[1;90m│   │   ├── [0m[35m kateryna-sheliuk-efMADvDQvEg.jpg[0m
+[1;90m│   │   ├── [0m[35m ken-cheung-KonWFWUaAuk-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m keyboard.jpg[0m
+[1;90m│   │   ├── [0m[35m keyboards.jpg[0m
+[1;90m│   │   ├── [0m[35m Keyswitch-wallpaper.jpg[0m
+[1;90m│   │   ├── [0m[35m kiddae.jpg[0m
+[1;90m│   │   ├── [0m[35m kirkham_abbey_prout.jpg[0m
+[1;90m│   │   ├── [0m[35m Kita.png[0m
+[1;90m│   │   ├── [0m[35m kk.gif[0m
+[1;90m│   │   ├── [0m[35m [1mkk.mp4[0m
+[1;90m│   │   ├── [0m[35m Knights.png[0m
+[1;90m│   │   ├── [0m[35m koi-fish.png[0m
+[1;90m│   │   ├── [0m[35m komeiji-koishi.png[0m
+[1;90m│   │   ├── [0m[35m kristian-seedorff-BvUicqkaZZ0.jpg[0m
+[1;90m│   │   ├── [0m[35m kurotani.jpg[0m
+[1;90m│   │   ├── [0m[35m kurt-cotoaga-cqbLg3lZEpk.jpg[0m
+[1;90m│   │   ├── [0m[35m Kurumi-Ebisuzawa.png[0m
+[1;90m│   │   ├── [0m[35m labyrinth_person_green_bush_light_dark.jpg[0m
+[1;90m│   │   ├── [0m[35m lain.png[0m
+[1;90m│   │   ├── [0m[35m lainascii.png[0m
+[1;90m│   │   ├── [0m[35m lake.png[0m
+[1;90m│   │   ├── [0m[35m landscape0.png[0m
+[1;90m│   │   ├── [0m[35m landscape2.jpg[0m
+[1;90m│   │   ├── [0m[35m lantern.jpg[0m
+[1;90m│   │   ├── [0m[35m large_asf_goodbg.png[0m
+[1;90m│   │   ├── [0m[35m lavender-cat.png[0m
+[1;90m│   │   ├── [0m[35m leaves-2.jpg[0m
+[1;90m│   │   ├── [0m[35m leaves-3.jpg[0m
+[1;90m│   │   ├── [0m[35m leaves-4.jpg[0m
+[1;90m│   │   ├── [0m[35m leaves-hard-pixelated.png[0m
+[1;90m│   │   ├── [0m[35m leaves-hard.jpg[0m
+[1;90m│   │   ├── [0m[35m leaves-wall.png[0m
+[1;90m│   │   ├── [0m[35m leaves.jpg[0m
+[1;90m│   │   ├── [0m[35m lep.png[0m
+[1;90m│   │   ├── [0m[35m lets_go_home.png[0m
+[1;90m│   │   ├── [0m[35m LH2yKVV.png[0m
+[1;90m│   │   ├── [0m[35m lighthouse.jpg[0m
+[1;90m│   │   ├── [0m[35m lights.jpg[0m
+[1;90m│   │   ├── [0m[35m LignInTheDark.jpg[0m
+[1;90m│   │   ├── [0m[35m literal-wallpaper.png[0m
+[1;90m│   │   ├── [0m[35m Lofi-Cafe1.png[0m
+[1;90m│   │   ├── [0m[35m Lofi-Kitchen.png[0m
+[1;90m│   │   ├── [0m[35m lofi_cat.png[0m
+[1;90m│   │   ├── [0m[35m looking-for.png[0m
+[1;90m│   │   ├── [0m[35m lowpoly_street.png[0m
+[1;90m│   │   ├── [0m[35m LpUcwjZ.jpg[0m
+[1;90m│   │   ├── [0m[35m LU6xD2.jpg[0m
+[1;90m│   │   ├── [0m[35m luca-bravo-zAjdgNXsMeg-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m luca-micheli-ruWkmt3nU58-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m lukasz-szmigiel-ps2daRcXYes.jpg[0m
+[1;90m│   │   ├── [0m[35m macchiato-hald8-cyberpunkish.png[0m
+[1;90m│   │   ├── [0m[35m maciek-sulkowski-58tP7g7x1LQ.jpg[0m
+[1;90m│   │   ├── [0m[35m maciek-sulkowski-eoXoU1wpvqs.jpg[0m
+[1;90m│   │   ├── [0m[35m maciek-sulkowski-fJ-22PLNGvE.jpg[0m
+[1;90m│   │   ├── [0m[35m maciek-sulkowski-GoJIPnqk9e4.jpg[0m
+[1;90m│   │   ├── [0m[35m maciek-sulkowski-jVJWrcUNdeY.jpg[0m
+[1;90m│   │   ├── [0m[35m maciek-sulkowski-KvXQBeoolwU.jpg[0m
+[1;90m│   │   ├── [0m[35m maciek-sulkowski-XtU9QnauM9k.jpg[0m
+[1;90m│   │   ├── [0m[35m macos-monterey-stock-red-light-layers-5k-6016x6016-5897.jpg[0m
+[1;90m│   │   ├── [0m[35m macos-sequoia-4096x2262-17019.jpg[0m
+[1;90m│   │   ├── [0m[35m macos-sequoia-4096x2264-17018.jpg[0m
+[1;90m│   │   ├── [0m[35m macos-sierra-mountain-peak-sunset-evening-stock-5k-5120x3684-3987.jpg[0m
+[1;90m│   │   ├── [0m[35m macos-sonoma-6016x6016-11575.jpeg[0m
+[1;90m│   │   ├── [0m[35m macos-ventura-macos-13-macos-2022-stock-dark-mode-5k-retina-6016x6016-8133.jpg[0m
+[1;90m│   │   ├── [0m[35m mad.jpg[0m
+[1;90m│   │   ├── [0m[35m magenta.png[0m
+[1;90m│   │   ├── [0m[35m malcolm-lightbody-bngTyBvAkDM.jpg[0m
+[1;90m│   │   ├── [0m[35m man-colors.jpg[0m
+[1;90m│   │   ├── [0m[35m man_sitting_chair_philosopher_green.png[0m
+[1;90m│   │   ├── [0m[35m Mandalorian.jpg[0m
+[1;90m│   │   ├── [0m[35m manga.gif[0m
+[1;90m│   │   ├── [0m[35m Manjaro.jpg[0m
+[1;90m│   │   ├── [0m[35m mark-basarab-1OtUkD_8svc-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m marketplace.png[0m
+[1;90m│   │   ├── [0m[35m mate-2.jpg[0m
+[1;90m│   │   ├── [0m[35m mate-3.jpg[0m
+[1;90m│   │   ├── [0m[35m mate-drink.jpg[0m
+[1;90m│   │   ├── [0m[35m mate.jpg[0m
+[1;90m│   │   ├── [0m[35m material-ocean.png[0m
+[1;90m│   │   ├── [0m[35m metro_moscow_half_tunel_white_black.jpg[0m
+[1;90m│   │   ├── [0m[35m milad-fakurian-E8Ufcyxz514-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m mine.gif[0m
+[1;90m│   │   ├── [0m[35m minecraft.gif[0m
+[1;90m│   │   ├── [0m[35m minim-helmet.png[0m
+[1;90m│   │   ├── [0m[35m minimal_landscape.jpg[0m
+[1;90m│   │   ├── [0m[35m minimal_nord_guy.png[0m
+[1;90m│   │   ├── [0m[35m MlizWNJ.png[0m
+[1;90m│   │   ├── [0m[35m mohammad-alizade-4wzRuAb-KWs-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m mohammad-alizade-4wzRuAb-KWs.jpg[0m
+[1;90m│   │   ├── [0m[35m momo_ayase_centered_gruvbox.png[0m
+[1;90m│   │   ├── [0m[35m momo_ayase_gruvbox.png[0m
+[1;90m│   │   ├── [0m[35m monochrome_berserk_black_white_corpses_manga.jpeg[0m
+[1;90m│   │   ├── [0m[35m monochrome_black_white_antique_art_people.png[0m
+[1;90m│   │   ├── [0m[35m monochrome_manga_person_black_white_corpses.jpg[0m
+[1;90m│   │   ├── [0m[35m moon.png[0m
+[1;90m│   │   ├── [0m[35m more-coffee.jpg[0m
+[1;90m│   │   ├── [0m[35m morning-field.png[0m
+[1;90m│   │   ├── [0m[35m moss-forest.png[0m
+[1;90m│   │   ├── [0m[35m moss.jpg[0m
+[1;90m│   │   ├── [0m[35m mountain-peak-5120x2880-24313.jpg[0m
+[1;90m│   │   ├── [0m[35m mountain-village.png[0m
+[1;90m│   │   ├── [0m[35m mountain.jpg[0m
+[1;90m│   │   ├── [0m[35m mountain_art_white_snow_center.png[0m
+[1;90m│   │   ├── [0m[35m mountain_at_dusk.jpg[0m
+[1;90m│   │   ├── [0m[35m mountain_snow_white_clouds_fog.jpg[0m
+[1;90m│   │   ├── [0m[35m mountain_sunset.png[0m
+[1;90m│   │   ├── [0m[35m mountains-2.png[0m
+[1;90m│   │   ├── [0m[35m mountains-lake-sunny-day-summer-landscape-scenic-reflection-2560x1440-1193.jpg[0m
+[1;90m│   │   ├── [0m[35m mountains2.jpg[0m
+[1;90m│   │   ├── [0m[35m mountains_lake_clouds_dark_sun.webp[0m
+[1;90m│   │   ├── [0m[35m MszZ4K.jpg[0m
+[1;90m│   │   ├── [0m[35m mushroom.jpg[0m
+[1;90m│   │   ├── [0m[35m mushrooms-1.jpg[0m
+[1;90m│   │   ├── [0m[35m mushrooms.jpg[0m
+[1;90m│   │   ├── [0m[35m mustacho.png[0m
+[1;90m│   │   ├── [0m[35m MXBpbZp.png[0m
+[1;90m│   │   ├── [0m[35m my-neighbor-totoro-sunflowers.png[0m
+[1;90m│   │   ├── [0m[35m naruto.png[0m
+[1;90m│   │   ├── [0m[35m nasa-2.png[0m
+[1;90m│   │   ├── [0m[35m nasa-3.png[0m
+[1;90m│   │   ├── [0m[35m nasa.png[0m
+[1;90m│   │   ├── [0m[35m nathan-anderson-SAB5Y1HS7NY.jpg[0m
+[1;90m│   │   ├── [0m[35m nature.jpg[0m
+[1;90m│   │   ├── [0m[35m nature_clouds_lake_sea_forest_cars_landscape_trees_green_orange_fog.jpg[0m
+[1;90m│   │   ├── [0m[35m natures-mountain-waters.jpg[0m
+[1;90m│   │   ├── [0m[35m nayam-gP03rRKJBps-unsplash.jpg[0m
+[1;90m│   │   └── [0m[35m nazhim-cat.png[0m
+[1;90m│   ├── [0m[34m [1mwalls[0m
+[1;90m│   │   ├── [0m[35m a_street_with_a_bridge_and_people_sitting_on_it.jpg[0m
+[1;90m│   │   ├── [0m[35m a_street_with_houses_and_power_lines.png[0m
+[1;90m│   │   ├── [0m[35m a_street_with_signs_and_lights_01.png[0m
+[1;90m│   │   ├── [0m[35m a_triangle_shaped_object.png[0m
+[1;90m│   │   ├── [0m[35m a_video_game_of_a_vehicle.jpg[0m
+[1;90m│   │   ├── [0m[35m a_video_game_screen_capture.jpg[0m
+[1;90m│   │   ├── [0m[35m a_white_drawing_of_a_person_with_a_mask_on_his_head.png[0m
+[1;90m│   │   ├── [0m[35m a_white_skull_with_black_eyes.jpg[0m
+[1;90m│   │   ├── [0m[35m a_woman_in_a_red_dress_sitting_in_front_of_a_gas_station.jpg[0m
+[1;90m│   │   ├── [0m[35m a_yellow_moon_in_the_sky.png[0m
+[1;90m│   │   ├── [0m[35m Assassins_Creed_Mirage-Baghdad-Gardens_of_the_Palace_of_the_Green_Dome-01.png[0m
+[1;90m│   │   ├── [0m[35m Assassins_Creed_Mirage-Baghdad-Residential_&_Commercial_Districts-01.png[0m
+[1;90m│   │   ├── [0m[35m Assassins_Creed_Origins-Cyrene-01.png[0m
+[1;90m│   │   ├── [0m[35m Assassins_Creed_Origins-Cyrene-02.png[0m
+[1;90m│   │   ├── [0m[35m Assassins_Creed_Origins-Egypt_43_BCE-Alexandria-01.jpg[0m
+[1;90m│   │   ├── [0m[35m Assassins_Creed_Origins-Egypt_43_BCE-Alexandria-02.jpg[0m
+[1;90m│   │   ├── [0m[35m Assassins_Creed_Origins-Egypt_43_BCE-Alexandria-03.png[0m
+[1;90m│   │   ├── [0m[35m Assassins_Creed_Origins-Egypt_43_BCE-Alexandria-04.png[0m
+[1;90m│   │   ├── [0m[35m Assassins_Creed_Origins-Egypt_43_BCE-Alexandria-05-saturation_0.447.png[0m
+[1;90m│   │   ├── [0m[35m Assassins_Creed_Origins-Egypt_43_BCE-Alexandria-05.png[0m
+[1;90m│   │   ├── [0m[35m Assassins_Creed_Origins-Egypt_43_BCE-Alexandria-06.png[0m
+[1;90m│   │   ├── [0m[35m Assassins_Creed_Origins-Egypt_43_BCE-Alexandria-07.png[0m
+[1;90m│   │   ├── [0m[35m 'astronaut (copy).jpg'[0m
+[1;90m│   │   ├── [0m[35m astronaut.jpg[0m
+[1;90m│   │   ├── [0m[35m at_the_coffeshop.png[0m
+[1;90m│   │   ├── [0m[35m atoms.png[0m
+[1;90m│   │   ├── [0m[35m Austrian_Parliament_Building-Pallas_Athene_Fountain.png[0m
+[1;90m│   │   ├── [0m[35m aw383-wallpaper.cam.jpg[0m
+[1;90m│   │   ├── [0m[35m awesome.png[0m
+[1;90m│   │   ├── [0m[35m b-012.jpg[0m
+[1;90m│   │   ├── [0m[35m b-030.jpg[0m
+[1;90m│   │   ├── [0m[35m b-031.jpg[0m
+[1;90m│   │   ├── [0m[35m b-034.jpg[0m
+[1;90m│   │   ├── [0m[35m b-050.jpg[0m
+[1;90m│   │   ├── [0m[35m b-058.jpg[0m
+[1;90m│   │   ├── [0m[35m b-099.jpg[0m
+[1;90m│   │   ├── [0m[35m b-100.jpg[0m
+[1;90m│   │   ├── [0m[35m b-102.jpg[0m
+[1;90m│   │   ├── [0m[35m b-105.jpg[0m
+[1;90m│   │   ├── [0m[35m b-115.jpg[0m
+[1;90m│   │   ├── [0m[35m b-128.jpg[0m
+[1;90m│   │   ├── [0m[35m b-131.jpg[0m
+[1;90m│   │   ├── [0m[35m b-144.jpg[0m
+[1;90m│   │   ├── [0m[35m b-146.jpg[0m
+[1;90m│   │   ├── [0m[35m b-147.jpg[0m
+[1;90m│   │   ├── [0m[35m b-148.jpg[0m
+[1;90m│   │   ├── [0m[35m b-155.jpg[0m
+[1;90m│   │   ├── [0m[35m b-156.jpg[0m
+[1;90m│   │   ├── [0m[35m b-161.jpg[0m
+[1;90m│   │   ├── [0m[35m b-162.jpg[0m
+[1;90m│   │   ├── [0m[35m b-163.jpg[0m
+[1;90m│   │   ├── [0m[35m b-164.jpg[0m
+[1;90m│   │   ├── [0m[35m b-166.jpg[0m
+[1;90m│   │   ├── [0m[35m b-167.jpg[0m
+[1;90m│   │   ├── [0m[35m b-173.jpg[0m
+[1;90m│   │   ├── [0m[35m b-180.jpg[0m
+[1;90m│   │   ├── [0m[35m b-181.jpg[0m
+[1;90m│   │   ├── [0m[35m b-184.jpg[0m
+[1;90m│   │   ├── [0m[35m b-198.jpg[0m
+[1;90m│   │   ├── [0m[35m b-205.jpg[0m
+[1;90m│   │   ├── [0m[35m b-213.jpg[0m
+[1;90m│   │   ├── [0m[35m b-229.jpg[0m
+[1;90m│   │   ├── [0m[35m b-251.jpg[0m
+[1;90m│   │   ├── [0m[35m b-253.jpg[0m
+[1;90m│   │   ├── [0m[35m b-260.jpg[0m
+[1;90m│   │   ├── [0m[35m b-273.jpg[0m
+[1;90m│   │   ├── [0m[35m b-277.jpg[0m
+[1;90m│   │   ├── [0m[35m b-282.jpg[0m
+[1;90m│   │   ├── [0m[35m b-285.jpg[0m
+[1;90m│   │   ├── [0m[35m b-294.jpg[0m
+[1;90m│   │   ├── [0m[35m b-295.jpg[0m
+[1;90m│   │   ├── [0m[35m b-297.jpg[0m
+[1;90m│   │   ├── [0m[35m b-298.jpg[0m
+[1;90m│   │   ├── [0m[35m b-299.jpg[0m
+[1;90m│   │   ├── [0m[35m b-300.jpg[0m
+[1;90m│   │   ├── [0m[35m b-302.jpg[0m
+[1;90m│   │   ├── [0m[35m b-306.jpg[0m
+[1;90m│   │   ├── [0m[35m b-307.jpg[0m
+[1;90m│   │   ├── [0m[35m b-308.jpg[0m
+[1;90m│   │   ├── [0m[35m b-309.jpg[0m
+[1;90m│   │   ├── [0m[35m b-310.jpg[0m
+[1;90m│   │   ├── [0m[35m b-312.jpg[0m
+[1;90m│   │   ├── [0m[35m b-320.jpg[0m
+[1;90m│   │   ├── [0m[35m b-321.jpg[0m
+[1;90m│   │   ├── [0m[35m b-322.jpg[0m
+[1;90m│   │   ├── [0m[35m b-323.jpg[0m
+[1;90m│   │   ├── [0m[35m b-344.jpg[0m
+[1;90m│   │   ├── [0m[35m b-345.jpg[0m
+[1;90m│   │   ├── [0m[35m b-346.jpg[0m
+[1;90m│   │   ├── [0m[35m b-347.jpg[0m
+[1;90m│   │   ├── [0m[35m b-348.jpg[0m
+[1;90m│   │   ├── [0m[35m b-349.jpg[0m
+[1;90m│   │   ├── [0m[35m b-351.jpg[0m
+[1;90m│   │   ├── [0m[35m b-352.jpg[0m
+[1;90m│   │   ├── [0m[35m b-353.jpg[0m
+[1;90m│   │   ├── [0m[35m b-354.jpg[0m
+[1;90m│   │   ├── [0m[35m b-356.jpg[0m
+[1;90m│   │   ├── [0m[35m b-357.jpg[0m
+[1;90m│   │   ├── [0m[35m b-358.jpg[0m
+[1;90m│   │   ├── [0m[35m b-360.jpg[0m
+[1;90m│   │   ├── [0m[35m b-362.jpg[0m
+[1;90m│   │   ├── [0m[35m b-363.jpg[0m
+[1;90m│   │   ├── [0m[35m b-364.jpg[0m
+[1;90m│   │   ├── [0m[35m b-365.jpg[0m
+[1;90m│   │   ├── [0m[35m b-366.jpg[0m
+[1;90m│   │   ├── [0m[35m b-367.jpg[0m
+[1;90m│   │   ├── [0m[35m b-373.jpg[0m
+[1;90m│   │   ├── [0m[35m b-374.jpg[0m
+[1;90m│   │   ├── [0m[35m b-376.jpg[0m
+[1;90m│   │   ├── [0m[35m b-377.jpg[0m
+[1;90m│   │   ├── [0m[35m b-378.jpg[0m
+[1;90m│   │   ├── [0m[35m b-379.jpg[0m
+[1;90m│   │   ├── [0m[35m b-381.jpg[0m
+[1;90m│   │   ├── [0m[35m b-384.jpg[0m
+[1;90m│   │   ├── [0m[35m b-388.jpg[0m
+[1;90m│   │   ├── [0m[35m b-390.jpg[0m
+[1;90m│   │   ├── [0m[35m b-392.jpg[0m
+[1;90m│   │   ├── [0m[35m b-393.jpg[0m
+[1;90m│   │   ├── [0m[35m b-396.jpg[0m
+[1;90m│   │   ├── [0m[35m b-397.jpg[0m
+[1;90m│   │   ├── [0m[35m b-398.jpg[0m
+[1;90m│   │   ├── [0m[35m b-400.jpg[0m
+[1;90m│   │   ├── [0m[35m b-403.jpg[0m
+[1;90m│   │   ├── [0m[35m b-404.jpg[0m
+[1;90m│   │   ├── [0m[35m b-409.jpg[0m
+[1;90m│   │   ├── [0m[35m b-413.jpg[0m
+[1;90m│   │   ├── [0m[35m b-414.jpg[0m
+[1;90m│   │   ├── [0m[35m b-415.jpg[0m
+[1;90m│   │   ├── [0m[35m b-417.jpg[0m
+[1;90m│   │   ├── [0m[35m b-419.jpg[0m
+[1;90m│   │   ├── [0m[35m b-421.jpg[0m
+[1;90m│   │   ├── [0m[35m b-426.jpg[0m
+[1;90m│   │   ├── [0m[35m b-429.jpg[0m
+[1;90m│   │   ├── [0m[35m b-438.jpg[0m
+[1;90m│   │   ├── [0m[35m b-441.jpg[0m
+[1;90m│   │   ├── [0m[35m b-446.jpg[0m
+[1;90m│   │   ├── [0m[35m b-447.jpg[0m
+[1;90m│   │   ├── [0m[35m b-459.jpg[0m
+[1;90m│   │   ├── [0m[35m b-465.jpg[0m
+[1;90m│   │   ├── [0m[35m b-466.jpg[0m
+[1;90m│   │   ├── [0m[35m b-467.jpg[0m
+[1;90m│   │   ├── [0m[35m b-468.jpg[0m
+[1;90m│   │   ├── [0m[35m b-469.jpg[0m
+[1;90m│   │   ├── [0m[35m b-470.jpg[0m
+[1;90m│   │   ├── [0m[35m b-472.jpg[0m
+[1;90m│   │   ├── [0m[35m b-473.jpg[0m
+[1;90m│   │   ├── [0m[35m b-476.jpg[0m
+[1;90m│   │   ├── [0m[35m b-479.jpg[0m
+[1;90m│   │   ├── [0m[35m b-483.jpg[0m
+[1;90m│   │   ├── [0m[35m b-487.jpg[0m
+[1;90m│   │   ├── [0m[35m b-501.jpg[0m
+[1;90m│   │   ├── [0m[35m b-502.jpg[0m
+[1;90m│   │   ├── [0m[35m b-505.jpg[0m
+[1;90m│   │   ├── [0m[35m b-508.jpg[0m
+[1;90m│   │   ├── [0m[35m b-509.jpg[0m
+[1;90m│   │   ├── [0m[35m b-516.jpg[0m
+[1;90m│   │   ├── [0m[35m b-519.jpg[0m
+[1;90m│   │   ├── [0m[35m b-520.jpg[0m
+[1;90m│   │   ├── [0m[35m b-521.jpg[0m
+[1;90m│   │   ├── [0m[35m b-524.jpg[0m
+[1;90m│   │   ├── [0m[35m b-525.jpg[0m
+[1;90m│   │   ├── [0m[35m b-526.jpg[0m
+[1;90m│   │   ├── [0m[35m b-528.jpg[0m
+[1;90m│   │   ├── [0m[35m b-537.jpg[0m
+[1;90m│   │   ├── [0m[35m b-538.jpg[0m
+[1;90m│   │   ├── [0m[35m b-539.jpg[0m
+[1;90m│   │   ├── [0m[35m b-545.jpg[0m
+[1;90m│   │   ├── [0m[35m b-561.jpg[0m
+[1;90m│   │   ├── [0m[35m b-576.jpg[0m
+[1;90m│   │   ├── [0m[35m b-598.jpg[0m
+[1;90m│   │   ├── [0m[35m b-601.jpg[0m
+[1;90m│   │   ├── [0m[35m b-602.jpg[0m
+[1;90m│   │   ├── [0m[35m b-612.jpg[0m
+[1;90m│   │   ├── [0m[35m b-616.jpg[0m
+[1;90m│   │   ├── [0m[35m b-617.jpg[0m
+[1;90m│   │   ├── [0m[35m b-618.jpg[0m
+[1;90m│   │   ├── [0m[35m b-624.jpg[0m
+[1;90m│   │   ├── [0m[35m b-644.jpg[0m
+[1;90m│   │   ├── [0m[35m b-646.jpg[0m
+[1;90m│   │   ├── [0m[35m b-647.jpg[0m
+[1;90m│   │   ├── [0m[35m b-648.jpg[0m
+[1;90m│   │   ├── [0m[35m b-657.jpg[0m
+[1;90m│   │   ├── [0m[35m b-671.jpg[0m
+[1;90m│   │   ├── [0m[35m b-695.jpg[0m
+[1;90m│   │   ├── [0m[35m b-702.jpg[0m
+[1;90m│   │   ├── [0m[35m b-716.jpg[0m
+[1;90m│   │   ├── [0m[35m b-717.jpg[0m
+[1;90m│   │   ├── [0m[35m b-718.jpg[0m
+[1;90m│   │   ├── [0m[35m b-719.jpg[0m
+[1;90m│   │   ├── [0m[35m b-722.jpg[0m
+[1;90m│   │   ├── [0m[35m b-723.jpg[0m
+[1;90m│   │   ├── [0m[35m b-725.jpg[0m
+[1;90m│   │   ├── [0m[35m b-726.jpg[0m
+[1;90m│   │   ├── [0m[35m b-727.jpg[0m
+[1;90m│   │   ├── [0m[35m b-728.jpg[0m
+[1;90m│   │   ├── [0m[35m b-730.jpg[0m
+[1;90m│   │   ├── [0m[35m b-735.jpg[0m
+[1;90m│   │   ├── [0m[35m b-741.jpg[0m
+[1;90m│   │   ├── [0m[35m b-742.jpg[0m
+[1;90m│   │   ├── [0m[35m b-743.jpg[0m
+[1;90m│   │   ├── [0m[35m b-748.jpg[0m
+[1;90m│   │   ├── [0m[35m b-751.jpg[0m
+[1;90m│   │   ├── [0m[35m b-752.jpg[0m
+[1;90m│   │   ├── [0m[35m b-756.jpg[0m
+[1;90m│   │   ├── [0m[35m b-758.jpg[0m
+[1;90m│   │   ├── [0m[35m b-759.jpg[0m
+[1;90m│   │   ├── [0m[35m b-760.jpg[0m
+[1;90m│   │   ├── [0m[35m b-762.jpg[0m
+[1;90m│   │   ├── [0m[35m b-765.jpg[0m
+[1;90m│   │   ├── [0m[35m b-766.jpg[0m
+[1;90m│   │   ├── [0m[35m b-769.jpg[0m
+[1;90m│   │   ├── [0m[35m b-770.jpg[0m
+[1;90m│   │   ├── [0m[35m b-771.jpg[0m
+[1;90m│   │   ├── [0m[35m b-772.jpg[0m
+[1;90m│   │   ├── [0m[35m b-773.jpg[0m
+[1;90m│   │   ├── [0m[35m b-774.jpg[0m
+[1;90m│   │   ├── [0m[35m b-776.jpg[0m
+[1;90m│   │   ├── [0m[35m b-780.jpg[0m
+[1;90m│   │   ├── [0m[35m b-781.jpg[0m
+[1;90m│   │   ├── [0m[35m b-783.jpg[0m
+[1;90m│   │   ├── [0m[35m b-784.jpg[0m
+[1;90m│   │   ├── [0m[35m b-785.jpg[0m
+[1;90m│   │   ├── [0m[35m b-787.jpg[0m
+[1;90m│   │   ├── [0m[35m b-797.jpg[0m
+[1;90m│   │   ├── [0m[35m b-799.jpg[0m
+[1;90m│   │   ├── [0m[35m b-800.jpg[0m
+[1;90m│   │   ├── [0m[35m b-803.jpg[0m
+[1;90m│   │   ├── [0m[35m b-805.jpg[0m
+[1;90m│   │   ├── [0m[35m b-806.jpg[0m
+[1;90m│   │   ├── [0m[35m b-807.jpg[0m
+[1;90m│   │   ├── [0m[35m b-809.jpg[0m
+[1;90m│   │   ├── [0m[35m b-810.jpg[0m
+[1;90m│   │   ├── [0m[35m b-813.jpg[0m
+[1;90m│   │   ├── [0m[35m b-814.jpg[0m
+[1;90m│   │   ├── [0m[35m b-820.jpg[0m
+[1;90m│   │   ├── [0m[35m b-821.jpg[0m
+[1;90m│   │   ├── [0m[35m b-822.jpg[0m
+[1;90m│   │   ├── [0m[35m b-823.jpg[0m
+[1;90m│   │   ├── [0m[35m b-824.jpg[0m
+[1;90m│   │   ├── [0m[35m b-847.jpg[0m
+[1;90m│   │   ├── [0m[35m b-848.jpg[0m
+[1;90m│   │   ├── [0m[35m b-856.jpg[0m
+[1;90m│   │   ├── [0m[35m b-859.jpg[0m
+[1;90m│   │   ├── [0m[35m b-868.jpg[0m
+[1;90m│   │   ├── [0m[35m b-869.jpg[0m
+[1;90m│   │   ├── [0m[35m b-875.jpg[0m
+[1;90m│   │   ├── [0m[35m b-880.jpg[0m
+[1;90m│   │   ├── [0m[35m b-882.jpg[0m
+[1;90m│   │   ├── [0m[35m b-886.jpg[0m
+[1;90m│   │   ├── [0m[35m b-908.jpg[0m
+[1;90m│   │   ├── [0m[35m b-909.jpg[0m
+[1;90m│   │   ├── [0m[35m b-915.jpg[0m
+[1;90m│   │   ├── [0m[35m b-917.jpg[0m
+[1;90m│   │   ├── [0m[35m bachlanschaft_hormann_1840.jpg[0m
+[1;90m│   │   ├── [0m[35m background.jpg[0m
+[1;90m│   │   ├── [0m[35m backiee-266172-landscape.jpg[0m
+[1;90m│   │   ├── [0m[35m backiee-269161-landscape.jpg[0m
+[1;90m│   │   ├── [0m[35m bailey-zindel-NRQV-hBF10M-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m based.png[0m
+[1;90m│   │   ├── [0m[35m Bass.png[0m
+[1;90m│   │   ├── [0m[35m bbd85fa86d8dc8e3fc64d086f6641a5c.gif[0m
+[1;90m│   │   ├── [0m[35m beach.jpg[0m
+[1;90m│   │   ├── [0m[35m beach.png[0m
+[1;90m│   │   ├── [0m[35m beach_landscape.png[0m
+[1;90m│   │   ├── [0m[35m beautiful_pond_trees_mountains_autumn_wallpaper_background_4k_hd_nature-1920x1080.jpg[0m
+[1;90m│   │   ├── [0m[35m Beer-Girl.png[0m
+[1;90m│   │   ├── [0m[35m beer.jpg[0m
+[1;90m│   │   ├── [0m[35m benjamin-voros-phIFdC6lA4E-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m berries.jpg[0m
+[1;90m│   │   ├── [0m[35m berserk_dark_scul_red_eyes_white.png[0m
+[1;90m│   │   ├── [0m[35m bg.png[0m
+[1;90m│   │   ├── [0m[35m bkq074xpdxm91.png[0m
+[1;90m│   │   ├── [0m[35m black-and-white-2560x1440-21293.jpg[0m
+[1;90m│   │   ├── [0m[35m black-hole.png[0m
+[1;90m│   │   ├── [0m[35m black5_unicat.png[0m
+[1;90m│   │   ├── [0m[35m black_hole_by_kurzgesagt.png[0m
+[1;90m│   │   ├── [0m[35m bLK2uxD.png[0m
+[1;90m│   │   ├── [0m[35m blobgirl.png[0m
+[1;90m│   │   ├── [0m[35m blue_foggy_forest_trees_person_house.jpg[0m
+[1;90m│   │   ├── [0m[35m blue_foggy_lake_bridge_night_grass_art_woman_sunset.jpg[0m
+[1;90m│   │   ├── [0m[35m blue_night_person_sky_stars_trees_field.png[0m
+[1;90m│   │   ├── [0m[35m blue_person_foggy_field_tree_hills.png[0m
+[1;90m│   │   ├── [0m[35m blue_sky_person_field_abstract_stars.jpg[0m
+[1;90m│   │   ├── [0m[35m blue_sky_road_field_trees.jpg[0m
+[1;90m│   │   ├── [0m[35m bo7pp9vixhe91.jpg[0m
+[1;90m│   │   ├── [0m[35m board.png[0m
+[1;90m│   │   ├── [0m[35m boat_abondoned.jpg[0m
+[1;90m│   │   ├── [0m[35m Bocchi.png[0m
+[1;90m│   │   ├── [0m[35m books.jpg[0m
+[1;90m│   │   ├── [0m[35m Boxes.png[0m
+[1;90m│   │   ├── [0m[35m Boykisser_dark_wallpaper_Computer_upscayl_5x_upscayl_lite_4x.png[0m
+[1;90m│   │   ├── [0m[35m BoykisserWhite_upscayl_6x_upscayl-lite-4x.png[0m
+[1;90m│   │   ├── [0m[35m Breath_of_the_Wild.png[0m
+[1;90m│   │   ├── [0m[35m Bridge.jpg[0m
+[1;90m│   │   ├── [0m[35m bridge.jpg[0m
+[1;90m│   │   ├── [0m[35m brown_city_planet_w.jpg[0m
+[1;90m│   │   ├── [0m[35m bsod.png[0m
+[1;90m│   │   ├── [0m[35m bu8j3glq8q4d1.jpg[0m
+[1;90m│   │   ├── [0m[35m bulbs.jpg[0m
+[1;90m│   │   ├── [0m[35m bunny.png[0m
+[1;90m│   │   ├── [0m[35m burning-earth.png[0m
+[1;90m│   │   ├── [0m[35m burnout.png[0m
+[1;90m│   │   ├── [0m[35m bush.png[0m
+[1;90m│   │   ├── [0m[35m butterFly.png[0m
+[1;90m│   │   ├── [0m[35m buttons.png[0m
+[1;90m│   │   ├── [0m[35m bvnbbvn.jpg[0m
+[1;90m│   │   ├── [0m[35m 'cabin (copy).png'[0m
+[1;90m│   │   ├── [0m[35m cabin.jpg[0m
+[1;90m│   │   ├── [0m[35m cabin.png[0m
+[1;90m│   │   ├── [0m[35m cabin_foggy_solitary_light_warm_abstract.png[0m
+[1;90m│   │   ├── [0m[35m cactus.png[0m
+[1;90m│   │   ├── [0m[35m calming-nature-wallpaper-free-image.jpeg[0m
+[1;90m│   │   ├── [0m[35m camera-2.jpg[0m
+[1;90m│   │   ├── [0m[35m camera.png[0m
+[1;90m│   │   ├── [0m[35m canyon.jpg[0m
+[1;90m│   │   ├── [0m[35m capm6mk4pedb1.jpg[0m
+[1;90m│   │   ├── [0m[35m car_sea_caffee_signs_pharmacy_flag.png[0m
+[1;90m│   │   ├── [0m[35m cars_on_a_train_track.jpg[0m
+[1;90m│   │   ├── [0m[35m cartoon_of_a_lamp_post_with_stars_and_hats.png[0m
+[1;90m│   │   ├── [0m[35m castle.jpg[0m
+[1;90m│   │   ├── [0m[35m castleinskywindmill.png[0m
+[1;90m│   │   ├── [0m[35m cat-2.jpg[0m
+[1;90m│   │   ├── [0m[35m cat-sound.png[0m
+[1;90m│   │   ├── [0m[35m cat.jpg[0m
+[1;90m│   │   ├── [0m[35m cat.png[0m
+[1;90m│   │   ├── [0m[35m Cat.png[0m
+[1;90m│   │   ├── [0m[35m cat11.png[0m
+[1;90m│   │   ├── [0m[35m cat_anime-girl.png[0m
+[1;90m│   │   ├── [0m[35m Cat_at_Play.png[0m
+[1;90m│   │   ├── [0m[35m cat_bunnies.png[0m
+[1;90m│   │   ├── [0m[35m cat_colors.png[0m
+[1;90m│   │   ├── [0m[35m cat_firewatch.png[0m
+[1;90m│   │   ├── [0m[35m cat_leaves.png[0m
+[1;90m│   │   ├── [0m[35m caterpillar.jpg[0m
+[1;90m│   │   ├── [0m[35m catpuccin.jpg[0m
+[1;90m│   │   ├── [0m[35m Catpuccin_Omori_Q.png[0m
+[1;90m│   │   ├── [0m[35m catpuccin_samurai.png[0m
+[1;90m│   │   ├── [0m[35m cats-computer-simple-background-minimalism-monochrome-2283948-wallhere.com.jpg[0m
+[1;90m│   │   ├── [0m[35m cats_animated_pink_trees_pixelated_brigde_sakura.gif[0m
+[1;90m│   │   ├── [0m[35m Cavalli_al_guado_.jpg[0m
+[1;90m│   │   ├── [0m[35m chaos.png[0m
+[1;90m│   │   ├── [0m[35m chica-anime-con-alas-y-astronauta_3840x2160_xtrafondos.com.jpg[0m
+[1;90m│   │   ├── [0m[35m chillhop.com-cosy_retreat.png[0m
+[1;90m│   │   ├── [0m[35m chillhop.com-cosy_retreat_sunset.png[0m
+[1;90m│   │   ├── [0m[35m chinatown.png[0m
+[1;90m│   │   ├── [0m[35m chiruno_90.jpg[0m
+[1;90m│   │   ├── [0m[35m chris-barbalis-rjwU7yqACkY.jpg[0m
+[1;90m│   │   ├── [0m[35m chris-lawton-5IHz5WhosQE.jpg[0m
+[1;90m│   │   ├── [0m[35m christmas-toys.jpg[0m
+[1;90m│   │   ├── [0m[35m cinnamon-rolls.jpg[0m
+[1;90m│   │   ├── [0m[35m city-from-above.jpg[0m
+[1;90m│   │   ├── [0m[35m city-rain.png[0m
+[1;90m│   │   ├── [0m[35m city-skyline.jpg[0m
+[1;90m│   │   ├── [0m[35m city_futuristic_future_day_purple_sky_buildings_person_planet.jpg[0m
+[1;90m│   │   ├── [0m[35m city_grey_buildings_trees_lake_person_bench.jpg[0m
+[1;90m│   │   ├── [0m[35m city_nigh_lights_fog_dark.jpg[0m
+[1;90m│   │   ├── [0m[35m city_night_cyberpunk_neon_buildings_clouds_foggy_dark_black.png[0m
+[1;90m│   │   ├── [0m[35m city_purple_night_roads_buildings_dark.png[0m
+[1;90m│   │   ├── [0m[35m city_top_view.jpg[0m
+[1;90m│   │   ├── [0m[35m classroom.jpg[0m
+[1;90m│   │   ├── [0m[35m clay-banks-Jya99orvzSE.jpg[0m
+[1;90m│   │   ├── [0m[35m clay-banks-u27Rrbs9Dwc-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m cliff-edge.jpg[0m
+[1;90m│   │   ├── [0m[35m clouds_sky_fog_night_highway_dark_lights_tree.jpg[0m
+[1;90m│   │   ├── [0m[35m clouds_tree_trees_tokyo_sky_city_road_signs.png[0m
+[1;90m│   │   ├── [0m[35m cmdwired.gif[0m
+[1;90m│   │   ├── [0m[35m cNL7ZMd.png[0m
+[1;90m│   │   ├── [0m[35m coding-2.png[0m
+[1;90m│   │   ├── [0m[35m coding-3.png[0m
+[1;90m│   │   ├── [0m[35m coding.png[0m
+[1;90m│   │   ├── [0m[35m coffee-cup.jpg[0m
+[1;90m│   │   ├── [0m[35m coffee-green.jpg[0m
+[1;90m│   │   ├── [0m[35m colorful-planets.jpg[0m
+[1;90m│   │   ├── [0m[35m Colors.png[0m
+[1;90m│   │   ├── [0m[35m comet.jpg[0m
+[1;90m│   │   ├── [0m[35m comfy-room.jpg[0m
+[1;90m│   │   ├── [0m[35m cool-tux.png[0m
+[1;90m│   │   ├── [0m[35m cornelius-dammrich-2003-mainshot-crop-hd-04.jpg[0m
+[1;90m│   │   ├── [0m[35m cowboy.png[0m
+[1;90m│   │   ├── [0m[35m crane_light_star_rain_art_sky_blue.png[0m
+[1;90m│   │   ├── [0m[35m cristina-gottardi-CSpjU6hYo_0-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m cut_rainbow.png[0m
+[1;90m│   │   ├── [0m[35m cws5grxz64m91.jpg[0m
+[1;90m│   │   ├── [0m[35m cyberpunk-anime-girl-rifle-4k-wallpaper-uhdpaper.com-272@1@m.jpg[0m
+[1;90m│   │   ├── [0m[35m cyberpunk-anime-girl-sci-fi-4k-wallpaper-uhdpaper.com-303@5@d.jpg[0m
+[1;90m│   │   ├── [0m[35m cyberpunk-gruvbox.png[0m
+[1;90m│   │   ├── [0m[35m cyberpunk-ninja-katana-sci-fi-hd-wallpaper-uhdpaper.com-618@0@j.jpg[0m
+[1;90m│   │   ├── [0m[35m cyberpunk-sci-fi-anime-boy-hd-wallpaper-uhdpaper.com-123@5@h.jpg[0m
+[1;90m│   │   ├── [0m[35m cyberpunk_city_blue_buildings_night.jpg[0m
+[1;90m│   │   ├── [0m[35m d71hj10-cb68bc64-0c64-4cfc-a105-7bbeb40975fb.jpg[0m
+[1;90m│   │   ├── [0m[35m dalek.jpg[0m
+[1;90m│   │   ├── [0m[35m dan-otis-OYFHT4X5isg.jpg[0m
+[1;90m│   │   ├── [0m[35m daniel-leone-v7daTKlZzaw-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m daniel-leone-v7daTKlZzaw.jpg[0m
+[1;90m│   │   ├── [0m[35m daniel-olah-6KQETG8J-zI-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m dark-bench.png[0m
+[1;90m│   │   ├── [0m[35m dark-cat-rosewater.png[0m
+[1;90m│   │   ├── [0m[35m dark-forest.jpg[0m
+[1;90m│   │   ├── [0m[35m dark-intel.png[0m
+[1;90m│   │   ├── [0m[35m dark_forest.png[0m
+[1;90m│   │   ├── [0m[35m dark_pixelart.png[0m
+[1;90m│   │   ├── [0m[35m darker_unicat.png[0m
+[1;90m│   │   ├── [0m[35m david-lezcano-mNCFOaaLu5o.jpg[0m
+[1;90m│   │   ├── [0m[35m davide-ragusa-4jcFu1byopQ.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774599903852464650.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774599941568874389.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774600419550128303.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774602436557979119.png[0m
+[1;90m│   │   ├── [0m[35m ddg_1774602437113595776.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774602438144596334.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774605382531553461.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774605446435930926.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774605579624138865.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774615767798027909.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774620034156831646.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774620409636205721.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774620413402932064.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774622043210650029.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774639067688695478.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774641872555614240.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774643182329880408.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774645026033718947.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774645712436028556.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774646984517969791.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774648312988462566.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774654777120434705.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774713611388463364.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774713611748526324.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774713636288814526.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774713636511819828.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774713636683994897.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774713636881196310.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774713637115375111.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774713637476461374.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774713638020815487.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774713638396323956.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774713638797795288.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774716902087709339.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774716902687099423.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774716903009217090.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774717604727599774.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774717605333031670.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774722613867122860.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774734298333240284.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774734326739841782.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774734326903598045.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774780391953611726.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774780393749657943.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774780394309762884.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774780395777131006.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774780396093463631.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774780397475447773.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774781033746426996.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774781658663966193.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774782187433854693.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774782188094899258.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774782189461707769.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774782190817151958.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774782669740861393.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774782671625932995.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774782672860867551.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774782673197911090.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774782673333584602.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774782674043721055.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774782674883102894.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774782675400853486.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774782675734960449.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774782676929757720.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774782677374066666.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774783055973498995.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774783315591977472.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774783320741072709.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774783322250686257.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774821968572753333.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774822948624329359.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774891010517672940.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774891011096475871.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774891011316616769.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774901723427810975.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774901727050256154.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774901728568069058.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774901731449616209.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1774905055421575526.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775128938820755628.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775128940124232689.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775128943444600210.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775238082972349461.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775238085863420113.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775238090087523949.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775239584175374902.png[0m
+[1;90m│   │   ├── [0m[35m ddg_1775339653155332671.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775465948835529174.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775465959941627817.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775598782454694145.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775598799992553761.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775598803350720201.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775600700665865616.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775600820377072218.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775600913544269819.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775840721786760543.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775840777174397560.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775840789752445237.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775840861499476095.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775847825579266680.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775847826593389677.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775847870758437579.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775847871769758615.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775847883365037796.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775900995808972286.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1775900998405312100.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776099649119592946.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776100398681680966.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776100454281931521.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776100455582483901.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776100455990583775.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776100456498617728.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776100457017603321.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776118484594471661.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776278336076098185.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776278336851163303.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776278338633212937.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776280410901767186.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776280415303827002.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776373765829978071.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776461223953118109.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776461225752394797.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776461233815174772.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776502018776887870.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776502024394019311.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776502257304634598.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776502338028869468.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776503846213010835.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776503847400342859.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776503850866606033.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776503881348392922.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776503884641683500.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776503935695806147.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776503936810328809.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776503938802122505.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776705904816269483.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776705918099295589.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776705919582977818.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776705941716669699.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776705944442940876.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776707857727915043.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776707864029672540.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776707871252943941.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776707875967148133.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776707876585363724.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776707882151723766.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776707888896377931.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776708000632701336.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776708003089682491.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776709026050161588.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776709050882319960.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776885413343117776.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776889020155911194.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776889023121422165.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776889025510771963.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776889035309844686.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776889036488197647.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776889037313704022.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776889038381168787.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776949355657106199.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776968609537630262.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776968611224978476.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776968612798568982.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776968614492623752.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776968617645334227.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776968619678093281.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776968620455538892.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776968624670744282.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776968625235767653.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1776968628942805169.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777058647276400061.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777058651940096635.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777125409636751952.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777125411791825203.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777125414124645708.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777125416040957884.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777125431729077717.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777125447136440684.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777125447633321642.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777125448104002343.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777125449260663696.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777126055626057433.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777126056276775997.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777126057237455991.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777126057711988210.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777126061314884486.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777126061925785682.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777126063159695155.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777126067508211634.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777126858760876329.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777126860109243540.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777126861330636434.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777126864743360373.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777126866998303091.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777126869520170066.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777126870112456543.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777126871118749215.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777126873526703267.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777300621007408132.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777317750629494810.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777317752190852327.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777317753546127234.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777317756273875827.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777326734657877690.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777326764672986234.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777326932217712406.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777326937724162288.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777326941732352185.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777326946231346959.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777327104308389973.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777414615160925517.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777414823655500066.jpg[0m
+[1;90m│   │   ├── [0m[35m ddg_1777414826353201272.jpg[0m
+[1;90m│   │   ├── [0m[35m 'dead-robot (copy).jpg'[0m
+[1;90m│   │   ├── [0m[35m dead-robot.jpg[0m
+[1;90m│   │   ├── [0m[35m debian_grey_swirl.png[0m
+[1;90m│   │   ├── [0m[35m debianfetch.png[0m
+[1;90m│   │   ├── [0m[35m deer_and_sunset.jpg[0m
+[1;90m│   │   ├── [0m[35m denji-5120x2880-8875.png[0m
+[1;90m│   │   ├── [0m[35m derniers_rayon_martin.jpg[0m
+[1;90m│   │   ├── [0m[35m derrick-cooper-L505cPnmIds-unsplash.jpg[0m
+[1;90m│   │   ├── [0m[35m desert-doom-sand-dunes-dark-background-monochrome-landscape-3440x1440-6409.jpg[0m
+[1;90m│   │   ├── [0m[35m desert.jpg[0m
+[1;90m│   │   ├── [0m[35m desk-gruvbox-material.jpg[0m
+[1;90m│   │   ├── [0m[35m detective-spiderman.jpg[0m
+[1;90m│   │   ├── [0m[35m Diseno_sin_titulo21.png[0m
+[1;90m│   │   ├── [0m[35m DKoRY7F.jpeg[0m
+[1;90m│   │   ├── [0m[35m dkyjlfrw08cd1.png[0m
+[1;90m│   │   ├── [0m[35m dock.png[0m
+[1;90m│   │   ├── [0m[35m dog_scull_minimalism_dark_red.jpg[0m
+[1;90m│   │   ├── [0m[35m dominik-mayer-10.jpg[0m
+[1;90m│   │   ├── [0m[35m dominik-mayer-17.jpg[0m
+[1;90m│   │   ├── [0m[35m door.png[0m
+[1;90m│   │   ├── [0m[35m dragon.jpg[0m
+[1;90m│   │   ├── [0m[35m dragon.png[0m
+[1;90m│   │   ├── [0m[35m dragon_sea_water_person_white_blue_sky_underwater.png[0m
+[1;90m│   │   ├── [0m[35m dragons_lake_fog_white_boat_person.jpg[0m
+[1;90m│   │   ├── [0m[35m Driving_Home_The_Flock.png[0m
+[1;90m│   │   ├── [0m[35m dryhope-White_Oak.jpg[0m
+[1;90m│   │   ├── [0m[35m edewaa-foster-aWkpMIIC5aY.jpg[0m
+[1;90m│   │   ├── [0m[35m edger_lucy_neon.jpg[0m
+[1;90m│   │   ├── [0m[35m efw6wleqkd5d1.jpg[0m
+[1;90m│   │   ├── [0m[35m eHNI13W.png[0m
+[1;90m│   │   ├── [0m[35m ek0KFD.jpg[0m
+[1;90m│   │   ├── [0m[35m elegant.png[0m
+[1;90m│   │   ├── [0m[35m elias.jpg[0m
+[1;90m│   │   ├── [0m[35m elliott-engelmann-DjlKxYFJlTc.jpg[0m
+[1;90m│   │   ├── [0m[35m em-rofi.jpg[0m
+[1;90m│   │   ├── [0m[35m escape_velocity.jpg[0m
+[1;90m│   │   ├── [0m[35m evangelion_robot_red_fire_rage.png[0m
+[1;90m│   │   ├── [0m[35m evening_sky.png[0m
+[1;90m│   │   ├── [0m[35m everforest.jpg[0m
+[1;90m│   │   ├── [0m[35m evil.jpeg[0m
+[1;90m│   │   ├── [0m[35m Excl_Autumn_Leaf.jpg[0m
+[1;90m│   │   ├── [0m[35m explorer_green_day.jpg[0m
+[1;90m│   │   └── [0m[35m explorer_orange_sunset.jpg[0m
+[1;90m│   └── [0m[34m [1mWalls[0m
+[1;90m│       ├── [0m[35m --.png[0m
+[1;90m│       ├── [0m[35m --1.png[0m
+[1;90m│       ├── [0m[35m --2.png[0m
+[1;90m│       ├── [0m[35m 0anime.jpg[0m
+[1;90m│       ├── [0m[35m 0anime1.jpg[0m
+[1;90m│       ├── [0m[35m 0anime2.jpg[0m
+[1;90m│       ├── [0m[35m 0anime3.png[0m
+[1;90m│       ├── [0m[35m 0anime4.jpg[0m
+[1;90m│       ├── [0m[35m 0anime5.png[0m
+[1;90m│       ├── [0m[35m 0anime6.png[0m
+[1;90m│       ├── [0m[35m 0anime9.jpg[0m
+[1;90m│       ├── [0m[35m 0anime10.png[0m
+[1;90m│       ├── [0m[35m 0anime11.png[0m
+[1;90m│       ├── [0m[35m 0anime12.jpg[0m
+[1;90m│       ├── [0m[35m 00010.png[0m
+[1;90m│       ├── [0m[35m 00049.jpg[0m
+[1;90m│       ├── [0m[35m 00053.jpg[0m
+[1;90m│       ├── [0m[35m 00054.jpg[0m
+[1;90m│       ├── [0m[35m 00055.jpg[0m
+[1;90m│       ├── [0m[35m 00068.jpg[0m
+[1;90m│       ├── [0m[35m 00069.jpg[0m
+[1;90m│       ├── [0m[35m 00070.jpg[0m
+[1;90m│       ├── [0m[35m 00072.jpg[0m
+[1;90m│       ├── [0m[35m 00074.jpg[0m
+[1;90m│       ├── [0m[35m 00083.jpg[0m
+[1;90m│       ├── [0m[35m 00096.jpg[0m
+[1;90m│       ├── [0m[35m 001-kita.png[0m
+[1;90m│       ├── [0m[35m 00105.jpg[0m
+[1;90m│       ├── [0m[35m 00142.jpg[0m
+[1;90m│       ├── [0m[35m 00146.jpg[0m
+[1;90m│       ├── [0m[35m 00147.jpg[0m
+[1;90m│       ├── [0m[35m 00158.jpg[0m
+[1;90m│       ├── [0m[35m 002-balloon-girl.png[0m
+[1;90m│       ├── [0m[35m 003-cliffside-town.png[0m
+[1;90m│       ├── [0m[35m 003-tunnel.png[0m
+[1;90m│       ├── [0m[35m 004-asa-yoru.png[0m
+[1;90m│       ├── [0m[35m 004-tunnel.png[0m
+[1;90m│       ├── [0m[35m 005-fields.png[0m
+[1;90m│       ├── [0m[35m 005-house.png[0m
+[1;90m│       ├── [0m[35m 005-yoru-asa.png[0m
+[1;90m│       ├── [0m[35m 006-airfield.png[0m
+[1;90m│       ├── [0m[35m 007-door.png[0m
+[1;90m│       ├── [0m[35m 007-knight.png[0m
+[1;90m│       ├── [0m[35m 0071.jpg[0m
+[1;90m│       ├── [0m[35m 008-circuit.png[0m
+[1;90m│       ├── [0m[35m 008-red-sunset.png[0m
+[1;90m│       ├── [0m[35m 008-waterfall.png[0m
+[1;90m│       ├── [0m[35m 009-circuit.png[0m
+[1;90m│       ├── [0m[35m 009-kiruko-maru-rough.png[0m
+[1;90m│       ├── [0m[35m '01. Green Lush.jpg'[0m
+[1;90m│       ├── [0m[35m '01. Rosé Pine.jpg'[0m
+[1;90m│       ├── [0m[35m 011-character.png[0m
+[1;90m│       ├── [0m[35m 011-katana-girl.png[0m
+[1;90m│       ├── [0m[35m 013-clouds.png[0m
+[1;90m│       ├── [0m[35m 015-xwing.png[0m
+[1;90m│       ├── [0m[35m 018-slumber.png[0m
+[1;90m│       ├── [0m[35m '02. Green Lush.png'[0m
+[1;90m│       ├── [0m[35m 02.png[0m
+[1;90m│       ├── [0m[35m '02. Rosé Pine.png'[0m
+[1;90m│       ├── [0m[35m 026-bridge.png[0m
+[1;90m│       ├── [0m[35m 027-ruins.png[0m
+[1;90m│       ├── [0m[35m '03. Abyssal Wave.png'[0m
+[1;90m│       ├── [0m[35m '03. Green Lush.png'[0m
+[1;90m│       ├── [0m[35m '03. One Dark.png'[0m
+[1;90m│       ├── [0m[35m 03.png[0m
+[1;90m│       ├── [0m[35m 030-leaves.png[0m
+[1;90m│       ├── [0m[35m 034-pier.png[0m
+[1;90m│       ├── [0m[35m '04. Abyssal Wave.png'[0m
+[1;90m│       ├── [0m[35m 04.png[0m
+[1;90m│       ├── [0m[35m '04. Scarlet Night.jpg'[0m
+[1;90m│       ├── [0m[35m 04vliswlot1g1.jpg[0m
+[1;90m│       ├── [0m[35m 0415.jpg[0m
+[1;90m│       ├── [0m[35m 0419.jpg[0m
+[1;90m│       ├── [0m[35m '05. One Dark.png'[0m
+[1;90m│       ├── [0m[35m 05.png[0m
+[1;90m│       ├── [0m[35m 050-camille-unknown.png[0m
+[1;90m│       ├── [0m[35m '06. Catppuccin Mocha.png'[0m
+[1;90m│       ├── [0m[35m '06. Green Lush.jpg'[0m
+[1;90m│       ├── [0m[35m 06.png[0m
+[1;90m│       ├── [0m[35m '07. Abyssal Wave.png'[0m
+[1;90m│       ├── [0m[35m '07. Catppuccin Mocha.png'[0m
+[1;90m│       ├── [0m[35m 07.png[0m
+[1;90m│       ├── [0m[35m '07. Sci-fi.jpg'[0m
+[1;90m│       ├── [0m[35m 07a937dfa5fcb675506b9622ad3802d4.jpg[0m
+[1;90m│       ├── [0m[35m '08. Abyssal Wave.png'[0m
+[1;90m│       ├── [0m[35m '08. Green Lush.jpg'[0m
+[1;90m│       ├── [0m[35m 08.png[0m
+[1;90m│       ├── [0m[35m '08. Scarlet Night.png'[0m
+[1;90m│       ├── [0m[35m 086a6606e068ef51.png[0m
+[1;90m│       ├── [0m[35m '09. Green Lush.png'[0m
+[1;90m│       ├── [0m[35m 1.jpg[0m
+[1;90m│       ├── [0m '1.jpg (another copy)'
+[1;90m│       ├── [0m '1.jpg (copy)'
+[1;90m│       ├── [0m[35m 1agG7ha.jpg[0m
+[1;90m│       ├── [0m[35m '1 rain_world.png'[0m
+[1;90m│       ├── [0m[35m 2.jpg[0m
+[1;90m│       ├── [0m[35m 2dc.jpg[0m
+[1;90m│       ├── [0m[35m 2m06cwlz0tnd1.png[0m
+[1;90m│       ├── [0m[35m '2 rain_world.png'[0m
+[1;90m│       ├── [0m[35m 3.jpg[0m
+[1;90m│       ├── [0m[35m 3_1_catppuccin-mocha.jpg[0m
+[1;90m│       ├── [0m[35m 3d_gruvbox.png[0m
+[1;90m│       ├── [0m[35m '3 rain_world.png'[0m
+[1;90m│       ├── [0m[35m 4.jpg[0m
+[1;90m│       ├── [0m[35m 4k-Blue-Cherry-Blossom-Japanese-Painting-AI-Generated-4K-Wallpaper.jpg[0m
+[1;90m│       ├── [0m[35m 4k-Serene-Nature-Torii-Arch-4K-Wallpaper.jpg[0m
+[1;90m│       ├── [0m[35m 4k.png[0m
+[1;90m│       ├── [0m[35m 4NZNZtD.jpg[0m
+[1;90m│       ├── [0m[35m 5.jpg[0m
+[1;90m│       ├── [0m[35m 5m5kLI9.png[0m
+[1;90m│       ├── [0m[35m 7a7aacdb-aa0d-41ad-9cee-05ac5f21e32d.png[0m
+[1;90m│       ├── [0m[35m 8.jpg[0m
+[1;90m│       ├── [0m[35m 8hjvog3gtl8d1.png[0m
+[1;90m│       ├── [0m[35m 9.jpg[0m
+[1;90m│       ├── [0m[35m 9hsxhj9esy5d1.png[0m
+[1;90m│       ├── [0m[35m 9Tk0g7.jpg[0m
+[1;90m│       ├── [0m[35m '10. Abyssal Wave.png'[0m
+[1;90m│       ├── [0m[35m '10. One Dark.png'[0m
+[1;90m│       ├── [0m[35m 10.png[0m
+[1;90m│       ├── [0m[35m '10. Scarlet Night.jpg'[0m
+[1;90m│       ├── [0m[35m '11. Abyssal Wave.png'[0m
+[1;90m│       ├── [0m[35m '11. Catppuccin Mocha.png'[0m
+[1;90m│       ├── [0m[35m '11. Green Lush.png'[0m
+[1;90m│       ├── [0m[35m '13. Abyssal Wave.png'[0m
+[1;90m│       ├── [0m[35m '14. Catppuccin Latte.jpg'[0m
+[1;90m│       ├── [0m[35m '14. Catppuccin Mocha.jpg'[0m
+[1;90m│       ├── [0m[35m '14. One Dark.png'[0m
+[1;90m│       ├── [0m[35m '15. Gruvbox Retro.png'[0m
+[1;90m│       ├── [0m[35m '15. One Dark.png'[0m
+[1;90m│       ├── [0m[35m '15. Paranoid Sweet.jpg'[0m
+[1;90m│       ├── [0m[35m '16. Rosé Pine.png'[0m
+[1;90m│       ├── [0m[35m '17. Catppuccin Latte.jpg'[0m
+[1;90m│       ├── [0m[35m '17. Catppuccin Mocha.jpg'[0m
+[1;90m│       ├── [0m[35m '17. Gruvbox Retro.png'[0m
+[1;90m│       ├── [0m[35m '17. One Dark.jpg'[0m
+[1;90m│       ├── [0m[35m '17. Rosé Pine.jpg'[0m
+[1;90m│       ├── [0m[35m '18. Catppuccin Latte.jpg'[0m
+[1;90m│       ├── [0m[35m '18. Scarlet Night.png'[0m
+[1;90m│       ├── [0m[35m 18a9a4a054e4d1f8.png[0m
+[1;90m│       ├── [0m[35m '20. Rosé Pine.jpg'[0m
+[1;90m│       ├── [0m[35m '21. Rosé Pine.png'[0m
+[1;90m│       ├── [0m[35m 22.jpg[0m
+[1;90m│       ├── [0m[35m '24. Catppuccin Mocha.jpg'[0m
+[1;90m│       ├── [0m[35m '25. Catppuccin Mocha.jpg'[0m
+[1;90m│       ├── [0m[35m '26. Catppuccin Mocha.png'[0m
+[1;90m│       ├── [0m[35m '27. Catppuccin Mocha.png'[0m
+[1;90m│       ├── [0m[35m '28. Catppuccin Mocha.png'[0m
+[1;90m│       ├── [0m[35m 28a1e36191eb43fae5347624b17edf10.gif[0m
+[1;90m│       ├── [0m[35m '30. Catppuccin Mocha.png'[0m
+[1;90m│       ├── [0m[35m '32. Catppuccin Mocha.png'[0m
+[1;90m│       ├── [0m[35m '33. Catppuccin Mocha.jpg'[0m
+[1;90m│       ├── [0m[35m '34. Catppuccin Mocha.png'[0m
+[1;90m│       ├── [0m[35m '35. Catppuccin Mocha.jpg'[0m
+[1;90m│       ├── [0m[35m 37.jpg[0m
+[1;90m│       ├── [0m[35m 3840x2160-minimal-monochrome-desktop-wallpapers-v0-9orn3xt37xje1.jpg[0m
+[1;90m│       ├── [0m[35m 164398-ambiente-la_luz_de_calle-entretenimiento-artes_escenicas-atardecer-3840x2160.jpg[0m
+[1;90m│       ├── [0m[35m 197424-nature-lake-sunset-landscape-ultrahd-4k-wallpaper.jpg[0m
+[1;90m│       ├── [0m[35m 237093-nature-mountain-forest-landscape-fog-lake-ultrahd-4k-wallpaper.jpg[0m
+[1;90m│       ├── [0m[35m 255756-nature-mountain-forest-landscape-fog-lake-ultrahd-4k-wallpaper.jpg[0m
+[1;90m│       ├── [0m[35m 462813.jpg[0m
+[1;90m│       ├── [0m[35m 484717.jpg[0m
+[1;90m│       ├── [0m[35m 1004017(1).png[0m
+[1;90m│       ├── [0m[35m 1004017-colorized.png[0m
+[1;90m│       ├── [0m[35m 1172983.jpg[0m
+[1;90m│       ├── [0m[35m 1269318.png[0m
+[1;90m│       ├── [0m[35m 1347723.png[0m
+[1;90m│       ├── [0m[35m 1390766.png[0m
+[1;90m│       ├── [0m[35m 1394830.png[0m
+[1;90m│       ├── [0m[35m 1395755.png[0m
+[1;90m│       ├── [0m[35m 1400988.png[0m
+[1;90m│       ├── [0m[35m 1406850.png[0m
+[1;90m│       ├── [0m[35m 1406945.png[0m
+[1;90m│       ├── [0m[35m 3713676.png[0m
+[1;90m│       ├── [0m[35m 7674881.jpg[0m
+[1;90m│       ├── [0m[35m 25862501_p0_waifu2x_art_noise1_scale.png[0m
+[1;90m│       ├── [0m[35m '48036927_p0 up.jpg'[0m
+[1;90m│       ├── [0m[35m 48053793_p0.jpg[0m
+[1;90m│       ├── [0m[35m 48621997_p0.jpg[0m
+[1;90m│       ├── [0m[35m 59919008_p0.png[0m
+[1;90m│       ├── [0m[35m 79085051_p0.png[0m
+[1;90m│       ├── [0m[35m 79721237_p0.jpg[0m
+[1;90m│       ├── [0m[35m 87952141_p7.jpg[0m
+[1;90m│       ├── [0m[35m 93165067_p1.jpg[0m
+[1;90m│       ├── [0m[35m 98904035_p0.jpg[0m
+[1;90m│       ├── [0m[35m 101818554_p0_master1200.jpg[0m
+[1;90m│       ├── [0m[35m 107813497_p0.jpg[0m
+[1;90m│       ├── [0m[35m 108948084_p0.png[0m
+[1;90m│       ├── [0m[35m 110947747_p0.png[0m
+[1;90m│       ├── [0m[35m 114133447_p0.png[0m
+[1;90m│       ├── [0m[35m 114753344_p0.png[0m
+[1;90m│       ├── [0m[35m 114815750_p0.png[0m
+[1;90m│       ├── [0m[35m 115315413_p0.jpg[0m
+[1;90m│       ├── [0m[35m 116327446_p1.jpg[0m
+[1;90m│       ├── [0m[35m 116861314_p0.jpg[0m
+[1;90m│       ├── [0m[35m 117497448_p0.jpg[0m
+[1;90m│       ├── [0m[35m 117542401_p0.png[0m
+[1;90m│       ├── [0m[35m 118016954_p0.png[0m
+[1;90m│       ├── [0m[35m 118205900_p0.jpg[0m
+[1;90m│       ├── [0m[35m 118205969_p0.jpg[0m
+[1;90m│       ├── [0m[35m 118206066_p0.jpg[0m
+[1;90m│       ├── [0m[35m 120275142_p0.jpg[0m
+[1;90m│       ├── [0m[35m 121534711_p0.png[0m
+[1;90m│       ├── [0m[35m 122252287_p0.jpg[0m
+[1;90m│       ├── [0m[35m 122440215_p0.png[0m
+[1;90m│       ├── [0m[35m '123824383_p0 (Edited) compressed.png'[0m
+[1;90m│       ├── [0m[35m 124110783_p0.png[0m
+[1;90m│       ├── [0m[35m 124929545_p0.png[0m
+[1;90m│       ├── [0m[35m 127213252_p0.png[0m
+[1;90m│       ├── [0m[35m 127218467_p0.jpg[0m
+[1;90m│       ├── [0m[35m 129038182_p0.jpg[0m
+[1;90m│       ├── [0m[35m 129692778_p0.jpg[0m
+[1;90m│       ├── [0m[35m 132064059_p0.png[0m
+[1;90m│       ├── [0m[35m 132704739_p0.jpg[0m
+[1;90m│       ├── [0m[35m 133762379_p0.jpg[0m
+[1;90m│       ├── [0m[35m 136233360_p0.jpg[0m
+[1;90m│       ├── [0m[35m 136268202_p0.png[0m
+[1;90m│       ├── [0m[35m 137178733_p0_master1200.jpg[0m
+[1;90m│       ├── [0m[35m 137722971_p0.jpg[0m
+[1;90m│       ├── [0m[35m 1723307794_grim.png[0m
+[1;90m│       ├── [0m[35m 1734824244939625.jpg[0m
+[1;90m│       ├── [0m[35m a_bird_flying_over_a_beach.jpg[0m
+[1;90m│       ├── [0m[35m a_bird_on_a_statue.jpg[0m
+[1;90m│       ├── [0m[35m a_black_and_white_drawing_of_a_door.jpg[0m
+[1;90m│       ├── [0m[35m a_black_and_white_drawing_of_a_person_with_a_blindfold.png[0m
+[1;90m│       ├── [0m[35m a_black_and_white_drawing_of_a_robot_with_a_halo.png[0m
+[1;90m│       ├── [0m[35m a_black_and_white_image_of_a_group_of_people.png[0m
+[1;90m│       ├── [0m[35m a_black_and_white_image_of_a_man.png[0m
+[1;90m│       ├── [0m[35m a_black_and_white_image_of_a_room.jpg[0m
+[1;90m│       ├── [0m[35m a_black_and_white_logo.png[0m
+[1;90m│       ├── [0m[35m a_black_background_with_white_dots.png[0m
+[1;90m│       ├── [0m[35m a_blue_and_pink_swirls_on_a_black_background.png[0m
+[1;90m│       ├── [0m[35m a_blue_and_white_image_of_a_mountain.png[0m
+[1;90m│       ├── [0m[35m a_blue_yin_yang_symbol.jpg[0m
+[1;90m│       ├── [0m[35m a_building_in_the_style_of_brutalism_night.png[0m
+[1;90m│       ├── [0m[35m a_building_with_a_roof_and_a_body_of_water.jpg[0m
+[1;90m│       ├── [0m[35m a_building_with_people_sitting_on_a_bench.jpg[0m
+[1;90m│       ├── [0m[35m a_car_driving_on_a_road_at_night.png[0m
+[1;90m│       ├── [0m[35m a_car_in_a_field_with_trees_and_a_fire.png[0m
+[1;90m│       ├── [0m[35m a_car_on_a_road_with_orange_clouds_in_the_sky.jpg[0m
+[1;90m│       ├── [0m[35m a_car_on_a_road_with_purple_clouds_in_the_sky.png[0m
+[1;90m│       ├── [0m[35m a_car_on_a_street.png[0m
+[1;90m│       ├── [0m[35m a_car_on_the_road.png[0m
+[1;90m│       ├── [0m[35m a_car_parked_in_a_dark_alley.jpg[0m
+[1;90m│       ├── [0m[35m a_car_parked_in_a_street.jpg[0m
+[1;90m│       ├── [0m[35m a_car_with_a_can_and_a_can_in_the_desert.jpg[0m
+[1;90m│       ├── [0m[35m a_car_with_luggage_on_top_of_it.jpg[0m
+[1;90m│       ├── [0m[35m a_cartoon_of_a_cat_01.png[0m
+[1;90m│       ├── [0m[35m a_cartoon_of_a_cat_drinking_from_a_cup.png[0m
+[1;90m│       ├── [0m[35m a_cartoon_of_a_cat_in_a_glass.png[0m
+[1;90m│       ├── [0m[35m a_cartoon_of_a_girl_holding_a_bouquet_of_flowers.png[0m
+[1;90m│       ├── [0m[35m a_cartoon_of_a_girl_holding_a_sword.png[0m
+[1;90m│       ├── [0m[35m a_cartoon_of_a_girl_with_long_hair_wearing_a_black_hat_and_jacket.png[0m
+[1;90m│       ├── [0m[35m a_cartoon_of_a_house_on_a_cliff.png[0m
+[1;90m│       ├── [0m[35m a_cartoon_of_a_lamp_post.jpg[0m
+[1;90m│       ├── [0m[35m a_cartoon_of_a_man_flying_through_the_air.jpg[0m
+[1;90m│       ├── [0m[35m a_cartoon_of_a_person_holding_a_globe.jpg[0m
+[1;90m│       ├── [0m[35m a_cartoon_of_a_person_with_their_hands_on_their_face.png[0m
+[1;90m│       ├── [0m[35m a_cartoon_of_a_vehicle_with_a_monster_on_it.jpg[0m
+[1;90m│       ├── [0m[35m a_cartoon_of_a_woman_diving_into_a_large_wave.png[0m
+[1;90m│       ├── [0m[35m a_cartoon_of_a_woman_sitting_on_a_plane.png[0m
+[1;90m│       ├── [0m[35m a_cat_walking_on_a_hill.png[0m
+[1;90m│       ├── [0m[35m a_city_skyline_with_a_plane_in_the_sky.png[0m
+[1;90m│       ├── [0m[35m a_close_up_of_a_moon.png[0m
+[1;90m│       ├── [0m[35m a_close_up_of_a_person_with_wings.jpg[0m
+[1;90m│       ├── [0m[35m a_close_up_of_a_wallpaper.png[0m
+[1;90m│       ├── [0m[35m a_colorful_mask_on_a_black_background.jpg[0m
+[1;90m│       ├── [0m[35m a_colorful_sky_with_clouds.png[0m
+[1;90m│       ├── [0m[35m a_couple_of_people_standing_on_a_mountain.png[0m
+[1;90m│       ├── [0m[35m a_couple_of_planes_flying_over_a_wave.jpg[0m
+[1;90m│       ├── [0m[35m a_drawing_of_a_bear_and_a_campfire.png[0m
+[1;90m│       ├── [0m[35m a_drawing_of_a_boy_in_a_hat_and_a_boat_in_a_swamp.jpeg[0m
+[1;90m│       ├── [0m[35m a_drawing_of_a_city.jpg[0m
+[1;90m│       ├── [0m[35m a_fish_in_a_circle.png[0m
+[1;90m│       ├── [0m[35m a_fish_with_long_tail.png[0m
+[1;90m│       ├── [0m[35m a_graveyard_with_a_castle_and_trees.png[0m
+[1;90m│       ├── [0m[35m a_group_of_buildings_with_neon_lights.png[0m
+[1;90m│       ├── [0m[35m a_group_of_colorful_ghosts.png[0m
+[1;90m│       ├── [0m[35m a_group_of_men_standing_on_a_beach.jpg[0m
+[1;90m│       ├── [0m[35m a_group_of_people_on_a_street.png[0m
+[1;90m│       ├── [0m[35m a_group_of_people_standing_on_a_road_with_a_city_in_the_background.jpg[0m
+[1;90m│       ├── [0m[35m a_group_of_people_walking_on_a_hill.png[0m
+[1;90m│       ├── [0m[35m a_group_of_televisions_and_tvs_in_front_of_a_store.jpg[0m
+[1;90m│       ├── [0m[35m A_Herefordshire_Lane.png[0m
+[1;90m│       ├── [0m[35m a_house_in_the_snow.png[0m
+[1;90m│       ├── [0m[35m a_land_forgotten_by_the_gods.png[0m
+[1;90m│       ├── [0m[35m a_lighthouse_with_a_large_cloud_of_pink_clouds.jpg[0m
+[1;90m│       ├── [0m[35m a_logo_with_lines_and_rays.jpg[0m
+[1;90m│       ├── [0m[35m a_man_and_a_robot_standing_in_a_parking_lot.jpg[0m
+[1;90m│       ├── [0m[35m a_motorcycle_parked_outside_a_restaurant.jpg[0m
+[1;90m│       ├── [0m[35m a_person_in_a_hat_and_long_black_dress.png[0m
+[1;90m│       ├── [0m[35m a_person_in_a_hat_standing_in_a_room_with_windows.png[0m
+[1;90m│       ├── [0m[35m a_person_sitting_on_a_wall.png[0m
+[1;90m│       ├── [0m[35m a_pixel_art_of_a_building.png[0m
+[1;90m│       ├── [0m[35m a_pixel_art_of_a_person_walking_by_a_building.jpg[0m
+[1;90m│       ├── [0m[35m a_pixel_art_of_a_sword_and_whale.png[0m
+[1;90m│       ├── [0m[35m a_room_with_a_desk_and_a_chair_and_a_skull_on_the_wall.jpg[0m
+[1;90m│       ├── [0m[35m a_screenshot_of_a_computer.png[0m
+[1;90m│       ├── [0m[35m a_silhouette_of_a_person_standing_in_a_room_with_a_window.png[0m
+[1;90m│       ├── [0m[35m a_snow_covered_road_with_two_large_machines.jpg[0m
+[1;90m│       ├── [0m[35m aafcf6cf516a7ed7d12265dabd58bfb1.jpg[0m
+[1;90m│       ├── [0m[35m aaron-burden-X3Um-nwpuWs.jpg[0m
+[1;90m│       ├── [0m[35m abandoned_buildings_2.png[0m
+[1;90m│       ├── [0m[35m abstract-2.jpg[0m
+[1;90m│       ├── [0m[35m abstract-3.jpg[0m
+[1;90m│       ├── [0m[35m abstract-4.png[0m
+[1;90m│       ├── [0m[35m abstract-darkhole.png[0m
+[1;90m│       ├── [0m[35m abstract.jpg[0m
+[1;90m│       ├── [0m[35m abstract_cliff_person_standing_edge_white_blue.jpg[0m
+[1;90m│       ├── [0m[35m abstract_person_cyberpunk_cyan_neon.jpg[0m
+[1;90m│       ├── [0m[35m abstract_planet_body_dark_neon.png[0m
+[1;90m│       ├── [0m[35m abstract_sky_minimalism_hole_person_black_nordic_cold_stars.jpg[0m
+[1;90m│       ├── [0m[35m AbWmEVz.jpeg[0m
+[1;90m│       ├── [0m[35m aesthetic_deer.png[0m
+[1;90m│       ├── [0m[35m after_school_stroll_gruvbox.png[0m
+[1;90m│       ├── [0m[35m aj-robbie-BuQ1RZckYW4.jpg[0m
+[1;90m│       ├── [0m[35m alien_landscape.png[0m
+[1;90m│       ├── [0m[35m ALLqk82.png[0m
+[1;90m│       ├── [0m[35m alone.png[0m
+[1;90m│       ├── [0m[35m alps-snow-mountains-7680x4320-25451.jpg[0m
+[1;90m│       ├── [0m[35m amdgruvblu.png[0m
+[1;90m│       ├── [0m[35m amdgruvgreen.png[0m
+[1;90m│       ├── [0m[35m amdgruvorange.png[0m
+[1;90m│       ├── [0m[35m amdgruvred.png[0m
+[1;90m│       ├── [0m[35m ameenfahmy-mXpTl4jNKiA.jpg[0m
+[1;90m│       ├── [0m[35m 'among-us (copy).jpg'[0m
+[1;90m│       ├── [0m[35m among-us.jpg[0m
+[1;90m│       ├── [0m[35m anders-jilden-AkUR27wtaxs-unsplash.jpg[0m
+[1;90m│       ├── [0m[35m anders-jilden-cYrMQA7a3Wc-unsplash.jpg[0m
+[1;90m│       ├── [0m[35m Angel1.png[0m
+[1;90m│       ├── [0m[35m Angel2.png[0m
+[1;90m│       ├── [0m[35m Angel3.png[0m
+[1;90m│       ├── [0m[35m aniket-deole-M6XC789HLe8-unsplash.jpg[0m
+[1;90m│       ├── [0m[35m animal-skull.jpg[0m
+[1;90m│       ├── [0m[35m anime-boy-gun-cyberpunk-sci-fi-4k-wallpaper-uhdpaper.com-620@5@f.jpg[0m
+[1;90m│       ├── [0m[35m anime-girl-and-dog-bound-by-loyalty-and-oath-8f-3440x1440.jpg[0m
+[1;90m│       ├── [0m[35m anime-girl-demon-horn-8k-wallpaper-uhdpaper.com-131@5@h.jpg[0m
+[1;90m│       ├── [0m[35m anime-girl-elf-sports-car-racer-2k-wallpaper-uhdpaper.com-858@1@m.jpg[0m
+[1;90m│       ├── [0m[35m anime-girl-horn-hd-wallpaper-uhdpaper.com-132@5@h.jpg[0m
+[1;90m│       ├── [0m[35m anime-girl-horn-with-mask-4k-wallpaper-uhdpaper.com-580@2@a.jpg[0m
+[1;90m│       ├── [0m[35m anime-girl-katana-cyberpunk-sci-fi-4k-wallpaper-uhdpaper.com-695@0@j.jpg[0m
+[1;90m│       ├── [0m[35m anime-girl-mask-red-eyes-tattoo-hd-wallpaper-uhdpaper.com-141@5@h.jpg[0m
+[1;90m│       ├── [0m[35m anime-girl-nun-with-tattoo-4k-wallpaper-uhdpaper.com-740@3@a.jpg[0m
+[1;90m│       ├── [0m[35m anime-girl-red-eyes-glasses-4k-wallpaper-uhdpaper.com-614@5@f.jpg[0m
+[1;90m│       ├── [0m[35m anime-girl-red-eyes-monster-4k-wallpaper-uhdpaper.com-6115f.jpg[0m
+[1;90m│       ├── [0m[35m anime-girl-sports-car-hd-wallpaper-uhdpaper.com-853@1@m.jpg[0m
+[1;90m│       ├── [0m[35m anime-girl-with-white-hair-4k-wallpaper-uhdpaper.com-693@2@b.jpg[0m
+[1;90m│       ├── [0m[35m anime-guy-cyberpunk-sci-fi-hd-wallpaper-uhdpaper.com-737@3@a.jpg[0m
+[1;90m│       ├── [0m[35m Anime-Japan-Street.png[0m
+[1;90m│       ├── [0m[35m anime-water.png[0m
+[1;90m│       ├── [0m[35m Anime.gif[0m
+[1;90m│       ├── [0m[35m anime_girl_eyes_magenta_pink_hair.png[0m
+[1;90m│       ├── [0m[35m anime_girl_mask_katana_devil_hair.png[0m
+[1;90m│       ├── [0m[35m anime_girl_plus_rockets.png[0m
+[1;90m│       ├── [0m[35m anime_rock_band.png[0m
+[1;90m│       ├── [0m[35m anime_skull.png[0m
+[1;90m│       ├── [0m[35m anna-scarfiello-Pxf5syDVuxQ.jpg[0m
+[1;90m│       ├── [0m[35m apex_octane.jpg[0m
+[1;90m│       ├── [0m[35m apple-black-4k.png[0m
+[1;90m│       ├── [0m[35m apple-blue-black-1920x1080.png[0m
+[1;90m│       ├── [0m[35m apple.jpg[0m
+[1;90m│       ├── [0m[35m arch-aroace.png[0m
+[1;90m│       ├── [0m[35m Arch-chan_to.png[0m
+[1;90m│       ├── [0m[35m arch-linux-2.png[0m
+[1;90m│       ├── [0m[35m arch-linux.png[0m
+[1;90m│       ├── [0m[35m arch-nord-dark.png[0m
+[1;90m│       ├── [0m[35m arch-nord-light.png[0m
+[1;90m│       ├── [0m[35m arch.png[0m
+[1;90m│       ├── [0m[35m arch_clouds_water_fog_mountains.jpg[0m
+[1;90m│       ├── [0m[35m arch_fill.png[0m
+[1;90m│       ├── [0m[35m arch_flat.png[0m
+[1;90m│       ├── [0m[35m arch_outline.png[0m
+[1;90m│       ├── [0m[35m archbtw.png[0m
+[1;90m│       ├── [0m[35m archlinux.png[0m
+[1;90m│       ├── [0m[35m󰕙 ArchLogo.svg[0m
+[1;90m│       ├── [0m[35m ArchWaveBlackThumb.png[0m
+[1;90m│       ├── [0m[35m ArchWaveMonoThumb.png[0m
+[1;90m│       ├── [0m[35m aroace-plain-wide.png[0m
+[1;90m│       ├── [0m[35m art_graphics_forest_plants_trees_mountain_field_grass_nord.png[0m
+[1;90m│       ├── [0m[35m artificial-brain.jpg[0m
+[1;90m│       ├── [0m[35m ascii.png[0m
+[1;90m│       ├── [0m[35m ascii_1.png[0m
+[1;90m│       ├── [0m[35m Assassins_Creed_Mirage-Baghdad-Administrative_District-01.png[0m
+[1;90m│       ├── [0m[35m Assassins_Creed_Mirage-Baghdad-Administrative_District-02.png[0m
+[1;90m│       ├── [0m[34m [1mlight[0m
+[1;90m│       ├── [0m[34m [1m'light (another copy)'[0m
+[1;90m│       ├── [0m[34m [1m'light (copy)'[0m
+[1;90m│       ├── [0m[34m [1mlight0[0m
+[1;90m│       ├── [0m[34m [1mlight1[0m
+[1;90m│       ├── [0m[34m [1mlight2[0m
+[1;90m│       └── [0m[34m [1mmisc[0m
+[1;90m├── [0m[34m [1mwaybar[0m
+[1;90m│   ├── [0m[34m [1mcolors[0m
+[1;90m│   │   ├── [0m[33m [1mCatppuccin.css[0m
+[1;90m│   │   ├── [0m[33m [1mEverforest.css[0m
+[1;90m│   │   ├── [0m[33m [1mGruvbox.css[0m
+[1;90m│   │   ├── [0m[33m [1mNeon.css[0m
+[1;90m│   │   └── [0m[33m [1mTokyoNight.css[0m
+[1;90m│   ├── [0m[33m [1mcolors.css[0m
+[1;90m│   ├── [0m config.jsonc
+[1;90m│   ├── [0m󰡯 config1
+[1;90m│   ├── [0m configmeowrch.jsonc
+[1;90m│   ├── [0m[34m [1mconfigs[0m
+[1;90m│   │   ├── [0m󰡯 bar-left
+[1;90m│   │   ├── [0m󰡯 dual-tone-top
+[1;90m│   │   ├── [0m󰡯 full-top
+[1;90m│   │   ├── [0m󰡯 minimal-bottom
+[1;90m│   │   ├── [0m󰡯 rounded-top
+[1;90m│   │   └── [0m󰡯 skew-left
+[1;90m│   ├── [0m[34m [1mcontext[0m
+[1;90m│   │   ├── [0m󰗀 ctlcenter.xml
+[1;90m│   │   └── [0m󰗀 network.xml
+[1;90m│   ├── [0m[34m [1mlayouts[0m
+[1;90m│   │   ├── [0m[32m [1mwith_music.jsonc[0m
+[1;90m│   │   └── [0m[32m [1mwith_window.jsonc[0m
+[1;90m│   ├── [0m[33m [1mmediaplayer.py[0m
+[1;90m│   ├── [0m[34m [1mmodules[0m
+[1;90m│   │   ├── [0m modules-custom.jsonc
+[1;90m│   │   ├── [0m modules-dual-tone.jsonc
+[1;90m│   │   ├── [0m modules-groups.jsonc
+[1;90m│   │   ├── [0m modules-main.jsonc
+[1;90m│   │   └── [0m modules-virt.jsonc
+[1;90m│   ├── [0m modules.jsonc
+[1;90m│   ├── [0m[34m [1moldd[0m
+[1;90m│   │   ├── [0m[34m [1mcolors[0m
+[1;90m│   │   ├── [0m[36m󱁻 [1mconfig[0m [1;90m->[0m [36m/home/prunus/.config/waybar/configs/[0mrounded-top
+[1;90m│   │   ├── [0m[34m [1mconfigs[0m
+[1;90m│   │   ├── [0m[34m [1mmodules[0m
+[1;90m│   │   ├── [0m[33m󰂺 [1mREADME.md[0m
+[1;90m│   │   ├── [0m[34m [1mstyle[0m
+[1;90m│   │   └── [0m[36m [1mstyle.css[0m [1;90m->[0m [36m/home/prunus/.config/waybar/style/[1;33mrounded-top.css[0m
+[1;90m│   ├── [0m[34m [1molddd[0m
+[1;90m│   │   ├── [0m[34m [1mcolors[0m
+[1;90m│   │   ├── [0m[33m [1mcolors.css[0m
+[1;90m│   │   ├── [0m config.jsonc
+[1;90m│   │   ├── [0m[36m󰡯 [1mconfig1[0m [1;90m->[0m [36m/home/prunus/.config/waybar/configs/[0mrounded-top
+[1;90m│   │   ├── [0m configmeowrch.jsonc
+[1;90m│   │   ├── [0m[34m [1mconfigs[0m
+[1;90m│   │   ├── [0m[34m [1mcontext[0m
+[1;90m│   │   ├── [0m[34m [1mlayouts[0m
+[1;90m│   │   ├── [0m[34m [1mmodules[0m
+[1;90m│   │   ├── [0m[34m [1moldd[0m
+[1;90m│   │   ├── [0m[34m [1moldddd[0m
+[1;90m│   │   ├── [0m[33m󰂺 [1mREADME.md[0m
+[1;90m│   │   ├── [0m[34m [1mstyle[0m
+[1;90m│   │   ├── [0m[33m [1mstyle.css[0m
+[1;90m│   │   ├── [0m[33m [1mstylemeowrch.css[0m
+[1;90m│   │   ├── [0m[34m [1m'Untitled Folder'[0m
+[1;90m│   │   └── [0m[34m [1mWeatherWaybar[0m
+[1;90m│   ├── [0m[34m [1moldddd[0m
+[1;90m│   │   └── [0m[34m [1mwaybar[0m
+[1;90m│   ├── [0m[33m󰂺 [1mREADME.md[0m
+[1;90m│   ├── [0m[34m [1mstyle[0m
+[1;90m│   │   ├── [0m[33m [1mbar-left.css[0m
+[1;90m│   │   ├── [0m[33m [1mdual-tone-top.css[0m
+[1;90m│   │   ├── [0m[33m [1mfull-top.css[0m
+[1;90m│   │   ├── [0m[33m [1mminimal-bottom.css[0m
+[1;90m│   │   ├── [0m[33m [1mmocha.css[0m
+[1;90m│   │   ├── [0m[33m [1mrounded-top.css[0m
+[1;90m│   │   ├── [0m[33m [1mskew-left.css[0m
+[1;90m│   │   └── [0m[36m [1mtheme.css[0m [1;90m->[0m [36m/home/prunus/.config/waybar/colors/[1;33mTokyoNight.css[0m
+[1;90m│   ├── [0m[33m [1mstyle.css[0m
+[1;90m│   ├── [0m[33m [1mstylemeowrch.css[0m
+[1;90m│   ├── [0m[33m [1mtaskbar.css[0m
+[1;90m│   ├── [0m taskbar.jsonc
+[1;90m│   ├── [0m[33m [1mtray.css[0m
+[1;90m│   ├── [0m tray.jsonc
+[1;90m│   ├── [0m[34m [1m'Untitled Folder'[0m
+[1;90m│   ├── [0m[33m [1mwaybar-media.py[0m
+[1;90m│   └── [0m[34m [1mWeatherWaybar[0m
+[1;90m│       └── [0m[33m [1mweather.py[0m
+[1;90m├── [0m[34m [1mwlogout[0m
+[1;90m│   ├── [0m[34m [1mcolors[0m
+[1;90m│   │   ├── [0m[33m [1mCatppuccin.css[0m
+[1;90m│   │   ├── [0m[33m [1mEverforest.css[0m
+[1;90m│   │   ├── [0m[33m [1mGruvbox.css[0m
+[1;90m│   │   ├── [0m[33m [1mNeon.css[0m
+[1;90m│   │   └── [0m[33m [1mTokyoNight.css[0m
+[1;90m│   ├── [0m[33m [1mcolors.css[0m
+[1;90m│   ├── [0m[34m [1micons[0m
+[1;90m│   │   ├── [0m[32m [1mhibernate.png[0m
+[1;90m│   │   ├── [0m[32m [1mlock.png[0m
+[1;90m│   │   ├── [0m[32m [1mlogout.png[0m
+[1;90m│   │   ├── [0m[32m [1mpoweroff.png[0m
+[1;90m│   │   ├── [0m[32m [1mreboot.png[0m
+[1;90m│   │   └── [0m[32m [1msleep.png[0m
+[1;90m│   ├── [0m󰡯 layout
+[1;90m│   ├── [0m󰡯 layout_2
+[1;90m│   ├── [0m[33m [1mstyle.css[0m
+[1;90m│   └── [0m[33m [1mstyle_2.css[0m
+[1;90m├── [0m[34m [1myazi[0m
+[1;90m│   ├── [0m[33m [1minit.lua[0m
+[1;90m│   ├── [0m[33m keymap.toml[0m
+[1;90m│   ├── [0m keymap.toml-1760799570678850
+[1;90m│   ├── [0m[33m package.toml[0m
+[1;90m│   ├── [0m[34m [1mplugins[0m
+[1;90m│   │   ├── [0m[34m [1mfull-border.yazi[0m
+[1;90m│   │   └── [0m[34m [1msmart-enter.yazi[0m
+[1;90m│   ├── [0m syntect_theme.tmTheme
+[1;90m│   ├── [0m[33m theme.toml[0m
+[1;90m│   ├── [0m theme.toml-1760799570703042
+[1;90m│   ├── [0m[33m yazi.toml[0m
+[1;90m│   └── [0m yazi.toml-1760799570676360
+[1;90m└── [0m[34m [1mzen[0m
+[1;90m    └── [0m[36m config.json[0m
