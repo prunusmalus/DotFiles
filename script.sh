@@ -13,3 +13,4 @@ for dir in */; do
     mkdir -p ~/.config/"$dir"
     stow -t ~/.config/"$dir" "$dir"
 done
+
