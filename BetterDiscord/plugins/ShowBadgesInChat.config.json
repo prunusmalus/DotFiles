@@ -10,7 +10,7 @@
 						"link": "https://discord.com/discovery/quests"
 					}
 				],
-				"date": 1781854189908
+				"date": 1782221714986
 			},
 			"1248289985745129633": {
 				"badges": [
@@ -23,62 +23,9 @@
 				],
 				"date": 1780426713050
 			},
-			"1344393507812409505": {
-				"badges": [],
-				"date": 1779462032393
-			},
 			"1474466854368973106": {
 				"badges": [],
-				"date": 1781854097801
-			},
-			"159985870458322944": {
-				"badges": [
-					{
-						"id": "bot_commands",
-						"description": "Supports Commands",
-						"icon": "6f9e37f9029ff57aef81db857890005e",
-						"link": "https://discord.com/blog/welcome-to-the-new-era-of-discord-apps?ref=badge"
-					}
-				],
-				"date": 1779462033545
-			},
-			"310848622642069504": {
-				"badges": [
-					{
-						"id": "bot_commands",
-						"description": "Supports Commands",
-						"icon": "6f9e37f9029ff57aef81db857890005e",
-						"link": "https://discord.com/blog/welcome-to-the-new-era-of-discord-apps?ref=badge"
-					}
-				],
-				"date": 1779462030531
-			},
-			"678344927997853742": {
-				"badges": [
-					{
-						"id": "bot_commands",
-						"description": "Supports Commands",
-						"icon": "6f9e37f9029ff57aef81db857890005e",
-						"link": "https://discord.com/blog/welcome-to-the-new-era-of-discord-apps?ref=badge"
-					},
-					{
-						"id": "automod",
-						"description": "Uses AutoMod",
-						"icon": "f2459b691ac7453ed6039bbcfaccbfcd"
-					}
-				],
-				"date": 1779458382815
-			},
-			"703886990948565003": {
-				"badges": [
-					{
-						"id": "bot_commands",
-						"description": "Supports Commands",
-						"icon": "6f9e37f9029ff57aef81db857890005e",
-						"link": "https://discord.com/blog/welcome-to-the-new-era-of-discord-apps?ref=badge"
-					}
-				],
-				"date": 1779462031395
+				"date": 1782225871766
 			},
 			"723558575305392208": {
 				"badges": [

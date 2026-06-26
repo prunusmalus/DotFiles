@@ -231,7 +231,7 @@ binds {
     Mod+T { spawn "kitty"; }
     Mod+Return { spawn "kitty" "--title" "main"; }
     Mod+Shift+Return { spawn "kitty" "--title" "floating"; }
-    Mod+W { spawn "zen-browser"; }
+    Mod+W { spawn "firefox"; }
     Mod+E { spawn "nautilus"; }
     Mod+Y { spawn "kitty" "yazi"; }
     Mod+B { spawn "blueman-manager"; }

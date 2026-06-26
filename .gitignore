@@ -1,3 +1,9 @@
 .git/
 Walls/
-
+*.swp
+*.swo
+*~
+.DS_Store
+*.log
+*.tmp
+*.bak

@@ -2,10 +2,11 @@
     "settings": {
         "tabs": [
             {
-                "name": "Friends",
-                "url": "/channels/@me",
+                "name": "artem20.09.2012_89540",
+                "url": "/channels/@me/1517242339704307916",
                 "selected": true,
-                "currentStatus": "none"
+                "currentStatus": "online",
+                "channelId": "1517242339704307916"
             }
         ],
         "favs": [],

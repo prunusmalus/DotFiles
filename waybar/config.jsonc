@@ -14,12 +14,12 @@
         "niri/workspaces",
         "niri/window",
         "custom/weather",
-        "custom/cava",
-        "cffi/mediaplayer"
+        "custom/waybar-media"
+        //"cffi/mediaplayer"
         //"custom/media"
     ],
     "modules-center": [
-        "keyboard-state",
+        "custom/cava",
         "clock",
         "niri/language"
     ],
@@ -196,14 +196,18 @@
             "unlocked": ""
         }
     },
+
     "custom/waybar-media": {
-    "return-type": "json",
-    "exec": "waybar-media.py status",
-    "on-click": "waybar-media.py playpause",
-    "on-scroll-up": "waybar-media.py previous",
-    "on-scroll-down": "waybar-media.py next",
-    "escape": true
-    },
+        "return-type": "json",
+        "max-length": 40,
+        "exec": "waybar-media.py status",
+        "on-click": "waybar-media.py playpause",
+        "on-scroll-up": "waybar-media.py previous",
+        "on-scroll-down": "waybar-media.py next",
+        "escape": true
+    }
+
+    }
     "cffi/mediaplayer": {
 		// Path to the compiled dynamic library file
 		"module_path": "/home/prunus/.config/waybar/scripts/waybar_mediaplayer.so",

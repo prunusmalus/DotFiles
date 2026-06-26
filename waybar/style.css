@@ -351,3 +351,15 @@ tooltip label {
 #media_player .title {
   color: white;
 }
+
+#custom-waybar-media.paused {
+  color: grey;
+}
+
+#custom-waybar-media.playing {
+  color: white;
+}
+
+#custom-waybar-media.stoped {
+  color: black;
+}

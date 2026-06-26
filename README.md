@@ -11,6 +11,17 @@ This repository is designed using a **flat GNU Stow structure**. This means ther
 
 ---
 
+## Dependencies
+
+- `niri` or `hyprland`
+- `kitty`, `waybar`, `swaync`, `rofi`
+- `fish` (or your preferred shell)
+- `feh` or `swww` (depending on your wallpaper script)
+- `polkit-gnome` or `mate-polkit`
+- `brightnessctl`, `wpctl` (for audio/brightness)
+
+  ***
+
 ## 📂 Repository Structure
 
 Each folder represents an independent configuration package:
@@ -36,8 +47,9 @@ Instead, each package must be deployed directly to its specific target destinati
 
 To apply the configuration for a specific program (e.g., `niri`), run:
 
-````bash
+```bash
 cd ~/DotFiles
 rm -rf ~/.config/niri && mkdir -p ~/.config/niri
 stow -t ~/.config/niri niri
 
+```
