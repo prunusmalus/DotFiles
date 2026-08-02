@@ -10,7 +10,7 @@
 						"link": "https://discord.com/discovery/quests"
 					}
 				],
-				"date": 1782221714986
+				"date": 1783757569703
 			},
 			"1248289985745129633": {
 				"badges": [
@@ -21,22 +21,15 @@
 						"link": "https://discord.com/discovery/quests"
 					}
 				],
-				"date": 1780426713050
+				"date": 1782676237199
+			},
+			"1343598321683665028": {
+				"badges": [],
+				"date": 1783758122409
 			},
 			"1474466854368973106": {
 				"badges": [],
-				"date": 1782225871766
-			},
-			"723558575305392208": {
-				"badges": [
-					{
-						"id": "bot_commands",
-						"description": "Supports Commands",
-						"icon": "6f9e37f9029ff57aef81db857890005e",
-						"link": "https://discord.com/blog/welcome-to-the-new-era-of-discord-apps?ref=badge"
-					}
-				],
-				"date": 1780426710925
+				"date": 1782553093185
 			}
 		}
 	}

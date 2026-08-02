@@ -3,9 +3,9 @@
 # --- НАСТРОЙКИ ---
 
 # Пути к вашим трем скриптам (замените на свои!)
-script_path1="quickshell -c /home/prunus/.config/quickshell/hyprquickshot/ -n"
-script_path2="/home/prunus/.config/hypr/scripts/record_area.sh"
-script_path3="/home/prunus/.config/hypr/scripts/test0.sh"
+script_path1="quickshell -c ~/.config/quickshell/hyprquickshot/ -n"
+script_path2="~/.config/hypr/scripts/record_area.sh"
+script_path3="~/.config/hypr/scripts/test0.sh"
 
 # Названия, которые будут видны в меню
 label1="🚀 Вариант 1"

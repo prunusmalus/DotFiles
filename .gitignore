@@ -1,5 +1,17 @@
-.git/
-Walls/
+
+**/oldd/
+**/oldddd/
+**/confs/
+**/confss/
+**/dms/
+**/backup*/
+**/*.backup*
+**/*.save
+
+.venv/
+venv/
+__pycache__/
+*.pyc
 
 *.swp
 *.swo
@@ -7,12 +19,4 @@ Walls/
 *.log
 *.tmp
 *.bak
-
 .DS_Store
-
-*.orig
-*.rej
-
-local/
-
-hypr/confs/

@@ -12,7 +12,7 @@ wallDir="$HOME/.config/hypr/Wallpapers/${theme}"
 
 PICS=($(find ${wallDir} -type f \( -name "*.jpg" -o -name "*.jpeg" -o -name "*.png" -o -name "*.gif" \)))
 #wallpaper=${PICS[ $RANDOM % ${#PICS[@]} ]}
-wallpaper=/home/prunus/.config/hypr/Wallpapers/TokyoNight/cats_animated_pink_trees_pixelated_brigde_sakura.gif
+wallpaper=$HOME/.config/hypr/Wallpapers/TokyoNight/cats_animated_pink_trees_pixelated_brigde_sakura.gif
 
 # Transition config
 FPS=60

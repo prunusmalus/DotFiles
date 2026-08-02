@@ -2,7 +2,7 @@
 * @name ARestoreBlockedUserList
 * @description Adds back the section to view blocked users into your friends list area.
 * @author ace.
-* @version 1.2.0
+* @version 1.3.1
 * @source https://raw.githubusercontent.com/AceLikesGhosts/bd-plugins/master/dist/ABlockedUserList/ABlockedUserList.plugin.js
 * @authorLink https://github.com/AceLikesGhosts/bd-plugins
 * @authorId 327639826075484162
@@ -87,7 +87,7 @@ var config_default = {
   name: "ARestoreBlockedUserList",
   description: "Adds back the section to view blocked users into your friends list area.",
   author: "ace.",
-  version: "1.2.0",
+  version: "1.3.1",
   source: "https://raw.githubusercontent.com/AceLikesGhosts/bd-plugins/master/dist/ABlockedUserList/ABlockedUserList.plugin.js",
   authorLink: "https://github.com/AceLikesGhosts/bd-plugins",
   authorId: "327639826075484162"
@@ -100,6 +100,9 @@ var ReactDom = BdApi.ReactDOM || /* @__PURE__ */ BdApi.Webpack.getByKeys("create
 // lib/modules/Dispatcher.ts
 var Dispatcher_default = /* @__PURE__ */ BdApi.Webpack.getByKeys("dispatch", "subscribe", "register", { searchExports: true });
 
+// lib/stores/RelationshipStore.ts
+var RelationshipStore_default = BdApi.Webpack.getStore("RelationshipStore");
+
 // plugins/ARestoreBlockedUserList/patches/friendsTabList.tsx
 var patchFriendsTabList = async () => {
   const friendsTablistItem = BdApi.Webpack.getModule(
@@ -111,6 +114,8 @@ var patchFriendsTabList = async () => {
   const blockedTextI18ned = discordI18nMod.intl.string(discordI18nMod.t["ot2tSp"]);
   const ignoredTextI18ned = discordI18nMod.intl.string(discordI18nMod.t["nDdxOG"]);
   const friendsAriaLabelI18ned = discordI18nMod.intl.string(discordI18nMod.t["FsbKOz"]);
+  const blockedUsersIds = RelationshipStore_default.getBlockedIDs();
+  const ignoredUserIds = RelationshipStore_default.getIgnoredIDs();
   BdApi.Patcher.after(
     config_default.name,
     friendsTablistItem.prototype,
@@ -119,11 +124,11 @@ var patchFriendsTabList = async () => {
       if (!ret || !ret.props) return;
       if (ret.props["aria-label"] !== friendsAriaLabelI18ned) return;
       if (!Array.isArray(ret.props.children)) return;
-      const pendingPos = ret.props.children.findIndex((value) => value.props && value.props.id === "PENDING");
+      const pendingPos = ret.props.children.findIndex((value) => value?.props && value?.props.id === "PENDING");
       ret.props.children.splice(
         pendingPos + 1,
         0,
-        /* @__PURE__ */ React.createElement(
+        (blockedUsersIds ?? []).length > 0 ? /* @__PURE__ */ React.createElement(
           TablistItem,
           {
             ...ret.props.children[0].props,
@@ -138,8 +143,8 @@ var patchFriendsTabList = async () => {
             }
           },
           blockedTextI18ned
-        ),
-        /* @__PURE__ */ React.createElement(
+        ) : null,
+        (ignoredUserIds ?? []).length > 0 ? /* @__PURE__ */ React.createElement(
           TablistItem,
           {
             ...ret.props.children[0].props,
@@ -154,7 +159,7 @@ var patchFriendsTabList = async () => {
             }
           },
           ignoredTextI18ned
-        )
+        ) : null
       );
     }
   );
@@ -162,9 +167,6 @@ var patchFriendsTabList = async () => {
 
 // lib/stores/FriendsStore.ts
 var FriendsStore_default = BdApi.Webpack.getStore("FriendsStore");
-
-// lib/stores/RelationshipStore.ts
-var RelationshipStore_default = BdApi.Webpack.getStore("RelationshipStore");
 
 // plugins/ARestoreBlockedUserList/patches/analyticProvider.tsx
 var patchAnalyticsContext = async () => {
