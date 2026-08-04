@@ -115,18 +115,21 @@ is_skipped() {
     return 1
 }
 
-# Бэкапит файлы, мешающие stow, и возвращает их количество
+# Бэкапит файлы, мешающие stow, и кладёт количество в глобальную переменную
+BACKED_UP_COUNT=0
 backup_conflicts() {
-    local pkg="$1" target="$2" backup="$3" f rel count=0
+    local pkg="$1" target="$2" backup="$3"
+    local pkg_abs="$DOTFILES_DIR/$pkg"
+    local f rel
+    BACKED_UP_COUNT=0
     while IFS= read -r f; do
-        rel="${f#"$DOTFILES_DIR/$pkg/"}"
+        rel="${f#"$pkg_abs/"}"
         if [ -e "$target/$rel" ] || [ -L "$target/$rel" ]; then
             mkdir -p "$backup/$pkg/$(dirname "$rel")"
             mv -f "$target/$rel" "$backup/$pkg/$rel" 2>/dev/null || true
-            count=$((count + 1))
+            BACKED_UP_COUNT=$((BACKED_UP_COUNT + 1))
         fi
-    done < <(find "$pkg" -type f 2>/dev/null)
-    return "$count"
+    done < <(find "$pkg_abs" -type f 2>/dev/null)
 }
 
 deploy_pkg() {
@@ -148,11 +151,12 @@ deploy_pkg() {
     fi
 
     # Конфликт — бэкапим и пробуем снова
-    local n=0
-    backup_conflicts "$pkg" "$target" "$backup" || n=$?
+    backup_conflicts "$pkg" "$target" "$backup"
     if stow --no-folding -t "$target" "$pkg" 2>/dev/null; then
-        warn "$pkg: конфликтующие файлы перенесены в $backup/$pkg ($n шт.)"
-        info "OK: $pkg -> $target (после бэкапа)"
+        if [ "$BACKED_UP_COUNT" -gt 0 ]; then
+            warn "$pkg: конфликтующие файлы перенесены в $backup/$pkg ($BACKED_UP_COUNT шт.)"
+        fi
+        info "OK: $pkg -> $target"
     else
         err "$pkg: не удалось развернуть даже после бэкапа. Пропускаю."
     fi
