@@ -1,6 +1,9 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+    fastfetch --config hypr/hichan.jsonc
+    #neofetch
+    starship init fish | source # Starship
 end
+
 set fish_greeting ""
 fish_add_path ~/.local/bin
 starship init fish | source

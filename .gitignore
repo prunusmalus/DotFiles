@@ -1,6 +1,14 @@
+# Wallpapers moved to a separate repository: DotFiles-Walls
+Walls/
 
 **/oldd/
 **/oldddd/
+**/confs/
+**/confss/
+**/dms/
+**/backup*/
+**/*.backup*
+**/*.save
 **/confs/
 **/confss/
 **/dms/
