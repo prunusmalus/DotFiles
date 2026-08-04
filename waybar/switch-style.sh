@@ -30,6 +30,17 @@ LEGACY_FILES=(
     "style.css"
 )
 
+# Симлинк на файл в DotFiles. Если на месте лежит реальный файл (не симлинк) —
+# сначала сохраняем его в бэкап, чтобы ничего не потерять.
+link_file() {
+    local src="$1" dst="$2"
+    if [ -e "$dst" ] && [ ! -L "$dst" ]; then
+        mv "$dst" "$dst.bak-$(date +%Y%m%d-%H%M%S)"
+        echo "  реальный файл $(basename "$dst") сохранён как бэкап"
+    fi
+    ln -sfn "$(realpath --relative-to "$(dirname "$dst")" "$src")" "$dst"
+}
+
 restart_waybar() {
     if pgrep -x waybar >/dev/null 2>&1; then
         killall waybar 2>/dev/null || true
@@ -43,7 +54,7 @@ restart_waybar() {
 
 apply_current() {
     for f in "${CURRENT_FILES[@]}"; do
-        cp "$DOTFILES/$f" "$CONFIG_DIR/$f"
+        link_file "$DOTFILES/$f" "$CONFIG_DIR/$f"
     done
     echo "OK: установлен current стиль (niri + matugen)"
     restart_waybar
@@ -51,7 +62,7 @@ apply_current() {
 
 apply_legacy() {
     for f in "${LEGACY_FILES[@]}"; do
-        cp "$DOTFILES/legacy/$f" "$CONFIG_DIR/$f"
+        link_file "$DOTFILES/legacy/$f" "$CONFIG_DIR/$f"
     done
     echo "OK: установлен legacy стиль"
     restart_waybar

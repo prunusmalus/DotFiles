@@ -15,13 +15,24 @@ if [ ! -d "$CONFIG_DIR" ]; then
     exit 1
 fi
 
+# Симлинк на файл в DotFiles. Если на месте лежит реальный файл (не симлинк) —
+# сначала сохраняем его в бэкап, чтобы ничего не потерять.
+link_file() {
+    local src="$1" dst="$2"
+    if [ -e "$dst" ] && [ ! -L "$dst" ]; then
+        mv "$dst" "$dst.bak-$(date +%Y%m%d-%H%M%S)"
+        echo "  реальный файл $(basename "$dst") сохранён как бэкап"
+    fi
+    ln -sfn "$(realpath --relative-to "$(dirname "$dst")" "$src")" "$dst"
+}
+
 apply_current() {
-    cp "$DOTFILES/config.fish" "$CONFIG_DIR/config.fish"
+    link_file "$DOTFILES/config.fish" "$CONFIG_DIR/config.fish"
     echo "OK: установлен актуальный стиль fish (config.fish)"
 }
 
 apply_legacy() {
-    cp "$DOTFILES/config.fish.macos" "$CONFIG_DIR/config.fish"
+    link_file "$DOTFILES/config.fish.macos" "$CONFIG_DIR/config.fish"
     echo "OK: установлен legacy стиль fish (config.fish.macos)"
 }
 
