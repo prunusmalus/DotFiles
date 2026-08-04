@@ -1,0 +1,9 @@
+// Вариант 1 (активный по умолчанию):
+//   Mod+Alt+S    — Steam (по выбору пользователя; sidebar остался только на Mod+M)
+//   Super+Alt+P  — orca (переключатель экранного диктора)
+// Переключение на вариант 2: в config.kdl закомментируй include extra-binds-v1.kdl
+// и раскомментируй include extra-binds-v2.kdl.
+binds {
+    Mod+Alt+S hotkey-overlay-title="Steam" { spawn "steam"; }
+    Super+Alt+P allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
+}

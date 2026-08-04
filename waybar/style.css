@@ -1,365 +1,513 @@
-/* Modern Aesthetic Waybar Theme */
+@import "colors.css";
+
+/* 核心逻辑：全相对单位 (em) 改造
+   基准字体大小：18px
+   如果需要整体放大缩小，只需修改下方的 18px 即可
+*/
 * {
-  font-family: "JetBrains Mono", "SF Pro Display", "Helvetica Neue", sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  border: none;
-  border-radius: 0;
-  min-height: 0;
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font Propo","LXGW WenKai Screen","JetBrains Maple Mono","Font Awesome 7 Free";
+    /* font-family:"0xProto Nerd Font Propo"; */
+    font-size: 16.6px; /* 基准大小 */
+    opacity: 1;
 }
 
 window#waybar {
-  background: linear-gradient(
-    135deg,
-    rgba(30, 30, 46, 0.85),
-    rgba(24, 24, 37, 0.85)
-  );
-  /* background:transparent; */
-  border-radius: 0px;
-  border: 1px solid rgba(205, 214, 244, 0.15);
-  margin: 8px;
-  padding: 4px 8px;
-  transition: all 0.3s ease;
+    background: transparent;
+    color: @on_surface;
 }
 
-window#waybar:hover {
-  background: linear-gradient(
-    135deg,
-    rgba(30, 30, 46, 0.95),
-    rgba(24, 24, 37, 0.95)
-  );
-  border-color: rgba(205, 214, 244, 0.25);
-}
-
-window#waybar.hidden {
-  opacity: 0.2;
-}
-
-/* Left modules */
-#workspaces {
-  background: rgba(49, 50, 68, 0.8);
-  border-radius: 0px;
-  margin: 4px 8px;
-  padding: 0 4px;
-  border: 1px solid rgba(205, 214, 244, 0.05);
-}
-
-#workspaces button {
-  padding: 6px 12px;
-  margin: 2px;
-  color: rgba(205, 214, 244, 0.6);
-  background: transparent;
-  border-radius: 0px;
-  transition: all 0.3s ease;
-  border: 1px solid transparent;
-}
-
-#workspaces button:hover {
-  background: rgba(137, 180, 250, 0.1);
-  color: #89b4fa;
-  border-color: rgba(137, 180, 250, 0.2);
-}
-
-#workspaces button.active {
-  background: linear-gradient(135deg, #89b4fa, #74c7ec);
-  color: #1e1e2e;
-  border-color: rgba(137, 180, 250, 0.3);
-}
-
-#workspaces button.urgent {
-  background: linear-gradient(135deg, #f38ba8, #eba0ac);
-  color: #1e1e2e;
-  animation: urgent 1s ease-in-out infinite alternate;
-}
-
-@keyframes urgent {
-  from {
-    background: rgba(243, 139, 168, 0.3);
-  }
-  to {
-    background: rgba(243, 139, 168, 0.6);
-  }
-}
-
-#window {
-  background: linear-gradient(
-    135deg,
-    rgba(49, 50, 68, 0.8),
-    rgba(40, 42, 54, 0.8)
-  );
-  border-radius: 0px;
-  margin: 4px 8px;
-  padding: 8px 16px;
-  color: #cdd6f4;
-  border: 1px solid rgba(205, 214, 244, 0.1);
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-#window:hover {
-  background: linear-gradient(
-    135deg,
-    rgba(49, 50, 68, 0.9),
-    rgba(40, 42, 54, 0.9)
-  );
-  border-color: rgba(205, 214, 244, 0.2);
-}
-
-#window.empty {
-  background: transparent;
-  border: none;
-}
-
-/* Center module */
-#clock {
-  background: linear-gradient(
-    135deg,
-    rgba(137, 180, 250, 0.2),
-    rgba(116, 199, 236, 0.2)
-  );
-  border-radius: 0px;
-  margin: 4px 8px;
-  padding: 10px 24px;
-  color: #cdd6f4;
-  border: 1px solid rgba(137, 180, 250, 0.3);
-  font-weight: 700;
-  font-size: 15px;
-  transition: all 0.3s ease;
-}
-
-#clock:hover {
-  background: linear-gradient(
-    135deg,
-    rgba(137, 180, 250, 0.3),
-    rgba(116, 199, 236, 0.3)
-  );
-  border-color: rgba(137, 180, 250, 0.5);
-}
-
-/* Right modules */
-#tray,
-#cpu,
-#memory,
-#backlight,
-#idle_inhibitor,
-#pulseaudio,
-#network,
-#bluetooth,
-#battery,
-#custom-power {
-  background: rgba(49, 50, 68, 0.8);
-  border-radius: 0px;
-  margin: 4px 2px;
-  padding: 8px 12px;
-  color: #cdd6f4;
-  border: 1px solid rgba(205, 214, 244, 0.05);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-#tray {
-  padding: 8px 8px;
-}
-
-#tray > .passive {
-  -gtk-icon-effect: dim;
-}
-
-#tray > .needs-attention {
-  -gtk-icon-effect: highlight;
-  background-color: rgba(243, 139, 168, 0.2);
-}
-
-/* Module hover effects */
-#idle_inhibitor:hover,
-#cpu:hover,
-#memory:hover,
-#backlight:hover,
-#pulseaudio:hover,
-#network:hover,
-#bluetooth:hover,
-#battery:hover {
-  background: linear-gradient(
-    135deg,
-    rgba(166, 227, 161, 0.2),
-    rgba(148, 226, 213, 0.2)
-  );
-  border-color: rgba(166, 227, 161, 0.4);
-}
-
-/* Specific module colors */
-#cpu {
-  color: #fab387;
-}
-
-#cpu.warning {
-  color: #f9e2af;
-  background: rgba(249, 226, 175, 0.1);
-}
-
-#cpu.critical {
-  color: #f38ba8;
-  background: rgba(243, 139, 168, 0.1);
-  animation: blink 0.5s linear infinite alternate;
-}
-
-#memory {
-  color: #cba6f7;
-}
-
-#memory.warning {
-  color: #f9e2af;
-  background: rgba(249, 226, 175, 0.1);
-}
-
-#memory.critical {
-  color: #f38ba8;
-  background: rgba(243, 139, 168, 0.1);
-  animation: blink 0.5s linear infinite alternate;
-}
-
-#pulseaudio {
-  color: #a6e3a1;
-}
-
-#pulseaudio.muted {
-  color: #f38ba8;
-  background: rgba(243, 139, 168, 0.1);
-}
-
-#network {
-  color: #74c7ec;
-}
-
-#network.disconnected {
-  color: #f38ba8;
-  background: rgba(243, 139, 168, 0.1);
-}
-
-#bluetooth {
-  color: #89b4fa;
-}
-
-#bluetooth.disabled,
-#bluetooth.off {
-  color: rgba(205, 214, 244, 0.4);
-}
-
-#battery {
-  color: #a6e3a1;
-}
-
-#battery.charging,
-#battery.plugged {
-  color: #f9e2af;
-  background: rgba(249, 226, 175, 0.1);
-}
-
-#battery.critical:not(.charging) {
-  background: rgba(243, 139, 168, 0.15);
-  color: #f38ba8;
-  animation: blink 0.5s linear infinite alternate;
-}
-
-#battery.warning:not(.charging) {
-  color: #f9e2af;
-  background: rgba(249, 226, 175, 0.1);
-}
-
-@keyframes blink {
-  to {
-    background-color: rgba(243, 139, 168, 0.3);
-    color: #ffffff;
-  }
-}
-
-#idle_inhibitor {
-  color: #cba6f7;
-}
-
-#idle_inhibitor.activated {
-  background: rgba(203, 166, 247, 0.15);
-  color: #cba6f7;
-}
-
-#custom-power {
-  color: #f38ba8;
-  font-size: 16px;
-  background: linear-gradient(
-    135deg,
-    rgba(243, 139, 168, 0.2),
-    rgba(235, 160, 172, 0.2)
-  );
-  border-color: rgba(243, 139, 168, 0.3);
-}
-
-#custom-power:hover {
-  background: linear-gradient(
-    135deg,
-    rgba(243, 139, 168, 0.3),
-    rgba(235, 160, 172, 0.3)
-  );
-  border-color: rgba(243, 139, 168, 0.5);
-}
-
-/* Tooltip styling */
+/* 鼠标悬浮信息提示 */
 tooltip {
-  background: linear-gradient(
-    135deg,
-    rgba(30, 30, 46, 0.95),
-    rgba(24, 24, 37, 0.95)
-  );
-  border: 1px solid rgba(205, 214, 244, 0.2);
-  border-radius: 0px;
-  color: #cdd6f4;
-  font-weight: 500;
-  padding: 8px 12px;
+    background: @secondary_container;
+    border: 0.17em solid @outline; /* 3px */
+    opacity: 1;
 }
 
 tooltip label {
-  color: #cdd6f4;
-  padding: 2px 4px;
+    color: @on_surface;
+    font-size: 0.89em; /* 16px */
 }
 
-#media_player {
-  color: red;
+
+/* 工作区 */
+#workspaces button {
+    padding: 0px 0.56em; /* 10px */
+    background: @surface;
+    color: @tertiary_container;
 }
 
-#media_player .button {
-  color: white;
-  background: transparent;
-  border-width: 0px;
-  border-radius: 0px;
-  margin: 0px;
-  padding: 0px;
-  box-shadow: none;
-  text-shadow: none;
+/* #workspaces label {
+    font-size: 1.22em; 
+} */
+
+#workspaces button:hover {
+    background: @on_tertiary;
 }
 
-#media_player .play-button {
+#workspaces button.active{
+    color:@tertiary;
 }
 
-#media_player .prev-button {
+#custom-right_div.5 {
+    background: @surface_container_high;
+    color: @surface;
+    font-size: 1.39em; /* 25px */
+    padding: 0px;
 }
 
-#media_player .next-button {
+/* waybar niri taskbar */
+.niri-taskbar {
+    background: @surface_container_high;
+    padding: 0 0 0 0.28em; /* 5px */
 }
 
-#media_player .players {
-  color: white;
+.niri-taskbar button:hover {
+    background: @surface_container;
 }
 
-#media_player .title {
-  color: white;
+.niri-taskbar button.focused {
+    background: @surface;
 }
 
-#custom-waybar-media.paused {
-  color: grey;
+.niri-taskbar button.urgent {
+    background-color: @tertiary;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes blink {
+    to {
+        background-color: @primary;
+        color: @error;
+    }
 }
 
-#custom-waybar-media.playing {
-  color: white;
+/* 窗口名 */
+#window {
+    padding: 0px 0.56em; /* 10px */
+    background-color: @surface_container_high;
+    color: @on_surface;
 }
 
-#custom-waybar-media.stoped {
-  color: black;
+#window label {
+    font-size: 0.89em; /* 16px */
+}
+
+window#waybar.empty #window {
+    background-color: @surface_container_high;
+}
+
+#custom-right_div.6 {
+    color: @surface_container_high;
+    font-size: 1.39em; /* 25px */
+    padding: 0px;
+}
+/* —————————————————————————————————————————————————————————————————————————— */
+/* —————————————————————————————————————————————————————————————————————————— */
+/* —————————————————————————————————————————————————————————————————————————— */
+/* —————————————————————————————————————————————————————————————————————————— */
+/* —————————————————————————————————————————————————————————————————————————— */
+
+/* 中间 */
+
+#custom-left_div.3 {
+    color: @surface_container_high;
+    /* 调节这里的padding可以移动中心的模块位置 */
+    padding: 0px 0em 0em 0.1em;
+    font-size: 1.39em; /* 25px */
+}
+
+
+#custom-actions {
+    padding: 0px 0.3em 0px 0.5em; /* 7px */
+    font-size: 1.35em; /* 20px */
+}
+
+ #custom-screenshot {
+    padding: 0px 0.35em; /* 7px */
+    font-size: 1.15em; /* 22px */
+}
+
+/* wf-recoder脚本 */
+#custom-wfrec {
+  padding: 0 0.25em; /* 7px */
+  font-size: 1.1em;
+}
+
+#custom-wallpapers{
+    padding: 0 0.5em 0 0.3em; /* 7px */
+    font-size: 1.15em; /* 22px */
+}
+#custom-clipboard{
+    padding: 0 0.5em 0 0.3em; /* 7px */
+    font-size: 1.15em; /* 22px */
+}
+
+
+#custom-wfrec.recording,
+#custom-wfrec,
+#custom-actions,
+#custom-wallpapers,
+#custom-clipboard,
+#custom-settings,
+#custom-screenshot {
+    background-color: @surface_container_high;
+    color: @secondary;
+}
+
+/* 录制中 */
+#custom-wfrec.recording {
+  color: @error;            
+}
+/* #custom-wfrec,
+#custom-screenshot{
+    color: @secondary;
+} */
+
+#custom-left_div.2 {
+    background-color: @surface_container_high;
+    color: @tertiary;
+    padding: 0px 0px;
+    font-size: 1.39em; /* 25px */
+}
+
+#power-profiles-daemon,
+#custom-colorpicker,
+#idle_inhibitor {
+    background-color: @tertiary;
+    color: @on_tertiary;
+    padding: 0px 0.36em; /* 6px */
+}
+#idle_inhibitor.activated{
+    padding: 0px 0.4em 0px 0.4em;
+}
+#power-profiles-daemon{
+    padding: 0px 0.4em 0em 0.36em;
+}
+#power-profiles-daemon.performance {
+    color: @on_error;
+    font-size: 1.28em; /* 23px */
+    padding: 0px 0.32em 0px 0.45em; /* 9px 8px */
+}
+
+#power-profiles-daemon.balanced {
+    color: @on_tertiary;
+}
+
+#power-profiles-daemon.power-saver {
+    color: #1aa052;
+
+}
+
+/* 菜单 */
+#custom-left_div.11 {
+    background-color: @tertiary;
+    color: @surface_container
+}
+#custom-applauncher {
+    font-size: 1.39em; /* 25px */
+    padding: 0px 0.39em; /* 7px */
+    margin: 0px;
+    background-color: @primary;
+    color: @on_primary;
+
+}
+#custom-right_div.1,
+#custom-left_div.1 {
+    background-color: @surface_container;
+    color: @primary;
+}
+#custom-left_div.1,
+#custom-right_div.1 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.39em; /* 25px */
+}
+#custom-left_div.11,
+#custom-right_div.11 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.39em; /* 25px */
+}
+#custom-right_div.11 {
+
+    background-color: @secondary;
+    color: @surface_container;
+}
+
+/*中间右边第二级*/
+
+#clock {
+    padding: 0px 0.45em 0em 0.45em; /* 8px */
+}
+
+#clock {
+    background-color: @secondary;
+    color: @on_secondary;
+}
+
+#custom-right_div.2 {
+    background-color: @surface_container_high;
+    color: @secondary;
+    padding: 0px;
+    font-size: 1.39em; /* 25px */
+}
+
+#custom-cava {
+    background-color: @surface_container_high;
+    color: @primary;
+    padding: 0px 0.35em; /* 7px */
+}
+
+#mpris {
+    background-color: @surface_container_high;
+    color: @primary;
+    padding: 0px 0.39em 0px 0px; /* 7px 0 0 */
+}
+
+#custom-right_div.3 {
+
+    color: @surface_container_high;
+    /* 调节这里的padding可以移动中心的模块位置 */
+    padding: 0px 0em 0px 0px ;
+    font-size: 1.39em; /* 25px */
+}
+#custom-right_div.4 {
+    /* background-color: @surface_container_high; */
+    color: @on_secondary;
+    padding: 0px;
+    font-size: 1.39em; /* 25px */
+}
+/* —————————————————————————————————————————————————————————————————————————— */
+/* —————————————————————————————————————————————————————————————————————————— */
+/* —————————————————————————————————————————————————————————————————————————— */
+/* —————————————————————————————————————————————————————————————————————————— */
+/* —————————————————————————————————————————————————————————————————————————— */
+
+/* 右侧 */
+
+
+#custom-left_div.7 {
+    /* background-color: @surface_container_high; */
+    color: @surface_bright;
+    font-size: 1.39em; /* 25px */
+    padding: 0px;
+}
+
+
+#custom-updates {
+    border-radius: 0px;
+    padding: 0px 0.17em 0px 0.39em; /* 3px 7px */
+    background-color: @surface_bright;
+    color: @error;
+
+}
+
+#tray {
+    padding: 0px 0.39em 0px 0.39em; /* 7px */
+    font-size: 1.11em; /* 20px */
+    background-color: @surface_bright;
+}
+
+
+#custom-left_div.4 {
+    background-color: @surface_bright;
+    color: @surface_container_high;
+    padding: 0px;
+    font-size: 1.39em; /* 25px */
+}
+/* 亮度 */
+#custom-ddcutil-day,
+#custom-ddcutil-night,
+#custom-ddcutil-sleep,
+#custom-separator.1 {
+    background-color: @surface_container_high;
+    color: @tertiary;
+    padding: 0px 0.33em; /* 5px */
+}
+
+#backlight {
+    background-color: @surface_container_high;
+    color: @tertiary;
+    padding: 0px 0.28em 0px 0px; /* 5px */
+}
+
+#backlight-slider {
+    background-color: @surface_container_high;
+    padding: 0px 0.28em 0px 0px; /* 5px */
+}
+
+#backlight-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+    background: none;
+}
+
+#backlight-slider trough {
+    min-height: 0.56em; /* 10px */
+    min-width: 4.44em;  /* 80px */
+    border-radius: 0.28em; /* 5px */
+    opacity: 0;
+    background-color: @background;
+}
+
+#backlight-slider highlight {
+    min-width: 0.56em; /* 10px */
+    border-radius: 0.28em; /* 5px */
+    background-color: @tertiary;
+}
+
+/* 音视频 */
+#privacy {
+    padding: 0px 0.39em; /* 7px */
+}
+
+#privacy {
+    background-color: @surface_container_high;
+    color: @error;
+}
+
+#pulseaudio {
+    padding: 0px 0px 0px 0.28em; /* 5px */
+}
+
+#pulseaudio-slider {
+    padding: 0px 0px 0px 0.56em; /* 10px */
+    margin: 0px;
+}
+
+#pulseaudio-slider,
+#pulseaudio {
+    background-color: @surface_container_high;
+    color: @tertiary;
+}
+
+#pulseaudio-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 0;
+    background-image: none;
+    box-shadow: none;
+    background: none;
+}
+
+#pulseaudio-slider trough {
+    min-height: 0.56em; /* 10px */
+    min-width: 4.44em; /* 80px */
+    border-radius: 0.28em; /* 5px */
+    background-color: @surface;
+}
+
+#pulseaudio-slider highlight {
+    min-width: 0px;
+    border-radius: 0.28em; /* 5px */
+    background-color: @tertiary;
+}
+
+#custom-left_div.8 {
+    background-color: @surface_container_high;
+    color: @surface_container;
+    font-size: 1.39em; /* 25px */
+    padding: 0px;
+}
+
+
+/* 电池 */
+#bluetooth,
+#bluetooth.disabled,
+#network,
+#battery {
+    background-color: @surface_container;
+    color: @secondary;
+    padding: 0px 0.39em; /* 7px */
+    
+}
+
+#battery.critical:not(.charging) {
+    background-color: @surface_container;
+    color: @error;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    padding: 0px 0.39em; /* 7px */
+}
+
+#bluetooth {
+    padding: 0px 0.3em 0 0.5em; /* 7px */
+    font-size: 1.13em; /* 20px */
+
+    
+}
+#bluetooth.disabled{
+    padding: 0px 0.2em 0px 0.46em ;
+}
+
+#network {
+    padding: 0px 0.35em 0 0.3em; /* 7px */
+    font-size: 1.1em; /* 22px */
+
+}
+
+
+/* powermenu电源菜单 */
+#custom-left_div.5 {
+    background-color: @surface_container;
+    color: @surface;
+    padding: 0px;
+    font-size: 1.39em; /* 25px */
+}
+#custom-wlogout {
+    padding: 0px 0.83em 0px 0.56em; /* 15px 10px */
+    font-size: 1.39em; /* 25px */
+}
+
+#custom-wlogout,
+#custom-reboot,
+#custom-lockscreen,
+#custom-logout {
+    background-color: @surface;
+    color: @error;
+    padding: 0px 0.56em; /* 10px */
+}
+
+
+
+
+
+#clock.date {
+    padding: 0px 0.39em; /* 7px */
+}
+#custom-datelogo,
+#clock.date {
+    background-color: @secondary_container;
+    color: @on_secondary_container;
+}
+
+#custom-swaync {
+    background-color: @surface_container_high;
+    color: @on_surface_container;
+    padding: 0px 0.83em; /* 15px */
+}
+
+#custom-mako {
+    background-color: @surface_container_high;
+    color: @on_surface_container;
+    padding: 0px 0.83em; /* 15px */
+}
+
+#custom-left_div.6 {
+    background-color: @surface;
+    color: @surface_container_high;
+    padding: 0px;
+    font-size: 1.39em; /* 25px */
 }

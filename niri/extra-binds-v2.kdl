@@ -1,0 +1,8 @@
+// Вариант 2 (альтернативный):
+//   Super+Alt+S  — orca (как было раньше)
+//   Sidebar остаётся только на Mod+M (в основном binds-блоке).
+// Переключение: в config.kdl закомментируй include extra-binds-v1.kdl
+// и раскомментируй include extra-binds-v2.kdl.
+binds {
+    Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
+}

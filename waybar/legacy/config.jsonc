@@ -1,0 +1,228 @@
+{
+    "include": [
+        "$HOME/.config/waybar/modules/modules-custom.jsonc"
+    ],
+    "layer": "top",
+    "position": "top",
+    "height": 51,
+    "spacing": 8,
+    "margin-top": 8,
+    "margin-left": 12,
+    "margin-right": 12,
+
+    "modules-left": [
+        "niri/workspaces",
+        "niri/window",
+        "custom/weather",
+        "custom/waybar-media"
+        //"cffi/mediaplayer"
+        //"custom/media"
+    ],
+    "modules-center": [
+        "custom/cava",
+        "clock",
+        "niri/language"
+    ],
+    "modules-right": [
+        "tray",
+        "custom/notify",
+        "cpu",
+        "memory",
+        "idle_inhibitor",
+        "backlight",
+        "pulseaudio",
+        "network",
+        "bluetooth",
+        "battery",
+        "custom/power"
+    ],
+    
+    "niri/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "I",
+            "2": "II",
+            "3": "III",
+            "4": "IV",
+            "5": "V",
+            "6": "VI",
+            "7": "VII",
+            "8": "VIII",
+            "9": "IX",
+            "10": "X"
+        },
+        "persistent-workspaces": {
+            "*": 5
+        }
+    },
+
+    "niri/window": {
+        "format": "{}",
+        "max-length": 50,
+        "separate-outputs": true
+    },
+    
+    "clock": {
+        "timezone": "Europe/Chisinau",
+        "interval": 1,
+        "format": "{:%H:%M:%S}",
+        "format-alt": "{:%A, %B %d, %Y (%R)}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "year",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "days": "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        }
+    },
+    
+    "tray": {
+        "icon-size": 18,
+        "spacing": 8
+    },
+    
+
+        "cpu": {
+        "format": "󰻠 {usage}%",
+        "format-alt": "󰻠 {avg_frequency} GHz",
+        "interval": 1,
+        "tooltip": true,
+        "tooltip-format": "CPU Usage: {usage}%\nAverage Frequency: {avg_frequency} GHz\nLoad: {load}"
+    },
+    
+    "memory": {
+        "format": "󰍛 {percentage}%",
+        "format-alt": "󰍛 {used:0.1f}G/{total:0.1f}G",
+        "interval": 1,
+        "tooltip": true,
+        "tooltip-format": "Memory Usage: {percentage}%\nUsed: {used:0.2f} GB\nAvailable: {avail:0.2f} GB\nTotal: {total:0.2f} GB"
+    },
+
+    
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "󰒳",
+            "deactivated": "󰒲"
+        }
+    },
+    
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%", // Один пробел [cite: 13]
+        "format-icons": ["󰃞", "󰃟", "󰃠"]
+    },
+    
+    "pulseaudio": {
+        "scroll-step": 5,
+        "format": "{icon} {volume}%", // Один пробел [cite: 14]
+        "format-muted": "󰖁 Muted",
+        "format-icons": {
+            "headphone": "󰋋",
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "on-click": "pavucontrol"
+    },
+    
+    "network": {
+        "format-wifi": "󰤨 {signalStrength}%", // Один пробел [cite: 16]
+        "format-ethernet": "󰈀 Connected",
+        "format-disconnected": "󰤭 Disconnected"
+    },
+    
+    "bluetooth": {
+        "format": "󰂯",
+        "format-connected": "󰂱 {num_connections}", // Один пробел [cite: 17]
+        "on-click": "blueman-manager"
+    },
+    
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%", // Один пробел [cite: 18]
+        "format-charging": "󰂄 {capacity}%",
+        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+    
+    "custom/power": {
+        "format": "⏻",
+        "tooltip": false,
+        "on-click": "wlogout"
+    },
+
+        "custom/media": {
+        "format": "{icon} {text}",
+        "return-type": "json",
+        "max-length": 40,
+        "format-icons": {
+            "spotify": "",
+            "default": "🎜"
+        },
+        "escape": true,
+        "exec": "$HOME/DotFiles/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    },
+
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 18,
+        "icon-theme": "Papirus", 
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "ignore-list": ["kitty"],
+        "rewrite": {
+            "Firefox Web Browser": "Firefox"
+        }
+    }, // Добавлена запятая, исправлен синтаксис 
+ 
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{icon} {name}", // Сначала иконка, потом текст
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+
+    "custom/waybar-media": {
+        "return-type": "json",
+        "max-length": 40,
+        "exec": "waybar-media.py status",
+        "on-click": "waybar-media.py playpause",
+        "on-scroll-up": "waybar-media.py previous",
+        "on-scroll-down": "waybar-media.py next",
+        "escape": true
+    }
+
+    }
+    "cffi/mediaplayer": {
+		// Path to the compiled dynamic library file
+		"module_path": "/home/prunus/.config/waybar/scripts/waybar_mediaplayer.so",
+		"scroll-title": true,
+		"scroll-interval": 200,
+		"scroll-before-timeout":5,
+		"title-max-width": 200,
+		"scroll-step": 2,
+		"tooltip": true,
+		"tooltip-image-width": 300,
+		"tooltip-image-height": 300,
+		"btn-play-icon": "",
+		"btn-pause-icon": "",
+		"btn-prev-icon": "",
+		"btn-next-icon": "",
+		"ignored-players": "playerctl"
+	}
+}
