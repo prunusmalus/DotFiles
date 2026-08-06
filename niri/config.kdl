@@ -612,6 +612,8 @@ binds {
     Mod+W hotkey-overlay-title="浏览器 Browser" { spawn "firefox"; }
     // Mod+S теперь Spotify (из keybinds.kdl)
     Mod+S hotkey-overlay-title="Spotify" { spawn "flatpak" "run" "com.spotify.Client"; }
+    Mod+Shift+A hotkey-overlay-title="AyuGram" { spawn "AyuGram"; }
+
     // Mod+Ctrl+S теперь скриншот (из keybinds.kdl)
     Mod+Ctrl+S hotkey-overlay-title="截图 Screenshot" { screenshot; }
     // Mod+Ctrl+W теперь walls.sh (из keybinds.kdl)
@@ -621,8 +623,8 @@ binds {
     Mod+Comma  { consume-window-into-column; }
     Mod+Period { expel-window-from-column; }
     // mod+shift+A/D 同效果
-    Mod+Shift+A  { consume-window-into-column; }
-    Mod+Shift+D { expel-window-from-column; }
+    Mod+Ctrl+Alt+Shift+L  { consume-window-into-column; }
+    Mod+Ctrl+Alt+Shift+J { expel-window-from-column; }
     // 开启colume的标签页模式（同一个colume中的窗口会以类似浏览器标签页的形式堆叠）
     Mod+Shift+X { toggle-column-tabbed-display; }
     //Mod+X { toggle-column-tabbed-display; }
