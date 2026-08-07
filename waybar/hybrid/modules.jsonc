@@ -1,0 +1,209 @@
+{
+    // Hybrid modules: legacy set, niri-compatible commands
+
+    // Workspaces (legacy style: roman numerals)
+    "niri/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "I",
+            "2": "II",
+            "3": "III",
+            "4": "IV",
+            "5": "V",
+            "6": "VI",
+            "7": "VII",
+            "8": "VIII",
+            "9": "IX",
+            "10": "X"
+        },
+        "persistent-workspaces": {
+            "*": 5
+        }
+    },
+
+    "niri/window": {
+        "format": "{}",
+        "max-length": 50,
+        "separate-outputs": true
+    },
+
+    // Weather (wttr.in via Weather.sh)
+    "custom/weather": {
+        "exec": "~/.config/waybar/scripts/weather.sh",
+        "return-type": "json",
+        "interval": 1800,
+        "tooltip": true
+    },
+
+    // MPRIS media controls
+    "custom/waybar-media": {
+        "return-type": "json",
+        "max-length": 40,
+        "exec": "waybar-media.py status",
+        "on-click": "waybar-media.py playpause",
+        "on-scroll-up": "waybar-media.py previous",
+        "on-scroll-down": "waybar-media.py next",
+        "escape": true
+    },
+
+    // Audio visualizer
+    "custom/cava": {
+        "tooltip": false,
+        "format": "{}",
+        "exec": "~/.config/waybar/scripts/cava.sh",
+        "on-click": "playerctl play-pause"
+    },
+
+    // Clock
+    "clock": {
+        "timezone": "Europe/Chisinau",
+        "interval": 1,
+        "format": "{:%H:%M:%S}",
+        "format-alt": "{:%A, %B %d, %Y (%R)}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "year",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "days": "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        }
+    },
+
+    // Keyboard layout (niri)
+    "niri/language": {},
+
+    // Tray
+    "tray": {
+        "icon-size": 18,
+        "spacing": 8
+    },
+
+    // Notification center
+    "custom/notify": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "󰂚",
+            "none": "󰂛",
+            "dnd-notification": "󰂛",
+            "dnd-none": "󰂛"
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+
+    // CPU
+    "cpu": {
+        "format": "󰻠 {usage}%",
+        "format-alt": "󰻠 {avg_frequency} GHz",
+        "interval": 1,
+        "tooltip": true,
+        "tooltip-format": "CPU Usage: {usage}%\nAverage Frequency: {avg_frequency} GHz\nLoad: {load}"
+    },
+
+    // Memory
+    "memory": {
+        "format": "󰍛 {percentage}%",
+        "format-alt": "󰍛 {used:0.1f}G/{total:0.1f}G",
+        "interval": 1,
+        "tooltip": true,
+        "tooltip-format": "Memory Usage: {percentage}%\nUsed: {used:0.2f} GB\nAvailable: {avail:0.2f} GB\nTotal: {total:0.2f} GB"
+    },
+
+    // Screen-off inhibition
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "󰒳",
+            "deactivated": "󰒲"
+        },
+        "tooltip-format-activated": "Auto screen-off disabled",
+        "tooltip-format-deactivated": "Auto screen-off enabled"
+    },
+
+    // Backlight
+    "backlight": {
+        "format": "{icon} {percent}%",
+        "format-icons": ["󰃞", "󰃟", "󰃠"],
+        "tooltip": true,
+        "tooltip-format": "Internal display brightness"
+    },
+
+    // Pulseaudio (wayland-native controls)
+    "pulseaudio": {
+        "scroll-step": 5,
+        "format": "{icon} {volume}%",
+        "format-muted": "󰖁 Muted",
+        "format-icons": {
+            "headphone": "󰋋",
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+        "on-click-middle": "pavucontrol --tab=3",
+        "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
+        "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+    },
+
+    // Network
+    "network": {
+        "format-disconnected": "{icon}",
+        "format-wifi": "{icon}",
+        "format-ethernet": "{icon}",
+        "format-icons": {
+            "disconnected": "󰤮",
+            "wifi": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+            "ethernet": "󰈀"
+        },
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)\n{ifname} : {ipaddr}\n---\nLMB: network panel\nRMB: advanced network settings",
+        "tooltip-format-ethernet": "{ifname} : {ipaddr}\n---\nLMB: network panel\nRMB: advanced network settings",
+        "tooltip-format-disconnected": "Network disconnected\n---\nLMB: network panel\nRMB: advanced network settings",
+        "on-click": "kitty --class network-tui -e ~/.config/waybar/scripts/select-network-tui.sh",
+        "on-click-right": "nm-connection-editor"
+    },
+
+    // Bluetooth
+    "bluetooth": {
+        "format-disabled": "󰂲",
+        "tooltip-format-disabled": "RMB: enable Bluetooth",
+        "format": "󰂯",
+        "tooltip-format-on": "LMB: panel\nRMB: disable Bluetooth",
+        "format-connected": "󰂱",
+        "tooltip-format-connected": "󰂱 {device_alias}\n---\nLMB: panel",
+        "on-click-right": "~/.config/waybar/scripts/toggle-bluetooth.sh",
+        "on-click": "kitty --class bluetui -e bluetui"
+    },
+
+    // Battery
+    "battery": {
+        "interval": 60,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "tooltip-format": "Charge: {capacity}%\nPower: {power}\nTime left: {timeTo}\n---\nBattery health: {health}%"
+    },
+
+    // Power menu
+    "custom/power": {
+        "format": "⏻",
+        "tooltip": false,
+        "on-click": "wlogout"
+    }
+}
